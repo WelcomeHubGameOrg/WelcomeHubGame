@@ -13,22 +13,33 @@ Through various minigames, new students will explore Finnish student culture in 
 * **CI/CD:** GitHub Actions (GameCI) for automated WebGL builds
 
 ---
+## Project Management via GitHub Projects
+### 1. Create a Feature Set for your Minigame
+1. Go to GitHub Projects -> Taskboard -> ... (right upper corner) -> Settings -> Feature Set
+2. Add your Minigame name to the list of Feature Sets (if not existing already)
+
+### 2. Create Issues/Tasks for your Minigame
+1. Add Item
+2. Assign Item to your Feature Set
+3. Set Issue settings, mandatory fields are: Type, Priority, Size
+
+---
 
 ## 🚦 Repository Rules & Workflow
 
 To keep our Unity project stable and avoid merge conflicts, we have strict rules for contributing. **Please read this carefully!**
 
 ### 1. Naming Conventions (Branch & Commits)
-We use our Trello-Board IDs for tracking. 
-* **Branches:** `<type>/<Trello-ID>-<short-description>`
-  * *Example:* `feature/T-12-blueberry-picking`
+* **Minigame-Branches:** `minigame/<minigame-name>`
+  * *Example:* `minigame/sauna`
+* **Suggestion for Minigame Feature branches:** `<type>/<minigame-name>-<description>`
+  * *Example:* `feature/sauna-test`
   * *Types:* `feature` (new stuff), `bugfix` (fixing errors), `docs` (documentation), `refactor` (code cleanup)
-* **Commits:** `[Trello-ID] type: Description in English`
-  * *Example:* `[T-12] feat: add player collision to trees`
+  * *Create Feature Branches out of the respective Issue*
 
-### 2. The Golden Workflow (How to contribute)
+### 2. How to contribute
 Direct pushes to the `main` branch are **blocked**.
-1. Pick a task from Trello.
+1. Pick a issue from the GitHub project view.
 2. Create a new branch from `main` (see Naming Conventions).
 3. Do your work in Unity and commit regularly.
 4. Push your branch to GitHub.
