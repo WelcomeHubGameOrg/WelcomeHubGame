@@ -7,16 +7,14 @@ public class TavelScript : MonoBehaviour
 {
     [SerializeField] private int cost;
     [SerializeField] private int reward;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField] private int zone;
 
-    // Update is called once per frame
-    void Update()
+    public void ShowPopUp(GameObject popUp)
     {
-        
+        if (popUp.activeSelf)
+            popUp.SetActive(false);
+        else
+            popUp.SetActive(true);
     }
 
     public void TravelToMinigameScene(string sceneName)
@@ -26,6 +24,8 @@ public class TavelScript : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+
+    // == should i put on a separete script? ==
     public void BackToMap()
     {
         SceneManager.LoadScene("MapProtype");
