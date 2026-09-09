@@ -1,0 +1,3432 @@
+fileFormatVersion: 2
+guid: b9e1c0597fb57f5e981d24cc61b4d77e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1064392974768584416
+    second: Sprite_03_ForestClose_DUMMY_0
+  - first:
+      213: -7928145608967910079
+    second: Sprite_03_ForestClose_DUMMY_1
+  - first:
+      213: -1347379005558245072
+    second: Sprite_03_ForestClose_DUMMY_2
+  - first:
+      213: 5518331131733324128
+    second: Sprite_03_ForestClose_DUMMY_3
+  - first:
+      213: 3790550376726379612
+    second: Sprite_03_ForestClose_DUMMY_4
+  - first:
+      213: -8228016870744005720
+    second: Sprite_03_ForestClose_DUMMY_5
+  - first:
+      213: 8054118413443388614
+    second: Sprite_03_ForestClose_DUMMY_6
+  - first:
+      213: 4072609415242628587
+    second: Sprite_03_ForestClose_DUMMY_7
+  - first:
+      213: 3933332809197084366
+    second: Sprite_03_ForestClose_DUMMY_8
+  - first:
+      213: 8491294448443172978
+    second: Sprite_03_ForestClose_DUMMY_9
+  - first:
+      213: 7827359101338514216
+    second: Sprite_03_ForestClose_DUMMY_10
+  - first:
+      213: -2879668057709430432
+    second: Sprite_03_ForestClose_DUMMY_11
+  - first:
+      213: 4922080034570941364
+    second: Sprite_03_ForestClose_DUMMY_12
+  - first:
+      213: -2243511537204305186
+    second: Sprite_03_ForestClose_DUMMY_13
+  - first:
+      213: 5309026024140320167
+    second: Sprite_03_ForestClose_DUMMY_14
+  - first:
+      213: -5805095889165461176
+    second: Sprite_03_ForestClose_DUMMY_15
+  - first:
+      213: 992793339635105320
+    second: Sprite_03_ForestClose_DUMMY_16
+  - first:
+      213: 7051582171818668677
+    second: Sprite_03_ForestClose_DUMMY_17
+  - first:
+      213: -3684315350839945280
+    second: Sprite_03_ForestClose_DUMMY_18
+  - first:
+      213: -1841673850581377166
+    second: Sprite_03_ForestClose_DUMMY_19
+  - first:
+      213: -5487177791235378275
+    second: Sprite_03_ForestClose_DUMMY_20
+  - first:
+      213: 5054059795633829649
+    second: Sprite_03_ForestClose_DUMMY_21
+  - first:
+      213: -5609403732029032228
+    second: Sprite_03_ForestClose_DUMMY_22
+  - first:
+      213: 3388024445649430694
+    second: Sprite_03_ForestClose_DUMMY_23
+  - first:
+      213: -4877280215527026921
+    second: Sprite_03_ForestClose_DUMMY_24
+  - first:
+      213: -7109224160235735562
+    second: Sprite_03_ForestClose_DUMMY_25
+  - first:
+      213: 6714165946595230292
+    second: Sprite_03_ForestClose_DUMMY_26
+  - first:
+      213: -2699721634866645477
+    second: Sprite_03_ForestClose_DUMMY_27
+  - first:
+      213: -7410496537490589125
+    second: Sprite_03_ForestClose_DUMMY_28
+  - first:
+      213: 3254197097157884491
+    second: Sprite_03_ForestClose_DUMMY_29
+  - first:
+      213: -6122043244213716747
+    second: Sprite_03_ForestClose_DUMMY_30
+  - first:
+      213: 8231119716546819474
+    second: Sprite_03_ForestClose_DUMMY_31
+  - first:
+      213: -1059747380163348765
+    second: Sprite_03_ForestClose_DUMMY_32
+  - first:
+      213: -4225906437634333066
+    second: Sprite_03_ForestClose_DUMMY_33
+  - first:
+      213: 9213937452555532611
+    second: Sprite_03_ForestClose_DUMMY_34
+  - first:
+      213: 904768003560210360
+    second: Sprite_03_ForestClose_DUMMY_35
+  - first:
+      213: 5105140942008866367
+    second: Sprite_03_ForestClose_DUMMY_36
+  - first:
+      213: -4988617789515531481
+    second: Sprite_03_ForestClose_DUMMY_37
+  - first:
+      213: 1631276205573670126
+    second: Sprite_03_ForestClose_DUMMY_38
+  - first:
+      213: 308534066259578474
+    second: Sprite_03_ForestClose_DUMMY_39
+  - first:
+      213: 121874829603724695
+    second: Sprite_03_ForestClose_DUMMY_40
+  - first:
+      213: -6286263803823382658
+    second: Sprite_03_ForestClose_DUMMY_41
+  - first:
+      213: 8503495233238210787
+    second: Sprite_03_ForestClose_DUMMY_42
+  - first:
+      213: -5986759845856616215
+    second: Sprite_03_ForestClose_DUMMY_43
+  - first:
+      213: 9152916127726391004
+    second: Sprite_03_ForestClose_DUMMY_44
+  - first:
+      213: -6161343516046503243
+    second: Sprite_03_ForestClose_DUMMY_45
+  - first:
+      213: 2376712383886671433
+    second: Sprite_03_ForestClose_DUMMY_46
+  - first:
+      213: -8660406006272638833
+    second: Sprite_03_ForestClose_DUMMY_47
+  - first:
+      213: 2358185500333323017
+    second: Sprite_03_ForestClose_DUMMY_48
+  - first:
+      213: -355607309639600158
+    second: Sprite_03_ForestClose_DUMMY_49
+  - first:
+      213: 1667022791408354937
+    second: Sprite_03_ForestClose_DUMMY_50
+  - first:
+      213: -5723645880409673075
+    second: Sprite_03_ForestClose_DUMMY_51
+  - first:
+      213: -6390923903431947120
+    second: Sprite_03_ForestClose_DUMMY_52
+  - first:
+      213: 7915914719202268189
+    second: Sprite_03_ForestClose_DUMMY_53
+  - first:
+      213: -6541531548942271778
+    second: Sprite_03_ForestClose_DUMMY_54
+  - first:
+      213: 8774716162004987050
+    second: Sprite_03_ForestClose_DUMMY_55
+  - first:
+      213: 9213911083270483289
+    second: Sprite_03_ForestClose_DUMMY_56
+  - first:
+      213: 8877625060434148773
+    second: Sprite_03_ForestClose_DUMMY_57
+  - first:
+      213: -6780342283314275435
+    second: Sprite_03_ForestClose_DUMMY_58
+  - first:
+      213: -8140115938011568328
+    second: Sprite_03_ForestClose_DUMMY_59
+  - first:
+      213: -7054691239281994778
+    second: Sprite_03_ForestClose_DUMMY_60
+  - first:
+      213: 306378821032073506
+    second: Sprite_03_ForestClose_DUMMY_61
+  - first:
+      213: -7198898630209434194
+    second: Sprite_03_ForestClose_DUMMY_62
+  - first:
+      213: -6170497423968779407
+    second: Sprite_03_ForestClose_DUMMY_63
+  - first:
+      213: 2264729590880885636
+    second: Sprite_03_ForestClose_DUMMY_64
+  - first:
+      213: 6439392338441084743
+    second: Sprite_03_ForestClose_DUMMY_65
+  - first:
+      213: -5842239599573202513
+    second: Sprite_03_ForestClose_DUMMY_66
+  - first:
+      213: -2176297743356243718
+    second: Sprite_03_ForestClose_DUMMY_67
+  - first:
+      213: 9097110016696557181
+    second: Sprite_03_ForestClose_DUMMY_68
+  - first:
+      213: -1321760256715010429
+    second: Sprite_03_ForestClose_DUMMY_69
+  - first:
+      213: -6529719181382078300
+    second: Sprite_03_ForestClose_DUMMY_70
+  - first:
+      213: 662467436279093993
+    second: Sprite_03_ForestClose_DUMMY_71
+  - first:
+      213: 7949548296458520786
+    second: Sprite_03_ForestClose_DUMMY_72
+  - first:
+      213: 2539705881867925631
+    second: Sprite_03_ForestClose_DUMMY_73
+  - first:
+      213: 2430189770019210088
+    second: Sprite_03_ForestClose_DUMMY_74
+  - first:
+      213: 7215217468622258695
+    second: Sprite_03_ForestClose_DUMMY_75
+  - first:
+      213: -7311405433679442198
+    second: Sprite_03_ForestClose_DUMMY_76
+  - first:
+      213: 321970200128076480
+    second: Sprite_03_ForestClose_DUMMY_77
+  - first:
+      213: -3271263379206308787
+    second: Sprite_03_ForestClose_DUMMY_78
+  - first:
+      213: -6202684562479079007
+    second: Sprite_03_ForestClose_DUMMY_79
+  - first:
+      213: -5768547795586260065
+    second: Sprite_03_ForestClose_DUMMY_80
+  - first:
+      213: 5475626181655116910
+    second: Sprite_03_ForestClose_DUMMY_81
+  - first:
+      213: 3434302753427096414
+    second: Sprite_03_ForestClose_DUMMY_82
+  - first:
+      213: -8535024374290126488
+    second: Sprite_03_ForestClose_DUMMY_83
+  - first:
+      213: 3684015064159261408
+    second: Sprite_03_ForestClose_DUMMY_84
+  - first:
+      213: -1345375420816880678
+    second: Sprite_03_ForestClose_DUMMY_85
+  - first:
+      213: 5483568590959152788
+    second: Sprite_03_ForestClose_DUMMY_86
+  - first:
+      213: -6887944466919985168
+    second: Sprite_03_ForestClose_DUMMY_87
+  - first:
+      213: -939260680916089630
+    second: Sprite_03_ForestClose_DUMMY_88
+  - first:
+      213: 8756309922325309170
+    second: Sprite_03_ForestClose_DUMMY_89
+  - first:
+      213: 2965047265289059510
+    second: Sprite_03_ForestClose_DUMMY_90
+  - first:
+      213: -3267845471141353279
+    second: Sprite_03_ForestClose_DUMMY_91
+  - first:
+      213: -7646035745901581221
+    second: Sprite_03_ForestClose_DUMMY_92
+  - first:
+      213: -4647390287973318310
+    second: Sprite_03_ForestClose_DUMMY_93
+  - first:
+      213: -250910215164023658
+    second: Sprite_03_ForestClose_DUMMY_94
+  - first:
+      213: 8921438190160867497
+    second: Sprite_03_ForestClose_DUMMY_95
+  - first:
+      213: 5572920425973884212
+    second: Sprite_03_ForestClose_DUMMY_96
+  - first:
+      213: 7932335863265043653
+    second: Sprite_03_ForestClose_DUMMY_97
+  - first:
+      213: -8886400752807904998
+    second: Sprite_03_ForestClose_DUMMY_98
+  - first:
+      213: -791108934710647642
+    second: Sprite_03_ForestClose_DUMMY_99
+  - first:
+      213: 9071110208010738507
+    second: Sprite_03_ForestClose_DUMMY_100
+  - first:
+      213: -5875212809833801307
+    second: Sprite_03_ForestClose_DUMMY_101
+  - first:
+      213: -8461650041605314893
+    second: Sprite_03_ForestClose_DUMMY_102
+  - first:
+      213: 3704764202157561275
+    second: Sprite_03_ForestClose_DUMMY_103
+  - first:
+      213: 6876277784934318762
+    second: Sprite_03_ForestClose_DUMMY_104
+  - first:
+      213: -7688806925396107242
+    second: Sprite_03_ForestClose_DUMMY_105
+  - first:
+      213: -8846051980720927835
+    second: Sprite_03_ForestClose_DUMMY_106
+  - first:
+      213: -6427013471789058090
+    second: Sprite_03_ForestClose_DUMMY_107
+  - first:
+      213: 2881528888447152048
+    second: Sprite_03_ForestClose_DUMMY_108
+  - first:
+      213: -7714422499623858106
+    second: Sprite_03_ForestClose_DUMMY_109
+  - first:
+      213: -6576021127015043893
+    second: Sprite_03_ForestClose_DUMMY_110
+  - first:
+      213: -2754238638473534879
+    second: Sprite_03_ForestClose_DUMMY_111
+  - first:
+      213: 4098821512732694004
+    second: Sprite_03_ForestClose_DUMMY_112
+  - first:
+      213: -3369811640854949913
+    second: Sprite_03_ForestClose_DUMMY_113
+  - first:
+      213: 5395957562523128210
+    second: Sprite_03_ForestClose_DUMMY_114
+  - first:
+      213: 3206979518159439263
+    second: Sprite_03_ForestClose_DUMMY_115
+  - first:
+      213: 3171767500472462441
+    second: Sprite_03_ForestClose_DUMMY_116
+  - first:
+      213: -38937129160799703
+    second: Sprite_03_ForestClose_DUMMY_117
+  - first:
+      213: 4417118696096232320
+    second: Sprite_03_ForestClose_DUMMY_118
+  - first:
+      213: -9126135976268664884
+    second: Sprite_03_ForestClose_DUMMY_119
+  - first:
+      213: -7862269444859362539
+    second: Sprite_03_ForestClose_DUMMY_120
+  - first:
+      213: 1590204421355022371
+    second: Sprite_03_ForestClose_DUMMY_121
+  - first:
+      213: -3395227211395280221
+    second: Sprite_03_ForestClose_DUMMY_122
+  - first:
+      213: -481441792207652028
+    second: Sprite_03_ForestClose_DUMMY_123
+  - first:
+      213: -8499299386826137700
+    second: Sprite_03_ForestClose_DUMMY_124
+  - first:
+      213: -4743995158529225798
+    second: Sprite_03_ForestClose_DUMMY_125
+  - first:
+      213: 2270718682538863595
+    second: Sprite_03_ForestClose_DUMMY_126
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1028
+        width: 590
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0294f759a348a31f0800000000000000
+      internalID: -1064392974768584416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_1
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 1108
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14d05e1e29199f190800000000000000
+      internalID: -7928145608967910079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_2
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 1108
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 039b1e3eee52d4de0800000000000000
+      internalID: -1347379005558245072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_3
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 1108
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 061b1fb4dec059c40800000000000000
+      internalID: 5518331131733324128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_4
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 1108
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5cbff30c7dba9430800000000000000
+      internalID: 3790550376726379612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_5
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 1108
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a3e16dff3630dd80800000000000000
+      internalID: -8228016870744005720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_6
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1108
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c4d934460af5cf60800000000000000
+      internalID: 8054118413443388614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_7
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 1108
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bedb2708fa0d48830800000000000000
+      internalID: 4072609415242628587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_8
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1108
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eced49ba951069630800000000000000
+      internalID: 3933332809197084366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_9
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 1108
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 278a3b2ef4327d570800000000000000
+      internalID: 8491294448443172978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_10
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 1108
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 823f3bca1ad50ac60800000000000000
+      internalID: 7827359101338514216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_11
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 1108
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 069b03d982d5908d0800000000000000
+      internalID: -2879668057709430432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_12
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 1108
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b3b4a096bdbe4440800000000000000
+      internalID: 4922080034570941364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_13
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 1108
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed2627fb4227dd0e0800000000000000
+      internalID: -2243511537204305186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_14
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 1108
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ad20306a037da940800000000000000
+      internalID: 5309026024140320167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_15
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 1108
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8495637ab08207fa0800000000000000
+      internalID: -5805095889165461176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_16
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 1108
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82ef258484c17cd00800000000000000
+      internalID: 992793339635105320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_17
+      rect:
+        serializedVersion: 2
+        x: 1655
+        y: 1108
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 582bab7df904cd160800000000000000
+      internalID: 7051582171818668677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_18
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 1108
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c79aa075beaedcc0800000000000000
+      internalID: -3684315350839945280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_19
+      rect:
+        serializedVersion: 2
+        x: 1723
+        y: 1108
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27f98f7f36f0176e0800000000000000
+      internalID: -1841673850581377166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_20
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 1108
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d93b0060fd0a9d3b0800000000000000
+      internalID: -5487177791235378275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_21
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 1108
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11776584b90a32640800000000000000
+      internalID: 5054059795633829649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_22
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 1108
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd8b8ae86056722b0800000000000000
+      internalID: -5609403732029032228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_23
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 1108
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a82645684ea40f20800000000000000
+      internalID: 3388024445649430694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_24
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 1108
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f88732c7b605cb0800000000000000
+      internalID: -4877280215527026921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_25
+      rect:
+        serializedVersion: 2
+        x: 1918
+        y: 1108
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f53684ea46f65d90800000000000000
+      internalID: -7109224160235735562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_26
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 1108
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45245d1fa528d2d50800000000000000
+      internalID: 6714165946595230292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_27
+      rect:
+        serializedVersion: 2
+        x: 1982
+        y: 1108
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1636511a79a88ad0800000000000000
+      internalID: -2699721634866645477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_28
+      rect:
+        serializedVersion: 2
+        x: 2034
+        y: 1108
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a7c9169a0a82990800000000000000
+      internalID: -7410496537490589125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_29
+      rect:
+        serializedVersion: 2
+        x: 2071
+        y: 1108
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4af335b40b392d20800000000000000
+      internalID: 3254197097157884491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_30
+      rect:
+        serializedVersion: 2
+        x: 2106
+        y: 1108
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f8bf09fa122a0ba0800000000000000
+      internalID: -6122043244213716747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_31
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 1108
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 295bc7895cfca3270800000000000000
+      internalID: 8231119716546819474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_32
+      rect:
+        serializedVersion: 2
+        x: 2189
+        y: 1108
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e676bd5f550b41f0800000000000000
+      internalID: -1059747380163348765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_33
+      rect:
+        serializedVersion: 2
+        x: 2483
+        y: 1108
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 676e4ca1c709a55c0800000000000000
+      internalID: -4225906437634333066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_34
+      rect:
+        serializedVersion: 2
+        x: 2521
+        y: 1108
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3497d3aab4b7edf70800000000000000
+      internalID: 9213937452555532611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_35
+      rect:
+        serializedVersion: 2
+        x: 2551
+        y: 1108
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bf7850a4b16e8c00800000000000000
+      internalID: 904768003560210360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_36
+      rect:
+        serializedVersion: 2
+        x: 2589
+        y: 1108
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f36ddb873aa19d640800000000000000
+      internalID: 5105140942008866367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_37
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 1108
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72b7bbf1d8ed4cab0800000000000000
+      internalID: -4988617789515531481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_38
+      rect:
+        serializedVersion: 2
+        x: 2656
+        y: 1108
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee404cbe01573a610800000000000000
+      internalID: 1631276205573670126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_39
+      rect:
+        serializedVersion: 2
+        x: 2686
+        y: 1108
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6e428c3912284400800000000000000
+      internalID: 308534066259578474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_40
+      rect:
+        serializedVersion: 2
+        x: 2716
+        y: 1108
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79d5795038cf0b100800000000000000
+      internalID: 121874829603724695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_41
+      rect:
+        serializedVersion: 2
+        x: 2746
+        y: 1108
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7f16b06064b2c8a0800000000000000
+      internalID: -6286263803823382658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_42
+      rect:
+        serializedVersion: 2
+        x: 2780
+        y: 1108
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e814667cdb720670800000000000000
+      internalID: 8503495233238210787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_43
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 1108
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e0e420b3a1caeca0800000000000000
+      internalID: -5986759845856616215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_44
+      rect:
+        serializedVersion: 2
+        x: 2862
+        y: 1108
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cde431459b0b50f70800000000000000
+      internalID: 9152916127726391004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_45
+      rect:
+        serializedVersion: 2
+        x: 2899
+        y: 1108
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b254e267b28e7aa0800000000000000
+      internalID: -6161343516046503243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_46
+      rect:
+        serializedVersion: 2
+        x: 2934
+        y: 1108
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94e36de1257cbf020800000000000000
+      internalID: 2376712383886671433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_47
+      rect:
+        serializedVersion: 2
+        x: 2978
+        y: 1108
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f80c5714f9e00d780800000000000000
+      internalID: -8660406006272638833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_48
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 815
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90338d5e735f9b020800000000000000
+      internalID: 2358185500333323017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_49
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 815
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e736653901a01bf0800000000000000
+      internalID: -355607309639600158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_50
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 815
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97600628564722710800000000000000
+      internalID: 1667022791408354937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_51
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 815
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d82bd0e95668190b0800000000000000
+      internalID: -5723645880409673075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_52
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 815
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09cc2650290ee47a0800000000000000
+      internalID: -6390923903431947120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_53
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 815
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d14565e2f7afadd60800000000000000
+      internalID: 7915914719202268189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_54
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 815
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edaf84af6bfc735a0800000000000000
+      internalID: -6541531548942271778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_55
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 815
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aacaf21ebdd06c970800000000000000
+      internalID: 8774716162004987050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_56
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 815
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95d2f5610536edf70800000000000000
+      internalID: 9213911083270483289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_57
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 815
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ad7840f4f8a33b70800000000000000
+      internalID: 8877625060434148773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_58
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 815
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59bdd7bfd9267e1a0800000000000000
+      internalID: -6780342283314275435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_59
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 815
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837235cbeaf780f80800000000000000
+      internalID: -8140115938011568328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_60
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 815
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e3598af1b3b81e90800000000000000
+      internalID: -7054691239281994778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_61
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 815
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 229d15a1ae9704400800000000000000
+      internalID: 306378821032073506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_62
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 815
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ead025456df581c90800000000000000
+      internalID: -7198898630209434194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_63
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 815
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 173c0ec194dfd5aa0800000000000000
+      internalID: -6170497423968779407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_64
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 815
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48b55c8509fed6f10800000000000000
+      internalID: 2264729590880885636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_65
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 815
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74f1726e6315d5950800000000000000
+      internalID: 6439392338441084743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_66
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 815
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa908b6a9023ceea0800000000000000
+      internalID: -5842239599573202513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_67
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 815
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af054c1abbc3cc1e0800000000000000
+      internalID: -2176297743356243718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_68
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 815
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7e98d39c5d6f3e70800000000000000
+      internalID: 9097110016696557181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_69
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 815
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38ec54cac0a28ade0800000000000000
+      internalID: -1321760256715010429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_70
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 815
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a0baae1007c165a0800000000000000
+      internalID: -6529719181382078300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_71
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 815
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eadda69f9e813900800000000000000
+      internalID: 662467436279093993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_72
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 815
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d8c83f9e08725e60800000000000000
+      internalID: 7949548296458520786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_73
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 815
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7835ba2b09de3320800000000000000
+      internalID: 2539705881867925631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_74
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 815
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86388ca58b4c9b120800000000000000
+      internalID: 2430189770019210088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_75
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 815
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7024c625f0a912460800000000000000
+      internalID: 7215217468622258695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_76
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 815
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee0dacde7ba88a90800000000000000
+      internalID: -7311405433679442198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_77
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 815
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ca35eee03ed77400800000000000000
+      internalID: 321970200128076480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_78
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 815
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4cf9abd9432a92d0800000000000000
+      internalID: -3271263379206308787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_79
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 815
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a1a2afe043abe9a0800000000000000
+      internalID: -6202684562479079007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_80
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 815
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f93e73ec75002ffa0800000000000000
+      internalID: -5768547795586260065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_81
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 815
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6cb16840055dfb40800000000000000
+      internalID: 5475626181655116910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_82
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 815
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e530b25982819af20800000000000000
+      internalID: 3434302753427096414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_83
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 815
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 869e2255d808d8980800000000000000
+      internalID: -8535024374290126488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_84
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 815
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e2966e9e20402330800000000000000
+      internalID: 3684015064159261408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_85
+      rect:
+        serializedVersion: 2
+        x: 2107
+        y: 815
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adb0ba0de24445de0800000000000000
+      internalID: -1345375420816880678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_86
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 815
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49e0c9d849c891c40800000000000000
+      internalID: 5483568590959152788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_87
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 815
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ffed90500b1960a0800000000000000
+      internalID: -6887944466919985168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_88
+      rect:
+        serializedVersion: 2
+        x: 2205
+        y: 815
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e4418a136317f2f0800000000000000
+      internalID: -939260680916089630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_89
+      rect:
+        serializedVersion: 2
+        x: 2242
+        y: 815
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f6ad6f3b79a48970800000000000000
+      internalID: 8756309922325309170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_90
+      rect:
+        serializedVersion: 2
+        x: 2272
+        y: 815
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc3ccd37c6f52920800000000000000
+      internalID: 2965047265289059510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_91
+      rect:
+        serializedVersion: 2
+        x: 2302
+        y: 815
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c820c79bd746a2d0800000000000000
+      internalID: -3267845471141353279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_92
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 815
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5ce891eff2d3e590800000000000000
+      internalID: -7646035745901581221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_93
+      rect:
+        serializedVersion: 2
+        x: 2366
+        y: 815
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5100c0f727218fb0800000000000000
+      internalID: -4647390287973318310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_94
+      rect:
+        serializedVersion: 2
+        x: 2396
+        y: 815
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69ca1aa1d76948cf0800000000000000
+      internalID: -250910215164023658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_95
+      rect:
+        serializedVersion: 2
+        x: 2448
+        y: 815
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a0742224c05fcb70800000000000000
+      internalID: 8921438190160867497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_96
+      rect:
+        serializedVersion: 2
+        x: 2485
+        y: 815
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43521bfc99df65d40800000000000000
+      internalID: 5572920425973884212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_97
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 815
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c42109b071551e60800000000000000
+      internalID: 7932335863265043653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_98
+      rect:
+        serializedVersion: 2
+        x: 2564
+        y: 815
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a19fe15f8992da480800000000000000
+      internalID: -8886400752807904998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_99
+      rect:
+        serializedVersion: 2
+        x: 2603
+        y: 815
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a42fe78d9a6505f0800000000000000
+      internalID: -791108934710647642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_100
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 815
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4b56e26cae03ed70800000000000000
+      internalID: 9071110208010738507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_101
+      rect:
+        serializedVersion: 2
+        x: 2935
+        y: 815
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a91802e31d077ea0800000000000000
+      internalID: -5875212809833801307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_102
+      rect:
+        serializedVersion: 2
+        x: 2965
+        y: 815
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b622707e1e229a80800000000000000
+      internalID: -8461650041605314893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_103
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 94
+        width: 3000
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb55f26c967f96330800000000000000
+      internalID: 3704764202157561275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_104
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 85
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa28beb96327d6f50800000000000000
+      internalID: 6876277784934318762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_105
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 55
+        width: 42
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 610a331a6dedb4590800000000000000
+      internalID: -7688806925396107242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_106
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 54
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ab0d7887928c3580800000000000000
+      internalID: -8846051980720927835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_107
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 46
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d7fc579c49aec6a0800000000000000
+      internalID: -6427013471789058090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_108
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 60
+        width: 39
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bf2bedc14f3df720800000000000000
+      internalID: 2881528888447152048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_109
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 60
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64093aefb9dd0f490800000000000000
+      internalID: -7714422499623858106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_110
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 71
+        width: 44
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bccedc050a74db4a0800000000000000
+      internalID: -6576021127015043893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_111
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 81
+        width: 38
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16221270d8af6c9d0800000000000000
+      internalID: -2754238638473534879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_112
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 41
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f559280370f1e830800000000000000
+      internalID: 4098821512732694004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_113
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 44
+        width: 42
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ef4ddaaa260c31d0800000000000000
+      internalID: -3369811640854949913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_114
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 50
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 291164960da42ea40800000000000000
+      internalID: 5395957562523128210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_115
+      rect:
+        serializedVersion: 2
+        x: 2187
+        y: 44
+        width: 34
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f95c8d561ea718c20800000000000000
+      internalID: 3206979518159439263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_116
+      rect:
+        serializedVersion: 2
+        x: 2583
+        y: 40
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96c2ac7acb1640c20800000000000000
+      internalID: 3171767500472462441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_117
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 70
+        width: 29
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92a0cc723eaa57ff0800000000000000
+      internalID: -38937129160799703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_118
+      rect:
+        serializedVersion: 2
+        x: 2964
+        y: 79
+        width: 36
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0837d8b1d02cc4d30800000000000000
+      internalID: 4417118696096232320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_119
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 9
+        width: 35
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccfe7929ea3795180800000000000000
+      internalID: -9126135976268664884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_120
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 7
+        width: 32
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51300c2989b93e290800000000000000
+      internalID: -7862269444859362539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_121
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 22
+        width: 46
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3282f17fe7a811610800000000000000
+      internalID: 1590204421355022371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_122
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 19
+        width: 41
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a25b0507dab1e0d0800000000000000
+      internalID: -3395227211395280221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_123
+      rect:
+        serializedVersion: 2
+        x: 2071
+        y: 3
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44b7f63ad339159f0800000000000000
+      internalID: -481441792207652028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_124
+      rect:
+        serializedVersion: 2
+        x: 2325
+        y: 7
+        width: 37
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9f58882d3c6c0a80800000000000000
+      internalID: -8499299386826137700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_125
+      rect:
+        serializedVersion: 2
+        x: 2463
+        y: 2
+        width: 41
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb41bfb981f92eb0800000000000000
+      internalID: -4743995158529225798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_03_ForestClose_DUMMY_126
+      rect:
+        serializedVersion: 2
+        x: 2826
+        y: 2
+        width: 38
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beb62996c96338f10800000000000000
+      internalID: 2270718682538863595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sprite_03_ForestClose_DUMMY_0: -1064392974768584416
+      Sprite_03_ForestClose_DUMMY_1: -7928145608967910079
+      Sprite_03_ForestClose_DUMMY_10: 7827359101338514216
+      Sprite_03_ForestClose_DUMMY_100: 9071110208010738507
+      Sprite_03_ForestClose_DUMMY_101: -5875212809833801307
+      Sprite_03_ForestClose_DUMMY_102: -8461650041605314893
+      Sprite_03_ForestClose_DUMMY_103: 3704764202157561275
+      Sprite_03_ForestClose_DUMMY_104: 6876277784934318762
+      Sprite_03_ForestClose_DUMMY_105: -7688806925396107242
+      Sprite_03_ForestClose_DUMMY_106: -8846051980720927835
+      Sprite_03_ForestClose_DUMMY_107: -6427013471789058090
+      Sprite_03_ForestClose_DUMMY_108: 2881528888447152048
+      Sprite_03_ForestClose_DUMMY_109: -7714422499623858106
+      Sprite_03_ForestClose_DUMMY_11: -2879668057709430432
+      Sprite_03_ForestClose_DUMMY_110: -6576021127015043893
+      Sprite_03_ForestClose_DUMMY_111: -2754238638473534879
+      Sprite_03_ForestClose_DUMMY_112: 4098821512732694004
+      Sprite_03_ForestClose_DUMMY_113: -3369811640854949913
+      Sprite_03_ForestClose_DUMMY_114: 5395957562523128210
+      Sprite_03_ForestClose_DUMMY_115: 3206979518159439263
+      Sprite_03_ForestClose_DUMMY_116: 3171767500472462441
+      Sprite_03_ForestClose_DUMMY_117: -38937129160799703
+      Sprite_03_ForestClose_DUMMY_118: 4417118696096232320
+      Sprite_03_ForestClose_DUMMY_119: -9126135976268664884
+      Sprite_03_ForestClose_DUMMY_12: 4922080034570941364
+      Sprite_03_ForestClose_DUMMY_120: -7862269444859362539
+      Sprite_03_ForestClose_DUMMY_121: 1590204421355022371
+      Sprite_03_ForestClose_DUMMY_122: -3395227211395280221
+      Sprite_03_ForestClose_DUMMY_123: -481441792207652028
+      Sprite_03_ForestClose_DUMMY_124: -8499299386826137700
+      Sprite_03_ForestClose_DUMMY_125: -4743995158529225798
+      Sprite_03_ForestClose_DUMMY_126: 2270718682538863595
+      Sprite_03_ForestClose_DUMMY_13: -2243511537204305186
+      Sprite_03_ForestClose_DUMMY_14: 5309026024140320167
+      Sprite_03_ForestClose_DUMMY_15: -5805095889165461176
+      Sprite_03_ForestClose_DUMMY_16: 992793339635105320
+      Sprite_03_ForestClose_DUMMY_17: 7051582171818668677
+      Sprite_03_ForestClose_DUMMY_18: -3684315350839945280
+      Sprite_03_ForestClose_DUMMY_19: -1841673850581377166
+      Sprite_03_ForestClose_DUMMY_2: -1347379005558245072
+      Sprite_03_ForestClose_DUMMY_20: -5487177791235378275
+      Sprite_03_ForestClose_DUMMY_21: 5054059795633829649
+      Sprite_03_ForestClose_DUMMY_22: -5609403732029032228
+      Sprite_03_ForestClose_DUMMY_23: 3388024445649430694
+      Sprite_03_ForestClose_DUMMY_24: -4877280215527026921
+      Sprite_03_ForestClose_DUMMY_25: -7109224160235735562
+      Sprite_03_ForestClose_DUMMY_26: 6714165946595230292
+      Sprite_03_ForestClose_DUMMY_27: -2699721634866645477
+      Sprite_03_ForestClose_DUMMY_28: -7410496537490589125
+      Sprite_03_ForestClose_DUMMY_29: 3254197097157884491
+      Sprite_03_ForestClose_DUMMY_3: 5518331131733324128
+      Sprite_03_ForestClose_DUMMY_30: -6122043244213716747
+      Sprite_03_ForestClose_DUMMY_31: 8231119716546819474
+      Sprite_03_ForestClose_DUMMY_32: -1059747380163348765
+      Sprite_03_ForestClose_DUMMY_33: -4225906437634333066
+      Sprite_03_ForestClose_DUMMY_34: 9213937452555532611
+      Sprite_03_ForestClose_DUMMY_35: 904768003560210360
+      Sprite_03_ForestClose_DUMMY_36: 5105140942008866367
+      Sprite_03_ForestClose_DUMMY_37: -4988617789515531481
+      Sprite_03_ForestClose_DUMMY_38: 1631276205573670126
+      Sprite_03_ForestClose_DUMMY_39: 308534066259578474
+      Sprite_03_ForestClose_DUMMY_4: 3790550376726379612
+      Sprite_03_ForestClose_DUMMY_40: 121874829603724695
+      Sprite_03_ForestClose_DUMMY_41: -6286263803823382658
+      Sprite_03_ForestClose_DUMMY_42: 8503495233238210787
+      Sprite_03_ForestClose_DUMMY_43: -5986759845856616215
+      Sprite_03_ForestClose_DUMMY_44: 9152916127726391004
+      Sprite_03_ForestClose_DUMMY_45: -6161343516046503243
+      Sprite_03_ForestClose_DUMMY_46: 2376712383886671433
+      Sprite_03_ForestClose_DUMMY_47: -8660406006272638833
+      Sprite_03_ForestClose_DUMMY_48: 2358185500333323017
+      Sprite_03_ForestClose_DUMMY_49: -355607309639600158
+      Sprite_03_ForestClose_DUMMY_5: -8228016870744005720
+      Sprite_03_ForestClose_DUMMY_50: 1667022791408354937
+      Sprite_03_ForestClose_DUMMY_51: -5723645880409673075
+      Sprite_03_ForestClose_DUMMY_52: -6390923903431947120
+      Sprite_03_ForestClose_DUMMY_53: 7915914719202268189
+      Sprite_03_ForestClose_DUMMY_54: -6541531548942271778
+      Sprite_03_ForestClose_DUMMY_55: 8774716162004987050
+      Sprite_03_ForestClose_DUMMY_56: 9213911083270483289
+      Sprite_03_ForestClose_DUMMY_57: 8877625060434148773
+      Sprite_03_ForestClose_DUMMY_58: -6780342283314275435
+      Sprite_03_ForestClose_DUMMY_59: -8140115938011568328
+      Sprite_03_ForestClose_DUMMY_6: 8054118413443388614
+      Sprite_03_ForestClose_DUMMY_60: -7054691239281994778
+      Sprite_03_ForestClose_DUMMY_61: 306378821032073506
+      Sprite_03_ForestClose_DUMMY_62: -7198898630209434194
+      Sprite_03_ForestClose_DUMMY_63: -6170497423968779407
+      Sprite_03_ForestClose_DUMMY_64: 2264729590880885636
+      Sprite_03_ForestClose_DUMMY_65: 6439392338441084743
+      Sprite_03_ForestClose_DUMMY_66: -5842239599573202513
+      Sprite_03_ForestClose_DUMMY_67: -2176297743356243718
+      Sprite_03_ForestClose_DUMMY_68: 9097110016696557181
+      Sprite_03_ForestClose_DUMMY_69: -1321760256715010429
+      Sprite_03_ForestClose_DUMMY_7: 4072609415242628587
+      Sprite_03_ForestClose_DUMMY_70: -6529719181382078300
+      Sprite_03_ForestClose_DUMMY_71: 662467436279093993
+      Sprite_03_ForestClose_DUMMY_72: 7949548296458520786
+      Sprite_03_ForestClose_DUMMY_73: 2539705881867925631
+      Sprite_03_ForestClose_DUMMY_74: 2430189770019210088
+      Sprite_03_ForestClose_DUMMY_75: 7215217468622258695
+      Sprite_03_ForestClose_DUMMY_76: -7311405433679442198
+      Sprite_03_ForestClose_DUMMY_77: 321970200128076480
+      Sprite_03_ForestClose_DUMMY_78: -3271263379206308787
+      Sprite_03_ForestClose_DUMMY_79: -6202684562479079007
+      Sprite_03_ForestClose_DUMMY_8: 3933332809197084366
+      Sprite_03_ForestClose_DUMMY_80: -5768547795586260065
+      Sprite_03_ForestClose_DUMMY_81: 5475626181655116910
+      Sprite_03_ForestClose_DUMMY_82: 3434302753427096414
+      Sprite_03_ForestClose_DUMMY_83: -8535024374290126488
+      Sprite_03_ForestClose_DUMMY_84: 3684015064159261408
+      Sprite_03_ForestClose_DUMMY_85: -1345375420816880678
+      Sprite_03_ForestClose_DUMMY_86: 5483568590959152788
+      Sprite_03_ForestClose_DUMMY_87: -6887944466919985168
+      Sprite_03_ForestClose_DUMMY_88: -939260680916089630
+      Sprite_03_ForestClose_DUMMY_89: 8756309922325309170
+      Sprite_03_ForestClose_DUMMY_9: 8491294448443172978
+      Sprite_03_ForestClose_DUMMY_90: 2965047265289059510
+      Sprite_03_ForestClose_DUMMY_91: -3267845471141353279
+      Sprite_03_ForestClose_DUMMY_92: -7646035745901581221
+      Sprite_03_ForestClose_DUMMY_93: -4647390287973318310
+      Sprite_03_ForestClose_DUMMY_94: -250910215164023658
+      Sprite_03_ForestClose_DUMMY_95: 8921438190160867497
+      Sprite_03_ForestClose_DUMMY_96: 5572920425973884212
+      Sprite_03_ForestClose_DUMMY_97: 7932335863265043653
+      Sprite_03_ForestClose_DUMMY_98: -8886400752807904998
+      Sprite_03_ForestClose_DUMMY_99: -791108934710647642
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

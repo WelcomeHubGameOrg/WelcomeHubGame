@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d829e2f20e6295a5bfc9fcb2ca92163, type: 3}
+  m_Name: Event_test_zeta
+  m_EditorClassIdentifier: Assembly-CSharp::EventDefinition
+  EventName: Test Zeta
+  Icon: {fileID: 0}
+  Description: A placeholder event with a deliberately broken icon path, to test
+    the warning path.
+  Weight: 1
+  MaxOccurrences: -1
+  Choices:
+  - choiceText: Continue
+    consequenceDescription: Placeholder outcome.
+  RequiredTags: []

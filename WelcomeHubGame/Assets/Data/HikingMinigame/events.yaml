@@ -1,0 +1,71 @@
+- id: test_alpha
+  eventName: Test Alpha
+  icon: ""
+  description: A placeholder event for testing the importer.
+  weight: 1
+  maxOccurrences: -1
+  requiredTags: []
+  choices:
+    - choiceText: Option A
+      consequenceDescription: Nothing happens yet.
+    - choiceText: Option B
+      consequenceDescription: Also nothing happens yet.
+
+- id: test_beta
+  eventName: Test Beta
+  icon: ""
+  description: A second placeholder event, this one with a limited occurrence count.
+  weight: 2
+  maxOccurrences: 3
+  requiredTags: [test]
+  choices:
+    - choiceText: Only Option
+      consequenceDescription: Placeholder consequence text.
+
+- id: test_gamma
+  eventName: Test Gamma
+  icon: ""
+  description: A placeholder event with a single-use limit.
+  weight: 5
+  maxOccurrences: 1
+  requiredTags: []
+  choices:
+    - choiceText: First Choice
+      consequenceDescription: Placeholder outcome one.
+    - choiceText: Second Choice
+      consequenceDescription: Placeholder outcome two.
+    - choiceText: Third Choice
+      consequenceDescription: Placeholder outcome three.
+
+- id: test_delta
+  eventName: Test Delta
+  icon: ""
+  description: A rare placeholder event with a very low weight.
+  weight: 0.1
+  maxOccurrences: -1
+  requiredTags: [rare, test]
+  choices:
+    - choiceText: Do The Thing
+      consequenceDescription: Placeholder rare-event outcome.
+
+- id: test_epsilon
+  eventName: ""
+  icon: ""
+  description: A placeholder event with an intentionally empty eventName, to test that field being blank.
+  weight: 1
+  maxOccurrences: -1
+  requiredTags: []
+  choices:
+    - choiceText: Whatever
+      consequenceDescription: Placeholder outcome.
+
+- id: test_zeta
+  eventName: Test Zeta
+  icon: nonexistent_sprite.png
+  description: A placeholder event with a deliberately broken icon path, to test the warning path.
+  weight: 1
+  maxOccurrences: -1
+  requiredTags: []
+  choices:
+    - choiceText: Continue
+      consequenceDescription: Placeholder outcome.

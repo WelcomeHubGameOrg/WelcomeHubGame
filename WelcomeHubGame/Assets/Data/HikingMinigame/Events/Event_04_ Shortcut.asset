@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d829e2f20e6295a5bfc9fcb2ca92163, type: 3}
+  m_Name: Event_04_ Shortcut
+  m_EditorClassIdentifier: Assembly-CSharp::EventDefinition
+  EventName: A Shortcut?
+  Icon: {fileID: 21300000, guid: 2b51b27d7924b9b2896c2437372e822a, type: 3}
+  Description: Maybe if I just cut though the forest here I'm faster...
+  Weight: 3
+  MaxOccurrences: -1
+  Choices:
+  - choiceText: Do it
+    consequenceDescription: Choie 1 Description
+  - choiceText: Stay on the path
+    consequenceDescription: Choie 2 Description
+  RequiredTags: []
