@@ -47,6 +47,7 @@ jobs:
         with:
           projectPath: WelcomeHubGame
           targetPlatform: WebGL
+          allowDirtyBuild: true
 
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v4
