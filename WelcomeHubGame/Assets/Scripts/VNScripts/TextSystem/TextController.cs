@@ -90,6 +90,7 @@ public class TextController : MonoBehaviour
         eventEnded = false;
     }
 
+
     private IEnumerator TypeWrittenText(string p)
     {
         isTyping = true;
