@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro; // used instead of UnityEngine.UI.Text for nicer text rendering
 using UnityEngine.SceneManagement;
 
@@ -16,6 +17,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TMP_Text scoreText;
     [SerializeField] private GameObject resultPanel;
     [SerializeField] private TMP_Text resultText;
+    [SerializeField] private Button restartButton;
 
     private float currentTime;
     private int currentScore = 0;
@@ -25,6 +27,8 @@ public class GameManager : MonoBehaviour
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
+
+        if (restartButton) restartButton.onClick.AddListener(RestartGame);
     }
 
     void Start()

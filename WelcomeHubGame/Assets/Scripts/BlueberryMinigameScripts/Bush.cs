@@ -10,32 +10,34 @@ public class Bush : MonoBehaviour
 
     [Header("Regrowth")]
     public float regenInterval = 4f; // seconds between new berries appearing (while the bush's UI window is closed)
+    public float unavailableAfterLeaving = 10f; // seconds the bush can't be opened again after you leave it
 
     private int capacity;
     private float regenTimer;
     private bool uiOpen;
+    private float unavailableUntil = 0f;
 
     private List<bool> berries = new List<bool>(); // true = bad
     private bool playerNearby = false;
 
     void Start()
     {
-        capacity = Random.Range(minCapacity, maxCapacity + 1);
-
         // Start roughly half-full so there's already something to collect
-        int startCount = Mathf.CeilToInt(capacity * 0.5f);
-        for (int i = 0; i < startCount; i++)
-            berries.Add(Random.value < badChance);
-
-        UpdateVisual();
+        RegrowFromScratch();
     }
 
     void Update()
     {
         if (playerNearby && Input.GetKeyDown(KeyCode.E))
         {
-            if (berries.Count > 0 && BushUIWindow.Instance != null)
+            if (uiOpen)
             {
+                // E toggles the window closed again (in addition to the Close button and walking away)
+                if (BushUIWindow.Instance != null) BushUIWindow.Instance.CloseBushUI();
+            }
+            else if (Time.time >= unavailableUntil && berries.Count > 0 && BushUIWindow.Instance != null)
+            {
+                // Ignored entirely while the bush is still on cooldown after being left
                 BushUIWindow.Instance.OpenBushUI(this, new List<bool>(berries));
             }
         }
@@ -56,6 +58,27 @@ public class Bush : MonoBehaviour
     public void SetUIOpen(bool open)
     {
         uiOpen = open;
+        if (open) return;
+
+        // Whenever the player leaves — whether some berries are left (usually the bad ones)
+        // or the bush was fully cleared out — all of its berries get completely replaced,
+        // and the bush can't be opened again for unavailableAfterLeaving seconds.
+        RegrowFromScratch();
+        unavailableUntil = Time.time + unavailableAfterLeaving;
+    }
+
+    private void RegrowFromScratch()
+    {
+        berries.Clear();
+
+        capacity = Random.Range(minCapacity, maxCapacity + 1);
+
+        int startCount = Mathf.CeilToInt(capacity * 0.5f);
+        for (int i = 0; i < startCount; i++)
+            berries.Add(Random.value < badChance);
+
+        regenTimer = 0f;
+        UpdateVisual();
     }
 
     public void ConsumeBerryUI(bool isBad)

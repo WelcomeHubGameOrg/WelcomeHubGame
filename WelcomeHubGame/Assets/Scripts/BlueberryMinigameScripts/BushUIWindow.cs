@@ -27,7 +27,11 @@ public class BushUIWindow : MonoBehaviour
     {
         Instance = this;
         if (panelRoot) panelRoot.SetActive(false);
-        if (closeButton) closeButton.onClick.AddListener(CloseBushUI);
+
+        if (closeButton)
+            closeButton.onClick.AddListener(CloseBushUI);
+        else
+            Debug.LogWarning($"[{nameof(BushUIWindow)}] Close Button is not assigned in the Inspector — the close button won't work (press E to close as a fallback).", this);
     }
 
     public void OpenBushUI(Bush bush, List<bool> berriesData)
