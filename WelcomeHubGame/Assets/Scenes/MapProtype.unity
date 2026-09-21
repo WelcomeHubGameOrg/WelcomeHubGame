@@ -431,6 +431,10 @@ MonoBehaviour:
   initialBtnCount: 3
   minBounds: {x: -400, y: -200}
   maxBounds: {x: 400, y: 200}
+  zones:
+  - zoneId: 1
+    points:
+    - {x: 0, y: 0}
   minBtnDistance: 120
   maxSpawnAttempts: 15
   buttonPrefab: {fileID: 3270212895441492762, guid: ed27d3fe872f50b4190ef52c60050ffb, type: 3}
@@ -1812,6 +1816,7 @@ GameObject:
   - component: {fileID: 1631049372}
   - component: {fileID: 1631049371}
   - component: {fileID: 1631049370}
+  - component: {fileID: 1631049373}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -1892,6 +1897,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631049368}
   m_CullTransparentMesh: 1
+--- !u!114 &1631049373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631049368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dca072ca1d137724f8ee062a6162a1a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ZonePointRecorder
+  mapRect: {fileID: 1631049369}
+  uiCamera: {fileID: 0}
+  printKey: 112
+  clearKey: 8
 --- !u!1 &1707224085
 GameObject:
   m_ObjectHideFlags: 0
@@ -2127,6 +2148,7 @@ MonoBehaviour:
   mapState: []
   AvailableMinigames:
   - {fileID: 11400000, guid: 7ed5960b726ed55479c432dc84644c39, type: 2}
+  - {fileID: 11400000, guid: 9b95e99abec976941aa331c520157524, type: 2}
   completedMinigames: 0
   failedMinigames: 0
   mainMapScene: MapProtype
