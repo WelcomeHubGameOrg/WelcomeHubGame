@@ -11,7 +11,7 @@ public class TextController : MonoBehaviour
     private Queue<string> paragraphs = new Queue<string>();
 
     public bool eventEnded;
-    private bool isTyping;
+    public bool isTyping;
 
     private string p;
 
@@ -20,7 +20,7 @@ public class TextController : MonoBehaviour
     private const string HTML_ALPHA = "<color=#00000000>";
     private const float MAX_TYPE_TIME = 0.1f;
 
-    public void DisplayNextParagraph(WrittenText writtenText)
+    public void DisplayNextParagraph(VNEvent vNEvent)
     {
         // if nothing in queue
         if (paragraphs.Count == 0)
@@ -28,13 +28,12 @@ public class TextController : MonoBehaviour
             if (!eventEnded)
             {
                 // start reading text
-                StartEvent(writtenText);
+                StartEvent(vNEvent);
             }
             else if (eventEnded && !isTyping)
             {
                 Debug.Log("Event Over! Something else should happen.");
-                // call end event
-                EndEvent();
+                //EndEvent();
 
                 // change this later!
                 return;
@@ -46,7 +45,7 @@ public class TextController : MonoBehaviour
         {
             p = paragraphs.Dequeue();
 
-            typeTextCoroutine = StartCoroutine(TypeWrittenText(p));
+            typeTextCoroutine = StartCoroutine(TypeVNEvent(p));
         }
 
         // if text is being typed
@@ -54,7 +53,7 @@ public class TextController : MonoBehaviour
         {
             FinishParagraphEarly();
         }
-
+         
 
         // update text
         //fullEventText.text = p;
@@ -67,7 +66,7 @@ public class TextController : MonoBehaviour
 
 
 
-    private void StartEvent(WrittenText writtenText)
+    private void StartEvent(VNEvent vNEvent)
     {
         // activate gameObject
         //if (!gameObject.activeSelf)
@@ -76,9 +75,9 @@ public class TextController : MonoBehaviour
         //}
 
         // add written text to queue
-        for (int i = 0; i < writtenText.paragraphs.Length; i++)
+        for (int i = 0; i < vNEvent.paragraphs.Length; i++)
         {
-            paragraphs.Enqueue(writtenText.paragraphs[i]);
+            paragraphs.Enqueue(vNEvent.paragraphs[i]);
         }
     }
 
@@ -90,8 +89,8 @@ public class TextController : MonoBehaviour
         eventEnded = false;
     }
 
-
-    private IEnumerator TypeWrittenText(string p)
+    // reveals text at the set text speed
+    private IEnumerator TypeVNEvent(string p)
     {
         isTyping = true;
 

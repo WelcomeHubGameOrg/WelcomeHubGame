@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8db0b20b775059340b13fec4cdf28e5e, type: 3}
+  m_Name: TicketEvent_3
+  m_EditorClassIdentifier: Assembly-CSharp::VNEvent
+  eventName: TicketEvent_3
+  paragraphs:
+  - Fine! :)
+  - "You lose 100\u20AC "
+  eventSprite: {fileID: -1890204988, guid: 22f4e81ea261ada4283760a45cf95a3d, type: 3}
+  branches: []
+  energyGain: 0
+  moneyGain: -100

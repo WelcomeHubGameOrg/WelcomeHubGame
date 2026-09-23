@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8db0b20b775059340b13fec4cdf28e5e, type: 3}
+  m_Name: TicketEvent_1
+  m_EditorClassIdentifier: Assembly-CSharp::VNEvent
+  eventName: TicketEvent_1
+  paragraphs:
+  - A character in blue approaches you.
+  - '"Tickets, please!"'
+  answers:
+  - I have one
+  - I don't have one
+  eventSprite: {fileID: 21300000, guid: eda41597afe2a29419364d4229b975ff, type: 3}
+  branches:
+  - {fileID: 11400000, guid: 78587f14685ec7a488fe50880592ade9, type: 2}
+  - {fileID: 11400000, guid: 0dceec81d87c8244e9f8ed1b179906f1, type: 2}
