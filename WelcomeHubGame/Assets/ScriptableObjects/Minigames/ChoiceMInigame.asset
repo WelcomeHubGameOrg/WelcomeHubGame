@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a39fd0509e989d478dd45cfc356044f, type: 3}
-  m_Name: ClickerMinigame
+  m_Name: ChoiceMInigame
   m_EditorClassIdentifier: Assembly-CSharp::MinigameData
-  sceneName: ClickerMinigame
-  displayName: Clicker
-  allowedZones: 12
+  sceneName: ChoiceMinigame
+  displayName: ChoiceGame
+  allowedZones: 3

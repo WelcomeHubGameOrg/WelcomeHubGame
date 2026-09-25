@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MinigameMapPrototype.unity
     guid: c24566b532ee7214e9cf0e3dfb8b2b4a
+  - enabled: 1
+    path: Assets/Scenes/Minigames/ChoiceMinigame.unity
+    guid: cf93052d4b5721a438a7d7bdaf5330c0
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

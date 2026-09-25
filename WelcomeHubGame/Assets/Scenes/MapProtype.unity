@@ -431,6 +431,55 @@ MonoBehaviour:
   initialBtnCount: 3
   minBounds: {x: -400, y: -200}
   maxBounds: {x: 400, y: 200}
+  zones:
+  - zoneId: 1
+    points:
+    - {x: -204.4, y: -419.5}
+    - {x: -173.4, y: 10.7}
+    - {x: 47.5, y: 99.8}
+    - {x: 297.4, y: 1}
+    - {x: 367.1, y: -402}
+  - zoneId: 2
+    points:
+    - {x: -379, y: -529.2}
+    - {x: -676.9, y: 56.9}
+    - {x: -30.3, y: 524.3}
+    - {x: 887.6, y: 93.2}
+    - {x: 882.7, y: -323.3}
+    - {x: 374.2, y: -383.9}
+    - {x: 279.7, y: 107.8}
+    - {x: -195, y: 69}
+    - {x: -211.9, y: -403.2}
+  - zoneId: 4
+    points:
+    - {x: -711, y: -780.8}
+    - {x: -1226.4, y: 525}
+    - {x: 668.4, y: 866}
+    - {x: 1040.4, y: 455.3}
+    - {x: 873.8, y: 122.1}
+    - {x: 52.3, y: 563.8}
+    - {x: -687.8, y: 160.8}
+    - {x: -342.9, y: -625.8}
+  - zoneId: 8
+    points:
+    - {x: 912.5, y: -300.3}
+    - {x: 1141.2, y: 536.7}
+    - {x: -44.6, y: 1098.5}
+    - {x: 137.6, y: 1482.1}
+    - {x: 734.3, y: 1296.1}
+    - {x: 815.7, y: 1664.3}
+    - {x: 982.3, y: 1629.4}
+    - {x: 1858, y: 331.3}
+  - zoneId: 8
+    points:
+    - {x: -1284.3, y: -1653.8}
+    - {x: -1728.8, y: -1674.5}
+    - {x: -1739.1, y: -1007.8}
+    - {x: -2684.9, y: -155}
+    - {x: -1868.3, y: 429}
+    - {x: -1687.4, y: 155}
+    - {x: -1325.7, y: 413.5}
+    - {x: -710.6, y: -764.9}
   minBtnDistance: 120
   maxSpawnAttempts: 15
   buttonPrefab: {fileID: 3270212895441492762, guid: ed27d3fe872f50b4190ef52c60050ffb, type: 3}
@@ -1812,6 +1861,7 @@ GameObject:
   - component: {fileID: 1631049372}
   - component: {fileID: 1631049371}
   - component: {fileID: 1631049370}
+  - component: {fileID: 1631049373}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -1892,6 +1942,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631049368}
   m_CullTransparentMesh: 1
+--- !u!114 &1631049373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631049368}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dca072ca1d137724f8ee062a6162a1a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ZonePointRecorder
+  mapRect: {fileID: 1631049369}
+  uiCamera: {fileID: 0}
+  printKey: 112
+  clearKey: 8
 --- !u!1 &1707224085
 GameObject:
   m_ObjectHideFlags: 0
@@ -2127,6 +2193,7 @@ MonoBehaviour:
   mapState: []
   AvailableMinigames:
   - {fileID: 11400000, guid: 7ed5960b726ed55479c432dc84644c39, type: 2}
+  - {fileID: 11400000, guid: 9b95e99abec976941aa331c520157524, type: 2}
   completedMinigames: 0
   failedMinigames: 0
   mainMapScene: MapProtype
