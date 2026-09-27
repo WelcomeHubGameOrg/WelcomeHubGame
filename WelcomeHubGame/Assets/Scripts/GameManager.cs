@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
 
     public void LaunchMinigame(MinigameData minigame)
     {
+        // note, might need to add an AudioManager StopMusic line here.
         currentMinigame = minigame;
         SceneManager.LoadScene(minigame.sceneName);
     }

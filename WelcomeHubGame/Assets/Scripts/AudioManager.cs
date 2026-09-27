@@ -11,8 +11,17 @@ public class AudioManager : MonoBehaviour
 
     [Header("Mixer")] 
     public AudioMixer mixer;
+    
+    [Header("Sound Library")]
+    [Tooltip("Shared lookup table of soundID -> AudioClip, so callers don't need separate clip references")]
+    public SoundLibrary soundLibrary;
+    
+    [Header("Music Library")]
+    [Tooltip("Shared lookup table of musicID -> AudioClip, so callers don't need separate clip references")]
+    public MusicLibrary musicLibrary;
 
     // ill change this to enums or something later... probably...
+    // these have to match the EXACT exposed parameter names set in the Audio Mixer window
     public string masterVolumeParam = "MasterVolume";
     public string musicVolumeParam = "MusicVolume";
     public string sfxVolumeParam = "SFXVolume";
@@ -79,13 +88,29 @@ public class AudioManager : MonoBehaviour
 
     public void PlayMusic(AudioClip clip, float fadeDuration = -1f)
     {
-        if (clip == null) return;
+        if (!clip) return;
         if (_activeMusicSource.clip == clip && _activeMusicSource.isPlaying) return;
         
         float duration = fadeDuration >= 0f ? fadeDuration : defaultFadeDuration;
 
         if (_musicFadeRoutine != null) StopCoroutine(_musicFadeRoutine);
         _musicFadeRoutine = StartCoroutine(CrossfadeMusic(clip, duration));
+    }
+
+    private void PlayMusic(MusicID musicID, float fadeDuration = -1f)
+    {
+        if (musicID == MusicID.None)
+        {
+            StopMusic(fadeDuration);
+            return;
+        }
+
+        if (!musicLibrary)
+        {
+            Debug.LogWarning("AudioManager: no MusicLibrary assigned");
+            return;
+        }
+        PlayMusic(musicLibrary.Get(musicID), fadeDuration);
     }
 
     public void StopMusic(float fadeDuration = -1f)
@@ -140,15 +165,35 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySFX(AudioClip clip, float volume = 1f, float pitch = 1f)
     {
-        if (clip == null) return;
+        if (!clip) return;
         _sfxSource.pitch = pitch;
         _sfxSource.PlayOneShot(clip, volume);
     }
 
+    public void PlaySFX(SoundID soundID, float volume = 1f, float pitch = 1f)
+    {
+        if (!soundLibrary)
+        {
+            Debug.LogWarning("AudioManager: no SoundLibrary assigned");
+            return;
+        }
+        PlaySFX(soundLibrary.Get(soundID), volume, pitch);
+    }
+
     public void PlayUISound(AudioClip clip, float volume = 1f)
     {
-        if (clip == null) return;
+        if (!clip) return;
         _uiSource.PlayOneShot(clip, volume);
+    }
+
+    public void PlayUISound(SoundID soundID, float volume = 1f)
+    {
+        if (!soundLibrary)
+        {
+            Debug.LogWarning("AudioManager: no SoundLibrary assigned");
+            return;
+        }
+        PlayUISound(soundLibrary.Get(soundID), volume);
     }
 
     public void SetMasterVolume01(float value01) => SetVolume(masterVolumeParam, MasterVolumeKey, value01);
