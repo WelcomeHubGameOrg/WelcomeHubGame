@@ -3,8 +3,11 @@ using UnityEngine;
 public abstract class MinigameController : MonoBehaviour
 {
     private bool _finished;
+
+    public void WinMinigame() => Finish(true);
+    public void LoseMinigame() => Finish(false);
     
-    public void FinishMinigame(bool won)
+    public void Finish(bool won)
     {
         if (_finished) return;
         _finished = true;

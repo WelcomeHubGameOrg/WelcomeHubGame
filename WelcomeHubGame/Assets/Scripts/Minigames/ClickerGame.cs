@@ -27,7 +27,7 @@ public class ClickerGame : MinigameController
         if (timer <= 0)
         {
             Debug.Log("Minigame finished, player loses");
-            FinishMinigame(false);
+            LoseMinigame();
         }
     }
 
@@ -36,6 +36,6 @@ public class ClickerGame : MinigameController
         clicks++;
         // AudioManager.Instance.PlaySFX
         if (clicks >= targetClicks)
-            FinishMinigame(true);
+            WinMinigame();
     }
 }
