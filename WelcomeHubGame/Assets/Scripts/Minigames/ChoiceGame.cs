@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class ChoiceGame : MonoBehaviour, IMinigameController
+public class ChoiceGame : MinigameController
 {
-    public void FinishMinigame(bool won)
+    protected override void OnFinished(bool won)
     {
         if (GameManager.Instance != null)
             GameManager.Instance.ReturnToMap(won);

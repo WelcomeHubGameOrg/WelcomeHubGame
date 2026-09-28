@@ -22,6 +22,7 @@ public class AudioManager : MonoBehaviour
 
     // ill change this to enums or something later... probably...
     // these have to match the EXACT exposed parameter names set in the Audio Mixer window
+    [Header("Exposed Parameters")]
     public string masterVolumeParam = "MasterVolume";
     public string musicVolumeParam = "MusicVolume";
     public string sfxVolumeParam = "SFXVolume";

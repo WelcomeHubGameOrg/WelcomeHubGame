@@ -291,14 +291,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da6381f5e86ac44cb3d6f758853c645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
-  mixer: {fileID: 0}
+  mixer: {fileID: 24100000, guid: f37d682f47e723a47821f41c089709bf, type: 2}
+  soundLibrary: {fileID: 0}
+  musicLibrary: {fileID: 0}
   masterVolumeParam: MasterVolume
   musicVolumeParam: MusicVolume
   sfxVolumeParam: SFXVolume
   uiVolumeParam: UIVolume
-  musicGroup: {fileID: 0}
-  sfxGroup: {fileID: 0}
-  uiGroup: {fileID: 0}
+  musicGroup: {fileID: -311145224668419553, guid: f37d682f47e723a47821f41c089709bf, type: 2}
+  sfxGroup: {fileID: -7450593810697920984, guid: f37d682f47e723a47821f41c089709bf, type: 2}
+  uiGroup: {fileID: 5796720201821670015, guid: f37d682f47e723a47821f41c089709bf, type: 2}
   defaultFadeDuration: 1.5
 --- !u!4 &89328148
 Transform:
