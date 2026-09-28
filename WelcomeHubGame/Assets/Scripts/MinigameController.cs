@@ -14,7 +14,14 @@ public abstract class MinigameController : MonoBehaviour
     }
 
     /// <summary>
-    /// The minigame's own result handling (win/lose UI, reporting score, etc).
+    /// Default: Returns to the map. You can override this to do your own thing, and then call base.OnFinished(won)
+    /// when you're actually ready to leave the scene
     /// </summary>
-    protected abstract void OnFinished(bool won);
+    protected virtual void OnFinished(bool won)
+    {
+        if (GameManager.Instance != null)
+            GameManager.Instance.ReturnToMap(won);
+        else
+            Debug.Log($"Minigame ended standalone. Did player win? = {won}");
+    }
 }
