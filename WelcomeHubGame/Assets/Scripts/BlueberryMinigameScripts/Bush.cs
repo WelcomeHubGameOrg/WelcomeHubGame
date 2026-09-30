@@ -8,11 +8,21 @@ public class Bush : MonoBehaviour
     public int maxCapacity = 12;
     [Range(0f, 1f)] public float badChance = 0.2f; // ~20% bad/inedible berries
 
+    [Header("Bad Berry Cap")]
+    // Without a cap, bad berries can pile up forever: the player rationally avoids
+    // clicking them (they're a penalty, not score), so they never get removed, while
+    // regrowth stops once the bush hits capacity -- a bush could end up ALL bad and
+    // stay stuck that way. This caps how many bad berries can exist in one bush at a
+    // time (roughly a third of its capacity), guaranteeing there's always room left for
+    // good ones to spawn.
+    [Range(0.1f, 0.6f)] public float maxBadFraction = 0.34f;
+
     [Header("Regrowth")]
     public float regenInterval = 4f; // seconds between new berries appearing (while the bush's UI window is closed)
     public float unavailableAfterLeaving = 10f; // seconds the bush can't be opened again after you leave it
 
     private int capacity;
+    private int maxBad; // cap on concurrent bad berries, recomputed per capacity (see Bad Berry Cap above)
     private float regenTimer;
     private bool uiOpen;
     private float unavailableUntil = 0f;
@@ -49,7 +59,7 @@ public class Bush : MonoBehaviour
             if (regenTimer >= regenInterval)
             {
                 regenTimer = 0f;
-                berries.Add(Random.value < badChance);
+                berries.Add(RollNewBerry());
                 UpdateVisual();
             }
         }
@@ -67,18 +77,46 @@ public class Bush : MonoBehaviour
         unavailableUntil = Time.time + unavailableAfterLeaving;
     }
 
+    // Public entry point for LevelManager/GameManager to force a completely fresh bush
+    // (new berries, no cooldown) whenever a level (re)starts. SetActive(false)/(true) does
+    // NOT re-run Start(), so without this a retried or revisited level would keep whatever
+    // berries/cooldown the bush had from the previous attempt.
+    public void ResetBush()
+    {
+        uiOpen = false;
+        unavailableUntil = 0f;
+        RegrowFromScratch();
+    }
+
     private void RegrowFromScratch()
     {
         berries.Clear();
 
         capacity = Random.Range(minCapacity, maxCapacity + 1);
+        maxBad = Mathf.Max(1, Mathf.CeilToInt(capacity * maxBadFraction));
 
         int startCount = Mathf.CeilToInt(capacity * 0.5f);
         for (int i = 0; i < startCount; i++)
-            berries.Add(Random.value < badChance);
+            berries.Add(RollNewBerry());
 
         regenTimer = 0f;
         UpdateVisual();
+    }
+
+    // Rolls whether a newly-added berry is bad, respecting the maxBad cap so a bush can
+    // never accumulate more bad berries than that regardless of luck or how long it sits.
+    private bool RollNewBerry()
+    {
+        if (CountBad() >= maxBad) return false; // cap reached -- force this one good
+        return Random.value < badChance;
+    }
+
+    private int CountBad()
+    {
+        int count = 0;
+        for (int i = 0; i < berries.Count; i++)
+            if (berries[i]) count++;
+        return count;
     }
 
     public void ConsumeBerryUI(bool isBad)
