@@ -385,8 +385,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1098359843}
         m_TargetAssemblyTypeName: ChoiceGame, Assembly-CSharp
-        m_MethodName: FinishMinigame
-        m_Mode: 6
+        m_MethodName: LoseMinigame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -977,8 +977,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1098359843}
         m_TargetAssemblyTypeName: ChoiceGame, Assembly-CSharp
-        m_MethodName: FinishMinigame
-        m_Mode: 6
+        m_MethodName: WinMinigame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

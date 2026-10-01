@@ -1,8 +1,7 @@
-using System;
 using TMPro;
 using UnityEngine;
 
-public class ClickerGame : MonoBehaviour, IMinigameController
+public class ClickerGame : MinigameController
 {
     public int clicks = 0;
     public int targetClicks = 20;
@@ -11,6 +10,13 @@ public class ClickerGame : MonoBehaviour, IMinigameController
     
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] TextMeshProUGUI clicksText;
+
+    /*
+    private void Start()
+    {
+        // AudioManager.Instance.PlayMusic(MusicID.MUSICHERE);
+    }
+    */
 
     private void Update()
     {
@@ -21,22 +27,15 @@ public class ClickerGame : MonoBehaviour, IMinigameController
         if (timer <= 0)
         {
             Debug.Log("Minigame finished, player loses");
-            FinishMinigame(false);
+            LoseMinigame();
         }
     }
 
     public void RegisterClick()
     {
         clicks++;
+        // AudioManager.Instance.PlaySFX
         if (clicks >= targetClicks)
-            FinishMinigame(true);
-    }
-
-    public void FinishMinigame(bool won)
-    {
-        if (GameManager.Instance != null)
-            GameManager.Instance.ReturnToMap(won);
-        else
-            Debug.Log($"Minigame ended standalone. Did player win? = {won}");
+            WinMinigame();
     }
 }

@@ -29,11 +29,14 @@ public class GameManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+            return;
         }
     }
 
     public void LaunchMinigame(MinigameData minigame)
     {
+        // note, might need to add an AudioManager StopMusic line here.
+        // AudioManager.Instance.StopMusic();
         currentMinigame = minigame;
         SceneManager.LoadScene(minigame.sceneName);
     }
