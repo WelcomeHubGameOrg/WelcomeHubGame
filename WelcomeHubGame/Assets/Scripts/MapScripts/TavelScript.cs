@@ -8,6 +8,8 @@ public class TavelScript : MonoBehaviour
     [SerializeField] private int cost;
     [SerializeField] private int reward;
     [SerializeField] private int zone;
+    [SerializeField] private string sceneName;
+    [SerializeField] private RectTransform minigameRectTransform;
 
     public void ShowPopUp(GameObject popUp)
     {
@@ -17,11 +19,12 @@ public class TavelScript : MonoBehaviour
             popUp.SetActive(true);
     }
 
-    public void TravelToMinigameScene(string sceneName)
+    public void TravelToMinigameScene()
     {
         Debug.Log("minus cost: " + cost);
         Debug.Log("plus reward: " + reward);
-        SceneManager.LoadScene(sceneName);
+        TravelManager.instance.MoveTo(minigameRectTransform.anchoredPosition, sceneName);
+        //SceneManager.LoadScene(sceneName);
     }
 
 
