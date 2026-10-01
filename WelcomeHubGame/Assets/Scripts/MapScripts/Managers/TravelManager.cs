@@ -18,7 +18,7 @@ public class TravelManager : MonoBehaviour
     [SerializeField] private Sprite bus;
 
 
-    void Start()
+    void Awake()
     {
         if (instance == null)
         {

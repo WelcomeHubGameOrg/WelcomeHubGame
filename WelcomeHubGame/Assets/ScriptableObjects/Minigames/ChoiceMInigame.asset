@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a39fd0509e989d478dd45cfc356044f, type: 3}
   m_Name: ChoiceMInigame
   m_EditorClassIdentifier: Assembly-CSharp::MinigameData
-  sceneName: ChoiceMinigame
   displayName: ChoiceGame
+  scene: {fileID: 11400000, guid: 973252c043d048a42a941aeba2e258a0, type: 2}
   allowedZones: 3
