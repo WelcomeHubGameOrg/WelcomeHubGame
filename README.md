@@ -47,9 +47,17 @@ Direct pushes to the `main` branch are **blocked**.
 6. **Wait for a Review:** Your PR must be approved by our Senior Unity Devs (Code Owners) before it can be merged.
 7. Once approved and the pipeline is green, hit merge!
 
+
+
 ---
 
 ## 🚀 Setup Instructions for Developers
 
 ### Prerequisites
 1. **Git LFS:** Our repository uses Git Large File Storage for images and sounds. You **must** install [Git LFS](https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage?platform=mac) before cloning!
+
+### Handling Git LFS (Large Files)
+Since we use LFS for Unity assets, a standard `git pull` might sometimes only fetch file pointers instead of the actual heavy assets. 
+* **Download the actual files:** After pulling new changes from a branch, run the following command to ensure all LFS files are downloaded correctly:
+  ```bash
+  git lfs pull
