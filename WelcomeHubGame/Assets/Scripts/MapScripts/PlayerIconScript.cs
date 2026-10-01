@@ -6,7 +6,7 @@ public class PlayerIconScript : MonoBehaviour
     [SerializeField] private GameObject player; 
     [SerializeField] private Image playerImage;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Awake()
+    void Start()
     {
         TravelManager.instance.player = playerImage;
         TravelManager.instance.playerRect = player.GetComponent<RectTransform>();

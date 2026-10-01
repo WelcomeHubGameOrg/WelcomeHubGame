@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a39fd0509e989d478dd45cfc356044f, type: 3}
   m_Name: ClickerMinigame
   m_EditorClassIdentifier: Assembly-CSharp::MinigameData
-  sceneName: ClickerMinigame
   displayName: Clicker
+  scene: {fileID: 11400000, guid: 65c47f75a299a064d8e0a78bae2d5142, type: 2}
   allowedZones: 12

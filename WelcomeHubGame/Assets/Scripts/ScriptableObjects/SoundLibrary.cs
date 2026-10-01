@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "SoundLibrary", menuName = "Audio/Sound Library")]
 public class SoundLibrary : ScriptableObject
 {
     [System.Serializable]

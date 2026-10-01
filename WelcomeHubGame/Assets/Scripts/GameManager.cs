@@ -15,10 +15,8 @@ public class GameManager : MonoBehaviour
     public int completedMinigames = 0;
     public int failedMinigames = 0;
 
+    public ScenePathSO mainMapScene;
     public MinigameData currentMinigame { get; private set; }
-    
-    // this should be changed into an enum probably
-    [SerializeField] string mainMapScene = "MainMap";
 
     private void Awake()
     {
@@ -38,7 +36,13 @@ public class GameManager : MonoBehaviour
         // note, might need to add an AudioManager StopMusic line here.
         // AudioManager.Instance.StopMusic();
         currentMinigame = minigame;
-        SceneManager.LoadScene(minigame.sceneName);
+
+        if (!minigame.scene)
+        {
+            Debug.LogError($"{minigame.displayName} has no scene assigned!");
+            return;
+        }
+        SceneManager.LoadScene(minigame.scene.Path);
     }
 
     public void ReturnToMap(bool isWon)
@@ -52,6 +56,6 @@ public class GameManager : MonoBehaviour
         }
 
         currentMinigame = null;
-        SceneManager.LoadScene(mainMapScene);
+        SceneManager.LoadScene(mainMapScene.Path);
     }
 }

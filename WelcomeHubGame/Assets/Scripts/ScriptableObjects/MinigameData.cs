@@ -3,8 +3,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NewMinigame", menuName = "Game/MinigameData")]
 public class MinigameData : ScriptableObject
 {
-    public string sceneName;
     public string displayName;
+    public ScenePathSO scene;
     // public enum timeOfDay
     // morning, noon, evening, night
 
