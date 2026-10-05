@@ -30,7 +30,8 @@ public class BushUIWindow : MonoBehaviour
     [Header("Scatter")]
     [SerializeField] private float berryScale = 1.25f;     // berry buttons are drawn this much bigger than the prefab
     [SerializeField] private float berryGap = 16f;         // empty space kept between neighbouring berries (never touching)
-    private const int CandidatesPerBerry = 80;
+    private const int CandidatesPerBerry = 300;
+    private const int RelaxIterations = 60; // push-apart passes after the initial scatter
     // The bush art is a flat, wide cloud shape that tapers in sharply at its bottom-left/right
     // corners — a single round-ish ellipse fit still let berries land past the edge there, so
     // X and Y are shrunk independently (Y much tighter) and the sampling area is nudged upward,
@@ -210,6 +211,32 @@ public class BushUIWindow : MonoBehaviour
             result.Add(best);
         }
 
+        // Relaxation: push any two berries that are closer than `wanted` apart (and keep them inside the ellipse),
+        // so crowded bushes still get a clean layout instead of having to shrink the berries.
+        for (int it = 0; it < RelaxIterations; it++)
+        {
+            bool moved = false;
+            for (int i = 0; i < result.Count; i++)
+                for (int j = i + 1; j < result.Count; j++)
+                {
+                    Vector2 delta = result[j] - result[i];
+                    float dist = delta.magnitude;
+                    if (dist >= wanted) continue;
+                    Vector2 dir = dist > 0.001f ? delta / dist : Vector2.right;
+                    float push = (wanted - dist) * 0.5f * 1.05f;
+                    result[i] -= dir * push;
+                    result[j] += dir * push;
+                    moved = true;
+                }
+            for (int i = 0; i < result.Count; i++)
+            {
+                Vector2 p = result[i] - center;
+                float k = (p.x * p.x) / (ellipseHalf.x * ellipseHalf.x) + (p.y * p.y) / (ellipseHalf.y * ellipseHalf.y);
+                if (k > 1f) result[i] = center + p / Mathf.Sqrt(k);
+            }
+            if (!moved) break;
+        }
+
         float minPair = float.MaxValue;
         for (int i = 0; i < result.Count; i++)
             for (int j = i + 1; j < result.Count; j++)
@@ -233,10 +260,9 @@ public class BushUIWindow : MonoBehaviour
         if (currentBushRef == null) return;
         currentBushRef.ConsumeBerryUI(isBad);
 
-        if (isBad)
-            StartCoroutine(PlayBadBerryPopup(btnObj));
-        else
-            Destroy(btnObj);
+        if (!gameObject.activeInHierarchy) return; // level just finished and the panel was closed -- nothing to animate
+
+        StartCoroutine(PlayBerryPopup(btnObj, isBad));
 
         // ConsumeBerryUI can finish the level: the old level's bushes get deactivated, the player leaves
         // their trigger, and the panel is closed (currentBushRef becomes null) before we get here.
@@ -246,47 +272,88 @@ public class BushUIWindow : MonoBehaviour
         }
     }
 
-    // Bad berry: show a floating "+5" (penalty) popup that rises and fades out,
-    // reusing the berry button's own (normally hidden) label so no extra prefab is needed.
-    private IEnumerator PlayBadBerryPopup(GameObject btnObj)
+    // Pick feedback: the berry flashes (red for bad, green for good) and swells, a ring bursts out from it,
+    // and a "+5" / "+1" badge pops in (with a little overshoot), floats up and fades out.
+    // Bad berries also shake.
+    private IEnumerator PlayBerryPopup(GameObject btnObj, bool isBad)
     {
+        Color accent = isBad ? UiKit.Danger : UiKit.Mint;
+        string label = isBad ? "+5" : "+1";
         Button btn = btnObj.GetComponent<Button>();
         if (btn) btn.interactable = false;
 
         Image img = btnObj.GetComponent<Image>();
-        if (img) img.enabled = false;
+        RectTransform berryRt = btnObj.GetComponent<RectTransform>();
+        TMP_Text oldLabel = btnObj.GetComponentInChildren<TMP_Text>(true);
+        if (oldLabel) oldLabel.gameObject.SetActive(false);
+        if (btn) btn.onClick.RemoveAllListeners();
 
-        TMP_Text label = btnObj.GetComponentInChildren<TMP_Text>(true);
-        RectTransform textRect = label ? label.rectTransform : null;
-        Vector2 startPos = textRect ? textRect.anchoredPosition : Vector2.zero;
+        UiKit.EnsureFont();
+        Vector2 basePos = berryRt.anchoredPosition;
+        Vector3 baseScale = berryRt.localScale;
+        float berryW = berryRt.sizeDelta.x;
 
-        if (label)
+        // Everything below is parented to the berry container (cleared the next time the panel opens)
+        RectTransform ring = UiKit.Img("PopRing", berryContainer, UiKit.Ring(), accent).rectTransform;
+        RectTransform badge = UiKit.Rt("PopBadge", berryContainer);
+        Image pill = UiKit.Img("Pill", badge, UiKit.Rounded(26), UiKit.Navy.WithA(0.95f), true);
+        UiKit.Fill(pill.rectTransform);
+        TextMeshProUGUI txt = UiKit.Txt("PopText", badge, label, 54f, accent, FontStyles.Bold);
+        UiKit.Fill(txt.rectTransform);
+
+        foreach (RectTransform r in new[] { ring, badge })
         {
-            label.gameObject.SetActive(true);
-            label.text = "+5";
-            label.color = badPenaltyTextColor;
+            r.anchorMin = berryRt.anchorMin; r.anchorMax = berryRt.anchorMax; r.pivot = new Vector2(0.5f, 0.5f);
+            r.anchoredPosition = basePos;
         }
+        ring.sizeDelta = new Vector2(berryW, berryW);
+        badge.sizeDelta = new Vector2(132f, 72f);
+        ring.SetAsLastSibling();
+        badge.SetAsLastSibling();
 
+        Color ringBase = accent;
+        const float duration = 1.1f;
         float elapsed = 0f;
-        while (elapsed < badPenaltyPopupDuration)
+        while (elapsed < duration)
         {
-            if (btnObj == null) yield break; // panel closed/reopened mid-animation and cleared this button already
-            elapsed += Time.deltaTime;
-            float t = Mathf.Clamp01(elapsed / badPenaltyPopupDuration);
+            if (btnObj == null) yield break; // panel reopened and cleared everything mid-animation
+            elapsed += Time.unscaledDeltaTime;
+            float t = Mathf.Clamp01(elapsed / duration);
 
-            if (textRect)
-                textRect.anchoredPosition = startPos + Vector2.up * (badPenaltyPopupRise * t);
-            if (label)
+            // Berry: red flash + shake + swell in the first ~35%, then shrinks away
+            if (img)
             {
-                Color c = label.color;
-                c.a = 1f - t;
-                label.color = c;
+                float flash = Mathf.Clamp01(t / 0.12f);
+                img.color = Color.Lerp(Color.white, accent, flash);
+                float fade = Mathf.Clamp01((t - 0.35f) / 0.35f);
+                img.color = img.color.WithA(1f - fade);
             }
+            float shake = isBad && t < 0.4f ? Mathf.Sin(elapsed * 70f) * 9f * (1f - t / 0.4f) : 0f;
+            berryRt.anchoredPosition = basePos + new Vector2(shake, 0f);
+            float swell = t < 0.2f ? 1f + 0.35f * (t / 0.2f) : Mathf.Lerp(1.35f, 0.3f, Mathf.Clamp01((t - 0.2f) / 0.5f));
+            berryRt.localScale = baseScale * swell;
+
+            // Ring: expands and fades
+            float rt01 = Mathf.Clamp01(t / 0.55f);
+            float ringScale = Mathf.Lerp(0.7f, 1.8f, 1f - (1f - rt01) * (1f - rt01));
+            ring.localScale = new Vector3(ringScale, ringScale, 1f);
+            ring.GetComponent<Image>().color = ringBase.WithA(0.9f * (1f - rt01));
+
+            // Badge: pops in with overshoot, floats up, fades out over the last 40%
+            float pop = Mathf.Clamp01(t / 0.18f);
+            float overshoot = 1f + 2.70158f * Mathf.Pow(pop - 1f, 3f) + 1.70158f * Mathf.Pow(pop - 1f, 2f); // easeOutBack
+            badge.localScale = Vector3.one * Mathf.Max(0.01f, overshoot);
+            badge.anchoredPosition = basePos + Vector2.up * (30f + 80f * (1f - (1f - t) * (1f - t)));
+            float a = 1f - Mathf.Clamp01((t - 0.6f) / 0.4f);
+            pill.color = UiKit.Navy.WithA(0.95f * a);
+            txt.color = accent.WithA(a);
 
             yield return null;
         }
 
-        Destroy(btnObj);
+        if (btnObj) Destroy(btnObj);
+        if (ring) Destroy(ring.gameObject);
+        if (badge) Destroy(badge.gameObject);
     }
 
     public void CloseBushUI()

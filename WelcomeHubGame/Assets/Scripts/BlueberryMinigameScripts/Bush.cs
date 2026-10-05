@@ -7,6 +7,7 @@ public class Bush : MonoBehaviour
     public int minCapacity = 6;
     public int maxCapacity = 12;
     [Range(0f, 1f)] public float badChance = 0.2f; // ~20% bad/inedible berries
+    [Range(0f, 1f)] public float startFillFraction = 0.5f; // how full the bush is when a level (re)starts / after a visit
 
     [Header("Bad Berry Cap")]
     // Without a cap, bad berries can pile up forever: the player rationally avoids
@@ -20,6 +21,10 @@ public class Bush : MonoBehaviour
     [Header("Regrowth")]
     public float regenInterval = 4f; // seconds between new berries appearing (while the bush's UI window is closed)
     public float unavailableAfterLeaving = 10f; // seconds the bush can't be opened again after you leave it
+
+    // Hard upper limit on berries per bush. More than this can't be laid out in the berry panel without the
+    // berries having to shrink to avoid touching, so capacity is clamped to it whatever the Inspector says.
+    public const int MaxBerriesPerBush = 8;
 
     private int capacity;
     private int maxBad; // cap on concurrent bad berries, recomputed per capacity (see Bad Berry Cap above)
@@ -54,6 +59,9 @@ public class Bush : MonoBehaviour
             }
         }
 
+        // Dots reappear when the cooldown ends
+        if (dotsRenderer != null && dotsRenderer.enabled != IsReady) UpdateVisual();
+
         // Gradual regrowth — paused while this bush's UI window is open
         if (!uiOpen && berries.Count < capacity)
         {
@@ -77,6 +85,7 @@ public class Bush : MonoBehaviour
         // and the bush can't be opened again for unavailableAfterLeaving seconds.
         RegrowFromScratch();
         unavailableUntil = Time.time + unavailableAfterLeaving;
+        UpdateVisual(); // bush looks empty during the cooldown
     }
 
     // Public entry point for LevelManager/GameManager to force a completely fresh bush
@@ -94,10 +103,10 @@ public class Bush : MonoBehaviour
     {
         berries.Clear();
 
-        capacity = Random.Range(minCapacity, maxCapacity + 1);
+        capacity = Mathf.Min(Random.Range(minCapacity, maxCapacity + 1), MaxBerriesPerBush);
         maxBad = Mathf.Max(1, Mathf.CeilToInt(capacity * maxBadFraction));
 
-        int startCount = Mathf.CeilToInt(capacity * 0.5f);
+        int startCount = Mathf.CeilToInt(capacity * startFillFraction);
         for (int i = 0; i < startCount; i++)
             berries.Add(RollNewBerry());
 
@@ -141,10 +150,88 @@ public class Bush : MonoBehaviour
 
     public int BerryCount => berries.Count;
 
+    // ---- Visual state: a bush that still has berries shows small blue berry dots on top of the plain
+    // bush art; once every berry is picked the dots disappear (plain bush), and they come back as
+    // soon as berries regrow. The dots are a child SpriteRenderer built at runtime, so the existing
+    // bush sprite/prefab/scene objects don't need to change.
+    private SpriteRenderer bushRenderer;
+    private SpriteRenderer dotsRenderer;
+
+    // Dot positions in the bush texture's pixel coordinates (180x180, origin bottom-left), picked inside the
+    // bush silhouette. Three layouts so neighbouring bushes don't look identical.
+    private static readonly Vector2[][] DotLayouts = new Vector2[][]
+    {
+        new Vector2[] { new Vector2(79f, 38f), new Vector2(87f, 92f), new Vector2(120f, 56f), new Vector2(86f, 133f), new Vector2(34f, 64f), new Vector2(154f, 73f), new Vector2(46f, 101f), new Vector2(122f, 112f) },
+        new Vector2[] { new Vector2(124f, 64f), new Vector2(54f, 90f), new Vector2(140f, 108f), new Vector2(96f, 139f), new Vector2(81f, 43f), new Vector2(97f, 98f), new Vector2(44f, 53f) },
+        new Vector2[] { new Vector2(93f, 129f), new Vector2(70f, 57f), new Vector2(143f, 59f), new Vector2(44f, 99f), new Vector2(134f, 107f), new Vector2(103f, 85f), new Vector2(105f, 39f), new Vector2(32f, 62f) }
+    };
+    private static readonly Sprite[] dotSprites = new Sprite[3];
+
+    // Ready = has berries AND is not on its post-visit cooldown. Only a ready bush shows berry dots.
+    private bool IsReady => berries.Count > 0 && Time.time >= unavailableUntil;
+
     private void UpdateVisual()
     {
-        SpriteRenderer sr = GetComponent<SpriteRenderer>();
-        if (sr) sr.color = berries.Count > 0 ? Color.white : new Color(1f, 1f, 1f, 0.35f);
+        if (bushRenderer == null) bushRenderer = GetComponent<SpriteRenderer>();
+        if (bushRenderer == null) return;
+        bushRenderer.color = Color.white;
+
+        if (dotsRenderer == null)
+        {
+            Sprite dots = GetDotsSprite(bushRenderer.sprite);
+            if (dots == null) return;
+            GameObject go = new GameObject("BerryDots");
+            go.transform.SetParent(transform, false);
+            dotsRenderer = go.AddComponent<SpriteRenderer>();
+            dotsRenderer.sprite = dots;
+            dotsRenderer.flipX = bushRenderer.flipX;
+            dotsRenderer.flipY = bushRenderer.flipY;
+            dotsRenderer.sortingLayerID = bushRenderer.sortingLayerID;
+            dotsRenderer.sortingOrder = bushRenderer.sortingOrder + 1;
+        }
+        dotsRenderer.enabled = IsReady;
+    }
+
+    private Sprite GetDotsSprite(Sprite bushSprite)
+    {
+        if (bushSprite == null) return null;
+        int variant = Mathf.Abs(Mathf.RoundToInt(transform.position.x * 31f + transform.position.y * 17f)) % DotLayouts.Length;
+        if (dotSprites[variant] != null) return dotSprites[variant];
+
+        int w = Mathf.RoundToInt(bushSprite.rect.width), h = Mathf.RoundToInt(bushSprite.rect.height);
+        float sx = w / 180f, sy = h / 180f; // layouts are authored for a 180x180 bush texture
+        Texture2D tex = new Texture2D(w, h, TextureFormat.RGBA32, false);
+        tex.filterMode = FilterMode.Bilinear;
+        tex.wrapMode = TextureWrapMode.Clamp;
+        Color[] px = new Color[w * h];
+
+        Color outline = new Color(0.08f, 0.10f, 0.35f, 1f);
+        Color fill = new Color(0.31f, 0.42f, 1f, 1f);
+        float r = 11f * sx;
+        foreach (Vector2 d in DotLayouts[variant])
+        {
+            float cx = d.x * sx, cy = d.y * sy;
+            int x0 = Mathf.Max(0, Mathf.FloorToInt(cx - r - 2)), x1 = Mathf.Min(w - 1, Mathf.CeilToInt(cx + r + 2));
+            int y0 = Mathf.Max(0, Mathf.FloorToInt(cy - r - 2)), y1 = Mathf.Min(h - 1, Mathf.CeilToInt(cy + r + 2));
+            for (int y = y0; y <= y1; y++)
+                for (int x = x0; x <= x1; x++)
+                {
+                    float dist = Vector2.Distance(new Vector2(x + 0.5f, y + 0.5f), new Vector2(cx, cy));
+                    float cover = Mathf.Clamp01(r + 0.5f - dist);
+                    if (cover <= 0f) continue;
+                    Color c = dist > r - 2.2f ? outline : fill;
+                    float hl = Mathf.Clamp01(3.2f * sx + 0.5f - Vector2.Distance(new Vector2(x + 0.5f, y + 0.5f), new Vector2(cx - r * 0.35f, cy + r * 0.35f)));
+                    c = Color.Lerp(c, new Color(0.85f, 0.9f, 1f, 1f), hl * (dist <= r - 2.2f ? 0.9f : 0f));
+                    c.a = cover;
+                    px[y * w + x] = c;
+                }
+        }
+        tex.SetPixels(px);
+        tex.Apply();
+
+        Vector2 pivot = new Vector2(bushSprite.pivot.x / bushSprite.rect.width, bushSprite.pivot.y / bushSprite.rect.height);
+        dotSprites[variant] = Sprite.Create(tex, new Rect(0, 0, w, h), pivot, bushSprite.pixelsPerUnit);
+        return dotSprites[variant];
     }
 
     private void OnTriggerEnter2D(Collider2D other)

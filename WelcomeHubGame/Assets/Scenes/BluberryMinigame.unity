@@ -898,18 +898,18 @@ MonoBehaviour:
   - levelName: Level 1
     content: {fileID: 997000001}
     spawnPoint: {fileID: 997000032}
-    targetScore: 22
-    totalTime: 70
+    targetScore: 25
+    totalTime: 60
   - levelName: Level 2
     content: {fileID: 997000011}
     spawnPoint: {fileID: 997000042}
-    targetScore: 35
+    targetScore: 33
     totalTime: 60
   - levelName: Level 3
     content: {fileID: 997000021}
     spawnPoint: {fileID: 997000052}
-    targetScore: 38
-    totalTime: 65
+    targetScore: 40
+    totalTime: 60
   poisonTargetPenalty: 5
   playerRb: {fileID: 962781460}
   timeText: {fileID: 360066969}
