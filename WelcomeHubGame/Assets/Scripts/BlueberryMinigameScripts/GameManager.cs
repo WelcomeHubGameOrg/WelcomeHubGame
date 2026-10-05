@@ -37,6 +37,17 @@ public class GameManager : MonoBehaviour
     private int currentScore;
     private int currentTargetScore;
     private bool isGameOver;
+    private bool gameWon;
+
+    // Read-only state for the HUD / pause menu (GameHud.cs, PauseMenu.cs)
+    public float TimeRemaining => currentTime;
+    public float TimeTotal => (levels != null && currentLevelIndex < levels.Length) ? levels[currentLevelIndex].totalTime : 0f;
+    public int Score => currentScore;
+    public int TargetScore => currentTargetScore;
+    public int LevelIndex => currentLevelIndex;
+    public int LevelCount => levels != null ? levels.Length : 0;
+    public bool IsGameOver => isGameOver;
+    public bool GameWon => gameWon; // true once the LAST level has been cleared
 
     private void Awake()
     {
@@ -128,6 +139,7 @@ public class GameManager : MonoBehaviour
         currentTime = level.totalTime;
         currentScore = 0;
         isGameOver = false;
+        gameWon = false;
 
         if (resultPanel) resultPanel.SetActive(false);
         if (gameCompletePanel) gameCompletePanel.SetActive(false);
@@ -146,6 +158,8 @@ public class GameManager : MonoBehaviour
     private void EndLevelFail(string message)
     {
         isGameOver = true;
+        gameWon = false;
+        if (EndScreen.Instance != null) return; // the styled end screen takes over (EndScreen.cs)
         if (resultPanel)
         {
             resultPanel.SetActive(true);
@@ -156,6 +170,8 @@ public class GameManager : MonoBehaviour
     private void EndGameComplete()
     {
         isGameOver = true;
+        gameWon = true;
+        if (EndScreen.Instance != null) return; // the styled end screen takes over (EndScreen.cs)
         if (gameCompletePanel) gameCompletePanel.SetActive(true);
     }
 

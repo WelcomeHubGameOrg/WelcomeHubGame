@@ -2008,7 +2008,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &995900002
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2083,7 +2083,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &995900012
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2158,7 +2158,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &995900022
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2233,7 +2233,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &995900032
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8041,7 +8041,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &997900002
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8300,8 +8300,8 @@ MonoBehaviour:
   badBerrySprite: {fileID: 21300000, guid: 46aef069f5ef4189aa64cd619b1b82b0, type: 3}
   goodLabel: Good berry
   badLabel: Bad berry
-  minBerryDistance: 46
-  scatterAttempts: 25
+  berryScale: 1.25
+  berryGap: 16
   scatterEllipseFitX: 0.62
   scatterEllipseFitY: 0.42
   scatterVerticalBias: 0.1

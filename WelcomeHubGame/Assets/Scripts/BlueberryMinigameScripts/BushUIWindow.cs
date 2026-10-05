@@ -28,8 +28,9 @@ public class BushUIWindow : MonoBehaviour
     [SerializeField] private string badLabel = "Bad berry";
 
     [Header("Scatter")]
-    [SerializeField] private float minBerryDistance = 46f; // keep scattered berries from piling up on each other
-    [SerializeField] private int scatterAttempts = 25;
+    [SerializeField] private float berryScale = 1.25f;     // berry buttons are drawn this much bigger than the prefab
+    [SerializeField] private float berryGap = 16f;         // empty space kept between neighbouring berries (never touching)
+    private const int CandidatesPerBerry = 80;
     // The bush art is a flat, wide cloud shape that tapers in sharply at its bottom-left/right
     // corners — a single round-ish ellipse fit still let berries land past the edge there, so
     // X and Y are shrunk independently (Y much tighter) and the sampling area is nudged upward,
@@ -44,7 +45,6 @@ public class BushUIWindow : MonoBehaviour
     [SerializeField] private float badPenaltyPopupRise = 45f;
 
     private Bush currentBushRef;
-    private readonly List<Vector2> placedPositions = new List<Vector2>();
 
     private void Awake()
     {
@@ -56,6 +56,8 @@ public class BushUIWindow : MonoBehaviour
         else
             Debug.LogWarning($"[{nameof(BushUIWindow)}] Close Button is not assigned in the Inspector — the close button won't work (press E to close as a fallback).", this);
 
+        RestyleCloseButton();
+
         // These two are required to show any berries at all — log loudly if either is missing
         if (berryContainer == null)
             Debug.LogError($"[{nameof(BushUIWindow)}] Berry Container is not assigned in the Inspector — berry buttons have nowhere to be placed and will never appear.", this);
@@ -63,11 +65,41 @@ public class BushUIWindow : MonoBehaviour
             Debug.LogError($"[{nameof(BushUIWindow)}] Berry Button Prefab is not assigned in the Inspector — there is nothing to instantiate for each berry.", this);
     }
 
+    // Swaps the plain red Close button for one in the shared HUD / pause-menu style (chunky rounded,
+    // blueberry colours). The old button is kept in the scene but switched off.
+    private void RestyleCloseButton()
+    {
+        if (closeButton == null) return;
+        UiKit.EnsureFont();
+
+        RectTransform old = (RectTransform)closeButton.transform;
+        Button styled = UiKit.MakeButton(old.parent, "CloseButton_Styled", "CLOSE", new Vector2(250f, 78f),
+            UiKit.NavyLight, UiKit.NavyMid, UiKit.Cream, 32f, CloseBushUI);
+
+        RectTransform r = (RectTransform)styled.transform;
+        r.anchorMin = old.anchorMin;
+        r.anchorMax = old.anchorMax;
+        r.pivot = old.pivot;
+        r.anchoredPosition = old.anchoredPosition;
+        r.sizeDelta = new Vector2(250f, 78f);
+        r.SetAsLastSibling(); // above the bush art and the berries
+
+        closeButton.gameObject.SetActive(false);
+    }
+
+    // True while the berry panel is showing (read by PauseMenu so Esc closes the bush panel first)
+    public bool IsOpen => panelRoot != null && panelRoot.activeSelf;
+
+    // Frame in which Esc was consumed by closing this panel. PauseMenu ignores Esc in that same
+    // frame, otherwise one key press would close the bush AND open the pause menu.
+    public static int EscConsumedFrame = -1;
+
     private void Update()
     {
         // Esc closes the bush panel too, in addition to the Close button and pressing E again.
-        if (panelRoot != null && panelRoot.activeSelf && Input.GetKeyDown(KeyCode.Escape))
+        if (IsOpen && Input.GetKeyDown(KeyCode.Escape))
         {
+            EscConsumedFrame = Time.frameCount;
             CloseBushUI();
         }
     }
@@ -92,15 +124,20 @@ public class BushUIWindow : MonoBehaviour
         {
             Destroy(child.gameObject);
         }
-        placedPositions.Clear();
-
         RectTransform containerRect = berryContainer as RectTransform;
+        Vector2 baseSize = ((RectTransform)berryButtonPrefab.transform).sizeDelta * berryScale;
 
-        foreach (bool isBad in berriesData)
+        // Work out every berry's position first, so they can all be shrunk together if the bush is
+        // crowded -- berries must never overlap or touch.
+        List<Vector2> positions = PickScatterPositions(containerRect, berriesData.Count, baseSize, out float sizeFactor);
+        Vector2 btnSize = baseSize * sizeFactor;
+
+        for (int i = 0; i < berriesData.Count; i++)
         {
+            bool isBad = berriesData[i];
             GameObject btnObj = Instantiate(berryButtonPrefab, berryContainer);
             // The template (Berry Button) lives inactive in the scene, and Instantiate()
-            // copies that inactive state onto every clone — without this, every berry
+            // copies that inactive state onto every clone -- without this, every berry
             // button is created but invisible/non-interactive.
             btnObj.SetActive(true);
 
@@ -120,8 +157,11 @@ public class BushUIWindow : MonoBehaviour
             if (label) label.gameObject.SetActive(false);
 
             RectTransform btnRect = btnObj.GetComponent<RectTransform>();
-            if (btnRect && containerRect)
-                btnRect.anchoredPosition = PickScatterPosition(containerRect, btnRect);
+            if (btnRect)
+            {
+                btnRect.sizeDelta = btnSize;
+                btnRect.anchoredPosition = positions[i];
+            }
 
             if (btn)
             {
@@ -129,53 +169,56 @@ public class BushUIWindow : MonoBehaviour
             }
             else
             {
-                Debug.LogError($"[{nameof(BushUIWindow)}] Berry Button Prefab has no Button component on its root — can't wire up clicks.", btnObj);
+                Debug.LogError($"[{nameof(BushUIWindow)}] Berry Button Prefab has no Button component on its root -- can't wire up clicks.", btnObj);
             }
         }
     }
 
-    // Random position inside the container, biased away from berries already placed
-    // this time round so they don't stack directly on top of each other. Points are
-    // sampled inside an ELLIPSE (not the full rectangle) — the bush art is a rounded
-    // cloud shape that doesn't fill its own bounding box, so rectangle sampling was
-    // dropping berries outside the bush entirely, in the corners.
-    private Vector2 PickScatterPosition(RectTransform containerRect, RectTransform btnRect)
+    // Picks a position for every berry inside an ELLIPSE (the bush art is a rounded cloud that doesn't
+    // fill its bounding box). Each berry takes the candidate spot farthest from the berries already
+    // placed; afterwards, if the closest pair is still nearer than size+gap, ALL berries are scaled
+    // down (sizeFactor < 1) just enough that nothing touches.
+    private List<Vector2> PickScatterPositions(RectTransform containerRect, int count, Vector2 btnSize, out float sizeFactor)
     {
-        Vector2 halfSize = containerRect.rect.size * 0.5f;
-        Vector2 margin = btnRect.rect.size * 0.5f;
-        halfSize -= margin;
+        List<Vector2> result = new List<Vector2>(count);
+        sizeFactor = 1f;
+        if (count <= 0) return result;
+
+        Vector2 halfSize = containerRect != null ? containerRect.rect.size * 0.5f : new Vector2(300f, 150f);
+        halfSize -= btnSize * 0.5f;
         halfSize.x = Mathf.Max(halfSize.x, 1f);
         halfSize.y = Mathf.Max(halfSize.y, 1f);
 
         Vector2 ellipseHalf = new Vector2(halfSize.x * scatterEllipseFitX, halfSize.y * scatterEllipseFitY);
         Vector2 center = new Vector2(0f, halfSize.y * scatterVerticalBias);
 
-        Vector2 best = Vector2.zero;
-        float bestScore = -1f;
-        for (int attempt = 0; attempt < scatterAttempts; attempt++)
+        float wanted = btnSize.x + berryGap; // centre-to-centre distance that keeps a clear gap
+        for (int i = 0; i < count; i++)
         {
-            Vector2 candidate = center + RandomPointInEllipse(ellipseHalf);
-
-            float nearest = float.MaxValue;
-            foreach (Vector2 placed in placedPositions)
-                nearest = Mathf.Min(nearest, Vector2.Distance(candidate, placed));
-            if (placedPositions.Count == 0) nearest = float.MaxValue;
-
-            if (nearest >= minBerryDistance)
+            Vector2 best = center;
+            float bestNearest = -1f;
+            for (int a = 0; a < CandidatesPerBerry; a++)
             {
-                placedPositions.Add(candidate);
-                return candidate;
+                Vector2 candidate = center + RandomPointInEllipse(ellipseHalf);
+                float nearest = float.MaxValue;
+                for (int j = 0; j < result.Count; j++)
+                    nearest = Mathf.Min(nearest, Vector2.Distance(candidate, result[j]));
+
+                if (nearest > bestNearest) { bestNearest = nearest; best = candidate; }
+                if (nearest >= wanted) break; // clear spot found
             }
-            if (nearest > bestScore)
-            {
-                bestScore = nearest;
-                best = candidate;
-            }
+            result.Add(best);
         }
 
-        // Couldn't find a fully clear spot within the attempt budget — use the best one found.
-        placedPositions.Add(best);
-        return best;
+        float minPair = float.MaxValue;
+        for (int i = 0; i < result.Count; i++)
+            for (int j = i + 1; j < result.Count; j++)
+                minPair = Mathf.Min(minPair, Vector2.Distance(result[i], result[j]));
+
+        if (minPair < wanted)
+            sizeFactor = Mathf.Clamp(minPair / wanted, 0.45f, 1f);
+
+        return result;
     }
 
     private static Vector2 RandomPointInEllipse(Vector2 halfSize)
@@ -195,7 +238,9 @@ public class BushUIWindow : MonoBehaviour
         else
             Destroy(btnObj);
 
-        if (currentBushRef.BerryCount <= 0)
+        // ConsumeBerryUI can finish the level: the old level's bushes get deactivated, the player leaves
+        // their trigger, and the panel is closed (currentBushRef becomes null) before we get here.
+        if (currentBushRef != null && currentBushRef.BerryCount <= 0)
         {
             CloseBushUI();
         }

@@ -38,7 +38,9 @@ public class Bush : MonoBehaviour
 
     void Update()
     {
-        if (playerNearby && Input.GetKeyDown(KeyCode.E))
+        // (E does nothing while the pause menu is open -- Update still runs when Time.timeScale is 0)
+        bool ended = GameManager.Instance != null && GameManager.Instance.IsGameOver; // end screen is up
+        if (playerNearby && !PauseMenu.IsPaused && !ended && Input.GetKeyDown(KeyCode.E))
         {
             if (uiOpen)
             {
