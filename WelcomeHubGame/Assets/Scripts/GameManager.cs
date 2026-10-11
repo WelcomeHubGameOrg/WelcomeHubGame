@@ -1,0 +1,61 @@
+using System.Collections.Generic;
+using Unity.VectorGraphics;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class GameManager : MonoBehaviour
+{
+    public static GameManager Instance { get; private set; }
+
+    [Header("Map state preservation")]
+    public List<MapButtonData> mapState = new List<MapButtonData>();
+    
+    [Header("Minigame pools")] 
+    public List<MinigameData> AvailableMinigames;
+    public int completedMinigames = 0;
+    public int failedMinigames = 0;
+
+    public ScenePathSO mainMapScene;
+    public MinigameData currentMinigame { get; private set; }
+
+    private void Awake()
+    {
+        if (!Instance) {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+    }
+
+    public void LaunchMinigame(MinigameData minigame)
+    {
+        // note, might need to add an AudioManager StopMusic line here.
+        // AudioManager.Instance.StopMusic();
+        currentMinigame = minigame;
+
+        if (!minigame.scene)
+        {
+            Debug.LogError($"{minigame.displayName} has no scene assigned!");
+            return;
+        }
+        SceneManager.LoadScene(minigame.scene.Path);
+    }
+
+    public void ReturnToMap(bool isWon)
+    {
+        if (currentMinigame != null)
+        {
+            if (isWon)
+                completedMinigames++;
+            else
+                failedMinigames++;
+        }
+
+        currentMinigame = null;
+        SceneManager.LoadScene(mainMapScene.Path);
+    }
+}

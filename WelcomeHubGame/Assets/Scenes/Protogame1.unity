@@ -437,6 +437,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TavelScript
   cost: 0
   reward: 0
+  zone: 0
+  destinationScene: {fileID: 0}
+  mainMapScene: {fileID: 11400000, guid: 2269eb2ad77f3f6419be40538b627fb4, type: 2}
+  minigameRectTransform: {fileID: 0}
 --- !u!114 &1926245730
 MonoBehaviour:
   m_ObjectHideFlags: 0
