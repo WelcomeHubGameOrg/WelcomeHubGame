@@ -1,7 +1,4 @@
 # 🎮 Metropolia Welcoming Game
-> [!CAUTION]
-> **This README file is only a draft!**
-
 Welcome to the **Innovation Project: Software/Game Development** repository! 
 
 This project aims to create an interactive, web-based 2D "Welcoming Game" for new international students at [Metropolia University of Applied Sciences](https://opiskelijan.metropolia.fi/en/guidance-and-support/welcome-hub). 
@@ -47,7 +44,16 @@ Direct pushes to the `main` branch are **blocked**.
 6. **Wait for a Review:** Your PR must be approved by our Senior Unity Devs (Code Owners) before it can be merged.
 7. Once approved and the pipeline is green, hit merge!
 
+---
 
+## Run WebGL application after pipeline has finished
+1. Download WebGL-Build zip-file from actions run
+2. Unzip file and go into folder
+3. Run `npm install -g serve-unity`
+4. Run `serve-unity 8080`
+5. Go to http://localhost:8080
+
+For more details: https://github.com/TheRoccoB/serve-unity
 
 ---
 
