@@ -10,6 +10,6 @@ public class ModifyStaminaEffect : ChoiceEffect
     {
         // GameManager should own the actual stamina value and its clamping/max logic,
         // this effect just tells it what happened
-        GameManager.Instance.ModifyStamina(amount);
+        HikingGameManager.Instance.ModifyStamina(amount);
     }
 }

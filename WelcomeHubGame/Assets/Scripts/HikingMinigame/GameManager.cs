@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class HikingGameManager : MonoBehaviour
 {
-    public static GameManager Instance { get; private set; }
+    public static HikingGameManager Instance { get; private set; }
 
     public int stamina = 100;
     public int maxStamina = 100;
