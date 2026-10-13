@@ -28,24 +28,20 @@ public class StairsGameManager : MonoBehaviour
         StairsRow row = rowObject.AddComponent<StairsRow>();
         rowObject.transform.position = new Vector3(0, 2 - rowNumber, 0);
 
-        for (int column = 0; column < 2; column++)
+        for (int column = 0; column < 3; column++)
         {
             GameObject cell = GameObject.CreatePrimitive(PrimitiveType.Cube);
             cell.transform.SetParent(rowObject.transform);
-            cell.transform.localPosition = new Vector3(column - 0.5f, 0, 0);
+            cell.transform.localPosition = new Vector3(column - 1, 0, 0);
         }
 
         if (rowNumber != 4)
         {
-            int obstaclePosition = Random.Range(0, 3);
+            int obstaclePosition = Random.Range(0, 4);
 
-            if (obstaclePosition == 1)
+            if (obstaclePosition != 0)
             {
-                CreateObstacle(row, 0);
-            }
-            else if (obstaclePosition == 2)
-            {
-                CreateObstacle(row, 1);
+                CreateObstacle(row, obstaclePosition - 1);
             }
         }
         
@@ -56,7 +52,7 @@ public class StairsGameManager : MonoBehaviour
     {
         GameObject obstacle = Instantiate(obstaclePrefab);
         obstacle.transform.SetParent(row.transform);
-        obstacle.transform.localPosition = new Vector3(column - 0.5f, 0, -1);
+        obstacle.transform.localPosition = new Vector3(column - 1, 0, -1);
         row.SetObstacle(obstacle);
     }
 
@@ -75,7 +71,7 @@ public class StairsGameManager : MonoBehaviour
 
     public bool BottomRowHasObstacle(int column)
     {
-        return rows[4].obstacle != null && Mathf.RoundToInt(rows[4].obstacle.transform.localPosition.x + 0.5f) == column;
+        return rows[4].obstacle != null && Mathf.RoundToInt(rows[4].obstacle.transform.localPosition.x + 1) == column;
     }
 
     public void AddScore()

@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class StairsPlayerController : MonoBehaviour
 {
     private StairsGameManager gameManager;
-    private int currentColumn = 0;
+    private int currentColumn = 1;
     private bool gameOver = false;
 
     void Start()
@@ -33,16 +33,27 @@ public class StairsPlayerController : MonoBehaviour
 
     void MoveLeft()
     {
-        currentColumn = 0;
-        transform.position = new Vector3(-0.5f, -2f, -1f);
+        if (currentColumn > 0)
+        {
+            currentColumn--;
+        }
+        UpdatePlayerPosition();
         MoveAndCheck();
     }
 
     void MoveRight()
     {
-        currentColumn = 1;
-        transform.position = new Vector3(0.5f, -2f, -1f);
+        if (currentColumn < 2)
+        {
+            currentColumn++;
+        }
+        UpdatePlayerPosition();
         MoveAndCheck();
+    }
+
+    void UpdatePlayerPosition()
+    {
+        transform.position = new Vector3(currentColumn - 1, -2f, -1f);
     }
 
     void MoveAndCheck()
