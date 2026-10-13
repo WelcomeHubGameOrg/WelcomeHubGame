@@ -5,16 +5,16 @@ public class StairsPlayerController : MonoBehaviour
 {
     private StairsGameManager gameManager;
     private int currentColumn = 1;
-    private bool gameOver = false;
 
     void Start()
     {
         gameManager = FindAnyObjectByType<StairsGameManager>();
+        UpdatePlayerPosition();
     }
 
     void Update()
     {
-        if (gameOver)
+        if (gameManager.GameEnded)
         {
             return;
         }
@@ -62,7 +62,6 @@ public class StairsPlayerController : MonoBehaviour
         
         if(gameManager.BottomRowHasObstacle(currentColumn))
         {
-            gameOver = true;
             gameManager.GameOver();
         }
         else

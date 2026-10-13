@@ -5,6 +5,8 @@ public class StairsGameManager : MonoBehaviour
 {
     private StairsRow[] rows = new StairsRow[5];
     private int score = 0;
+    private const int MaxScore = 347;
+    public bool GameEnded { get; private set; }
     [SerializeField] private GameObject obstaclePrefab;
     [SerializeField] private GameObject gameOverScreen;
     [SerializeField] private TMP_Text scoreText;
@@ -37,15 +39,37 @@ public class StairsGameManager : MonoBehaviour
 
         if (rowNumber != 4)
         {
-            int obstaclePosition = Random.Range(0, 4);
+            float obstacleChange = GetObstacleChange();
 
-            if (obstaclePosition != 0)
+            if (Random.value < obstacleChange)
             {
-                CreateObstacle(row, obstaclePosition - 1);
+                int obstacleColumn = Random.Range(0, 3);
+                CreateObstacle(row, obstacleColumn);
             }
         }
         
         rows[rowNumber] = row;
+    }
+
+    float GetObstacleChange()
+    {
+        switch (score)
+        {
+            case < 50:
+                return 0.30f;
+            case < 100:
+                return 0.40f;
+            case < 150:
+                return 0.50f;
+            case < 200:
+                return 0.60f;
+            case < 250:
+                return 0.70f;
+            case < 300:
+                return 0.80f;
+            default:
+                return 0.90f;
+        }
     }
 
     void CreateObstacle(StairsRow row, int column)
@@ -77,6 +101,10 @@ public class StairsGameManager : MonoBehaviour
     public void AddScore()
     {
         score++;
+
+        if (score >= MaxScore) {
+            GameOver();
+        }
     }
 
     public int GetScore()
@@ -86,6 +114,7 @@ public class StairsGameManager : MonoBehaviour
 
     public void GameOver()
     {
+        GameEnded = true;
         scoreText.text = "Score: " + score;
         gameOverScreen.SetActive(true);
         Time.timeScale = 0;
