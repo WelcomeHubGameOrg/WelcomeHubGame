@@ -1,15 +1,18 @@
 using Effect;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "ModifyStamina", menuName = "Effects/ModifyStamina")]
-public class ModifyStaminaEffect : ChoiceEffect
+namespace HikingMinigame.Effect
 {
-    public int amount; // positive = restore, negative = drain
-
-    public override void Apply()
+    [CreateAssetMenu(fileName = "ModifyStamina", menuName = "Effects/ModifyStamina")]
+    public class ModifyStaminaEffect : ChoiceEffect
     {
-        // GameManager should own the actual stamina value and its clamping/max logic,
-        // this effect just tells it what happened
-        HikingGameManager.Instance.ModifyStamina(amount);
+        public int amount; // positive = restore, negative = drain
+
+        public override void Apply()
+        {
+            // GameManager should own the actual stamina value and its clamping/max logic,
+            // this effect just tells it what happened
+            HikingGameManager.Instance.ModifyStamina(amount);
+        }
     }
 }

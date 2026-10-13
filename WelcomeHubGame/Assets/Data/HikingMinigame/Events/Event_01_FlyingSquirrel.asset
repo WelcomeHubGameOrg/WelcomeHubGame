@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Event_01_FlyingSquirrel
   m_EditorClassIdentifier: Assembly-CSharp::EventDefinition
   EventName: Squirrel
-  Icon: {fileID: 21300000, guid: 2b51b27d7924b9b2896c2437372e822a, type: 3}
+  Icon: {fileID: 21300000, guid: 811030faaddb34387872cad223162138, type: 3}
   Description: Look, a flying Squirrel! The Siberian flying squirrel is the only
     species of flying squirrels in Europe. It is considered vulnerable in the European
     Union, where it only occurs in Estonia and Finnland.

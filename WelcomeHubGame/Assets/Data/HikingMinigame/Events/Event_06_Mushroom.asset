@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Event_06_Mushroom
   m_EditorClassIdentifier: Assembly-CSharp::EventDefinition
   EventName: Event Name
-  Icon: {fileID: 21300000, guid: 2b51b27d7924b9b2896c2437372e822a, type: 3}
+  Icon: {fileID: 21300000, guid: dc53a878cd8934fe28e873bb86eaa2d5, type: 3}
   Description: A mushroom! I wonder if I can eat this...
   Weight: 3
   MaxOccurrences: -1

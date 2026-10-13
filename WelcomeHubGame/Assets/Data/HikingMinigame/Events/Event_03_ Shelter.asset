@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Event_03_ Shelter
   m_EditorClassIdentifier: Assembly-CSharp::EventDefinition
   EventName: A Shelter
-  Icon: {fileID: 21300000, guid: 2b51b27d7924b9b2896c2437372e822a, type: 3}
+  Icon: {fileID: 21300000, guid: f0184cd0f5003478fa1cfe1e42268567, type: 3}
   Description: In this public Shelter you can stay the night, just be mindfull of
     others and always make space if someone else shows up later!
   Weight: 3

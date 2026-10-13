@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Event_05_Berries
   m_EditorClassIdentifier: Assembly-CSharp::EventDefinition
   EventName: A field of berries!
-  Icon: {fileID: 21300000, guid: 2b51b27d7924b9b2896c2437372e822a, type: 3}
+  Icon: {fileID: 21300000, guid: 06e5601e7fed742ee92d83f34195d73f, type: 3}
   Description: You can freely pick them!
   Weight: 3
   MaxOccurrences: -1

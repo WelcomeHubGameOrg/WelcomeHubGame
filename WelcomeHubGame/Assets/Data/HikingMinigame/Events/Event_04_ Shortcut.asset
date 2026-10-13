@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Event_04_ Shortcut
   m_EditorClassIdentifier: Assembly-CSharp::EventDefinition
   EventName: A Shortcut?
-  Icon: {fileID: 21300000, guid: 2b51b27d7924b9b2896c2437372e822a, type: 3}
+  Icon: {fileID: 21300000, guid: 1782f72d710ef4193a620538a9ffac39, type: 3}
   Description: Maybe if I just cut though the forest here I'm faster...
   Weight: 3
   MaxOccurrences: -1
