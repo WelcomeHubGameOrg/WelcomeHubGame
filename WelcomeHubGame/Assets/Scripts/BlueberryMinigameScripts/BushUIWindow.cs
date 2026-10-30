@@ -273,12 +273,12 @@ public class BushUIWindow : MonoBehaviour
     }
 
     // Pick feedback: the berry flashes (red for bad, green for good) and swells, a ring bursts out from it,
-    // and a "+5" / "+1" badge pops in (with a little overshoot), floats up and fades out.
+    // and a "-5" / "+1" badge pops in (with a little overshoot), floats up and fades out.
     // Bad berries also shake.
     private IEnumerator PlayBerryPopup(GameObject btnObj, bool isBad)
     {
         Color accent = isBad ? UiKit.Danger : UiKit.Mint;
-        string label = isBad ? "+5" : "+1";
+        string label = isBad ? "-5" : "+1";
         Button btn = btnObj.GetComponent<Button>();
         if (btn) btn.interactable = false;
 

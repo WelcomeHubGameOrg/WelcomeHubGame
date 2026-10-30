@@ -134,7 +134,7 @@ public class Bush : MonoBehaviour
     {
         if (isBad)
         {
-            GameManager.Instance.AddBadBerryPenalty(); // +5 to the target
+            GameManager.Instance.AddBadBerryPenalty(); // -5 from the collected berries
         }
         else
         {

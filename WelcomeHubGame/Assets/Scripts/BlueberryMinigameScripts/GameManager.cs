@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     public LevelConfig[] levels;
 
     [Header("Penalty")]
-    public int poisonTargetPenalty = 5; // +5 to this attempt's target for each bad berry eaten
+    public int badBerryScorePenalty = 5; // each bad berry eaten takes this many berries away from the ones already collected
 
     [Header("Player")]
     [SerializeField] private Rigidbody2D playerRb; // teleported to each level's spawn point, velocity reset on (re)load
@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
     private int currentTargetScore;
     private bool isGameOver;
     private bool gameWon;
+    private int penaltyCount;
 
     // Read-only state for the HUD / pause menu (GameHud.cs, PauseMenu.cs)
     public float TimeRemaining => currentTime;
@@ -48,6 +49,7 @@ public class GameManager : MonoBehaviour
     public int LevelCount => levels != null ? levels.Length : 0;
     public bool IsGameOver => isGameOver;
     public bool GameWon => gameWon; // true once the LAST level has been cleared
+    public int PenaltyCount => penaltyCount; // increments on every bad berry (the HUD watches it to play the "lost berries" effect)
 
     private void Awake()
     {
@@ -93,8 +95,10 @@ public class GameManager : MonoBehaviour
     public void AddBadBerryPenalty()
     {
         if (isGameOver) return;
-        currentTargetScore += poisonTargetPenalty; // this attempt now needs more berries
-        CheckWin();
+        // A bad berry takes berries away from the ones already collected (never below zero);
+        // the target stays the same.
+        currentScore = Mathf.Max(0, currentScore - badBerryScorePenalty);
+        penaltyCount++;
         UpdateUI();
     }
 

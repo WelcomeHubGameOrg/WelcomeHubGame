@@ -75,6 +75,10 @@ public class GameHud : MonoBehaviour
     private float barValue;
     private int shownScore = int.MinValue, shownTarget = int.MinValue;
     private float popTimer, flashTimer;
+    private int shownPenalties;
+    private float shakeTimer, minusTimer;
+    private TextMeshProUGUI minusTxt;
+    private Vector2 berryTxtBase;
 
     // pause button
     private Button pauseBtn;
@@ -235,6 +239,12 @@ public class GameHud : MonoBehaviour
         berryTxt = UiKit.Txt("Count", p.content, "0", 42f, UiKit.Cream, FontStyles.Bold, TextAlignmentOptions.MidlineLeft);
         UiKit.Fill(berryTxt.rectTransform, 88f, 30f, 18f, 6f);
         berryTxt.richText = true;
+        berryTxtBase = berryTxt.rectTransform.anchoredPosition;
+
+        // Floating "-5" that drops out of the counter when a bad berry takes berries away
+        minusTxt = UiKit.Txt("Minus", p.root, "-5", 44f, UiKit.Danger, FontStyles.Bold);
+        UiKit.Place(minusTxt.rectTransform, new Vector2(0.5f, 0f), new Vector2(0.5f, 1f), new Vector2(0f, -4f), new Vector2(140f, 56f));
+        minusTxt.color = UiKit.Danger.WithA(0f);
 
         Image track = UiKit.Img("BarTrack", p.content, UiKit.Rounded(5), Color.white.WithA(0.14f), true);
         track.rectTransform.anchorMin = new Vector2(0f, 0f);
@@ -322,13 +332,23 @@ public class GameHud : MonoBehaviour
             if (shownScore != int.MinValue)
             {
                 if (score > shownScore) popTimer = 0.3f;
-                if (target > shownTarget) flashTimer = 0.6f;
             }
             shownScore = score;
             shownTarget = target;
             berryTxt.text = score + "<size=62%><color=#" + ColorUtility.ToHtmlStringRGB(UiKit.BerryLight) + "> / " + target + "</color></size>";
         }
 
+        // Bad berry eaten: the counter flashes red, shakes, and a red "-5" drops out of it
+        if (gm.PenaltyCount != shownPenalties)
+        {
+            if (gm.PenaltyCount > shownPenalties)
+            {
+                flashTimer = 0.7f;
+                shakeTimer = 0.45f;
+                minusTimer = 0.9f;
+            }
+            shownPenalties = gm.PenaltyCount;
+        }
         float goal = target > 0 ? Mathf.Clamp01((float)score / target) : 0f;
         barValue = Mathf.MoveTowards(barValue, goal, dt * 2.5f);
         barFill.anchorMax = new Vector2(barValue, 1f);
@@ -338,7 +358,19 @@ public class GameHud : MonoBehaviour
         berryIcon.localScale = new Vector3(popScale, popScale, 1f);
 
         if (flashTimer > 0f) flashTimer = Mathf.Max(0f, flashTimer - dt);
-        berryTxt.color = Color.Lerp(UiKit.Cream, UiKit.Danger, flashTimer / 0.6f);
+        berryTxt.color = Color.Lerp(UiKit.Cream, UiKit.Danger, Mathf.Clamp01(flashTimer / 0.5f));
+
+        // shake the counter text sideways while shakeTimer runs
+        if (shakeTimer > 0f) shakeTimer = Mathf.Max(0f, shakeTimer - dt);
+        float shake = Mathf.Sin(Time.unscaledTime * 80f) * 8f * (shakeTimer / 0.45f);
+        berryTxt.rectTransform.anchoredPosition = berryTxtBase + new Vector2(shake, 0f);
+
+        // red "-5" drops out of the counter and fades
+        if (minusTimer > 0f) minusTimer = Mathf.Max(0f, minusTimer - dt);
+        float mk = 1f - minusTimer / 0.9f; // 0 -> 1 over the effect
+        float mAlpha = minusTimer > 0f ? Mathf.Clamp01(Mathf.Min(mk * 8f, (1f - mk) * 2.5f)) : 0f;
+        minusTxt.color = UiKit.Danger.WithA(mAlpha);
+        minusTxt.rectTransform.anchoredPosition = new Vector2(0f, -4f - 46f * mk);
 
         // --- pause button ---
         pauseBtn.interactable = !gm.IsGameOver && !paused;
