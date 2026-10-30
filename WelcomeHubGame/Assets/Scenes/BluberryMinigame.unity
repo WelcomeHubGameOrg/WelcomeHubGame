@@ -891,9 +891,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 819911229}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebe6a790b98fd674aa1ac44d3f4d9ace, type: 3}
+  m_Script: {fileID: 11500000, guid: afbba409859d4a169ebf9bc3874a6d04, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  m_EditorClassIdentifier: Assembly-CSharp::BlueberryGameManager
   levels:
   - levelName: Level 1
     content: {fileID: 997000001}
@@ -1730,7 +1730,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 819911230}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: BlueberryGameManager, Assembly-CSharp
         m_MethodName: RestartGame
         m_Mode: 1
         m_Arguments:
@@ -7838,7 +7838,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 819911230}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: BlueberryGameManager, Assembly-CSharp
         m_MethodName: RestartFullGame
         m_Mode: 1
         m_Arguments:

@@ -178,7 +178,7 @@ public class PauseMenu : MonoBehaviour
     // ------------------------------------------------------------------ state
     private bool CanPause()
     {
-        GameManager gm = GameManager.Instance;
+        BlueberryGameManager gm = BlueberryGameManager.Instance;
         if (gm == null || gm.IsGameOver) return false;
         BushUIWindow bush = BushUIWindow.Instance;
         if (bush != null && bush.IsOpen) return false;
@@ -215,7 +215,7 @@ public class PauseMenu : MonoBehaviour
         Resume();
         PlayerMovement.InputEnabled = true;
         if (BushUIWindow.Instance != null && BushUIWindow.Instance.IsOpen) BushUIWindow.Instance.CloseBushUI();
-        if (GameManager.Instance != null) GameManager.Instance.RestartGame();
+        if (BlueberryGameManager.Instance != null) BlueberryGameManager.Instance.RestartGame();
     }
 
     public void MainMenu()

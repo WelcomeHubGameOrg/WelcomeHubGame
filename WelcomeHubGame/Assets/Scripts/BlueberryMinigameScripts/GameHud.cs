@@ -8,13 +8,13 @@ using UnityEngine.UI;
 //   top-left   : round countdown timer (seconds only, ring drains, turns gold then red)
 //   top-center : level medallions (done = check mark, current = glowing, upcoming = dim)
 //   top-right  : berry counter with progress bar, plus the pause button
-// Everything is built in code at scene start (see Bootstrap) and reads its numbers from GameManager,
+// Everything is built in code at scene start (see Bootstrap) and reads its numbers from BlueberryGameManager,
 // so no scene wiring is needed. The old HUD objects are simply switched off.
 public class GameHud : MonoBehaviour
 {
     public static GameHud Instance;
 
-    // ---- Auto-creation: puts one "GameUI" object (HUD + pause menu) into any scene that has a GameManager ----
+    // ---- Auto-creation: puts one "GameUI" object (HUD + pause menu) into any scene that has a BlueberryGameManager ----
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
     private static void Bootstrap()
     {
@@ -30,7 +30,7 @@ public class GameHud : MonoBehaviour
 
     private static void Ensure()
     {
-        if (GameManager.Instance == null) return;
+        if (BlueberryGameManager.Instance == null) return;
         if (FindFirstObjectByType<GameHud>() != null) return;
 
         GameObject go = new GameObject("GameUI");
@@ -284,7 +284,7 @@ public class GameHud : MonoBehaviour
     // ------------------------------------------------------------------ per-frame update
     private void Update()
     {
-        GameManager gm = GameManager.Instance;
+        BlueberryGameManager gm = BlueberryGameManager.Instance;
         if (gm == null) return;
 
         float dt = Time.unscaledDeltaTime;

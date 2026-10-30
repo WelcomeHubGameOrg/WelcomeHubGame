@@ -44,7 +44,7 @@ public class Bush : MonoBehaviour
     void Update()
     {
         // (E does nothing while the pause menu is open -- Update still runs when Time.timeScale is 0)
-        bool ended = GameManager.Instance != null && GameManager.Instance.IsGameOver; // end screen is up
+        bool ended = BlueberryGameManager.Instance != null && BlueberryGameManager.Instance.IsGameOver; // end screen is up
         if (playerNearby && !PauseMenu.IsPaused && !ended && Input.GetKeyDown(KeyCode.E))
         {
             if (uiOpen)
@@ -88,7 +88,7 @@ public class Bush : MonoBehaviour
         UpdateVisual(); // bush looks empty during the cooldown
     }
 
-    // Public entry point for LevelManager/GameManager to force a completely fresh bush
+    // Public entry point for LevelManager/BlueberryGameManager to force a completely fresh bush
     // (new berries, no cooldown) whenever a level (re)starts. SetActive(false)/(true) does
     // NOT re-run Start(), so without this a retried or revisited level would keep whatever
     // berries/cooldown the bush had from the previous attempt.
@@ -134,11 +134,11 @@ public class Bush : MonoBehaviour
     {
         if (isBad)
         {
-            GameManager.Instance.AddBadBerryPenalty(); // -5 from the collected berries
+            BlueberryGameManager.Instance.AddBadBerryPenalty(); // -5 from the collected berries
         }
         else
         {
-            GameManager.Instance.AddGoodBerry(); // +1 to the score
+            BlueberryGameManager.Instance.AddGoodBerry(); // +1 to the score
         }
 
         // Remove one berry of the matching type — which exact index doesn't matter,

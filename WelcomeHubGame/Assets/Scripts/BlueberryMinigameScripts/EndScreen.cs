@@ -3,10 +3,10 @@ using UnityEngine;
 using UnityEngine.UI;
 
 // Replaces the plain "Time is up! / Game Complete!" panels with cards in the same style as the HUD and
-// the pause menu. Created together with GameHud (see GameHud.Ensure); it watches GameManager and shows
+// the pause menu. Created together with GameHud (see GameHud.Ensure); it watches BlueberryGameManager and shows
 //   - "TIME'S UP!"     when a level attempt runs out of time  (Try Again / Main Menu)
 //   - "GAME COMPLETE!" after the last level is cleared        (Play Again / Main Menu)
-// While it exists, GameManager no longer switches on the old ResultPanel / GameCompletePanel.
+// While it exists, BlueberryGameManager no longer switches on the old ResultPanel / GameCompletePanel.
 public class EndScreen : MonoBehaviour
 {
     public static EndScreen Instance;
@@ -134,7 +134,7 @@ public class EndScreen : MonoBehaviour
     // ------------------------------------------------------------------ show / hide
     private void Show(bool won)
     {
-        GameManager gm = GameManager.Instance;
+        BlueberryGameManager gm = BlueberryGameManager.Instance;
         shown = true;
 
         // The berry panel may still be open (time ran out while picking) -- close it first,
@@ -199,7 +199,7 @@ public class EndScreen : MonoBehaviour
 
     private void Update()
     {
-        GameManager gm = GameManager.Instance;
+        BlueberryGameManager gm = BlueberryGameManager.Instance;
         if (gm == null) return;
 
         if (gm.IsGameOver && !shown) Show(gm.GameWon);
@@ -215,12 +215,12 @@ public class EndScreen : MonoBehaviour
     // ------------------------------------------------------------------ buttons
     private void OnTryAgain()
     {
-        if (GameManager.Instance != null) GameManager.Instance.RestartGame(); // Update() hides the card next frame
+        if (BlueberryGameManager.Instance != null) BlueberryGameManager.Instance.RestartGame(); // Update() hides the card next frame
     }
 
     private void OnPlayAgain()
     {
-        if (GameManager.Instance != null) GameManager.Instance.RestartFullGame();
+        if (BlueberryGameManager.Instance != null) BlueberryGameManager.Instance.RestartFullGame();
     }
 
     private void OnMainMenu()
