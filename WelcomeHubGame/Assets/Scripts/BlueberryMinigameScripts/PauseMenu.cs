@@ -4,14 +4,14 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 // Pause menu, built in code (created together with GameHud, see GameHud.Bootstrap).
-//   Resume (highlighted) / Restart (current level) / Settings (volume) / Main Menu (MapProtype)
+//   Resume (highlighted) / Restart (current level) / Settings (volume) / Main Menu (MainMap)
 // Opened with the pause button or Esc. Esc first closes the berry panel if it is open.
 public class PauseMenu : MonoBehaviour
 {
     public static PauseMenu Instance;
     public static bool IsPaused { get; private set; }
 
-    private const string MainMenuScene = "MapProtype";
+    private const string MainMenuScene = "MainMap"; // the hub map scene (Assets/Scenes/MainMap.unity)
     private const string VolumePref = "MasterVolume";
 
     private GameObject overlay;
