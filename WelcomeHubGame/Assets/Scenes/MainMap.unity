@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &27102820
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1823,7 +1823,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &190666882
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2003,7 +2003,6 @@ GameObject:
   - component: {fileID: 200379235}
   - component: {fileID: 200379237}
   - component: {fileID: 200379236}
-  - component: {fileID: 200379238}
   m_Layer: 5
   m_Name: Player
   m_TagString: Untagged
@@ -2068,20 +2067,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 200379234}
   m_CullTransparentMesh: 1
---- !u!114 &200379238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 200379234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37370c72bcd562e42a9983d55d8a03ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerIconScript
-  player: {fileID: 200379234}
-  playerImage: {fileID: 200379236}
 --- !u!1 &234928118
 GameObject:
   m_ObjectHideFlags: 0
@@ -4919,6 +4904,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9b95e99abec976941aa331c520157524, type: 2}
   - {fileID: 11400000, guid: 7ed5960b726ed55479c432dc84644c39, type: 2}
   - {fileID: 11400000, guid: f0b459c73880beb4f974d6224604b2b1, type: 2}
+  - {fileID: 11400000, guid: dce64952452f0e74c982a004835879ba, type: 2}
   completedMinigames: 0
   failedMinigames: 0
   mainMapScene: {fileID: 11400000, guid: 2269eb2ad77f3f6419be40538b627fb4, type: 2}
@@ -8208,11 +8194,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TravelManager
   playerRect: {fileID: 200379235}
-  playerPosition: {x: 0, y: 0}
-  moveSpeed: 300
   player: {fileID: 200379236}
   playerIcon: {fileID: 21300000, guid: 7985a99ea304be54988bf5d3743fe3f2, type: 3}
   bus: {fileID: 21300000, guid: 3add4ab422171a442bdffe186a74713a, type: 3}
+  moveSpeed: 300
+  isTraveling: 0
 --- !u!4 &1882737829
 Transform:
   m_ObjectHideFlags: 0

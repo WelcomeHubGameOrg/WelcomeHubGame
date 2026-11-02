@@ -15,3 +15,5 @@ MonoBehaviour:
   displayName: Clicker
   scene: {fileID: 11400000, guid: 65c47f75a299a064d8e0a78bae2d5142, type: 2}
   allowedZones: 12
+  icon: {fileID: 21300000, guid: 74ec2256f10caa5428b72403542a0ef0, type: 3}
+  description: Click click click

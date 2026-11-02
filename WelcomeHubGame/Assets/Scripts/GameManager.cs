@@ -62,8 +62,18 @@ public class GameManager : MonoBehaviour
             else
                 failedMinigames++;
         }
+        
+        ResetTicket();
 
         currentMinigame = null;
         SceneManager.LoadScene(mainMapScene.Path);
+    }
+
+    public void ResetTicket()
+    {
+        A = false;
+        B = false;
+        C = false;
+        D = false;
     }
 }

@@ -20,7 +20,7 @@ public class TravelScript : MonoBehaviour
         else
             popUp.SetActive(true);
     }
-
+    /*
     public void TravelToMinigameScene()
     {
         Debug.Log("minus cost: " + cost);
@@ -28,11 +28,12 @@ public class TravelScript : MonoBehaviour
         TravelManager.instance.MoveTo(minigameRectTransform.anchoredPosition, destinationScene.Path);
         //SceneManager.LoadScene(sceneName);
     }
-
+    */
 
     // == should i put on a separete script? ==
     public void BackToMap()
     {
-        SceneManager.LoadScene(mainMapScene.Path);
+        GameManager.Instance.ReturnToMap(true);
+        //SceneManager.LoadScene(mainMapScene.Path);
     }
 }
