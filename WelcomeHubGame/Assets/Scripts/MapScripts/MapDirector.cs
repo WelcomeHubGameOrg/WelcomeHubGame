@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -95,7 +96,7 @@ public class MapDirector : MonoBehaviour
             Debug.LogError("Failed to find valid spawnpoint, skipping spawn");
             return;
         }
-        
+
         MapButtonData newButtonData = new MapButtonData(randomGame, cleanPos);
         GameManager.Instance.mapState.Add(newButtonData);
         BuildButtonUI(newButtonData);
@@ -156,16 +157,36 @@ public class MapDirector : MonoBehaviour
         
         GameObject btnObj = Instantiate(buttonPrefab, mapCanvasTransform);
         btnObj.GetComponent<RectTransform>().anchoredPosition = data.screenPosition;
-        
+
+        MapButtonView view = btnObj.GetComponent<MapButtonView>();
+        if (view != null)
+            PopulateButtonView(view, data.minigameData);
+
         Button btn = btnObj.GetComponent<Button>();
         btn.onClick.AddListener(() =>
         {
+            if (TravelManager.instance.isTraveling) return;
+
             GameManager.Instance.mapState.Remove(data);
-            GameManager.Instance.LaunchMinigame(data.minigameData);
+            TravelManager.instance.MoveTo(btnObj.GetComponent<RectTransform>(), data.minigameData);
+            //GameManager.Instance.LaunchMinigame(data.minigameData);
             Destroy(btnObj);
         });
         
         //update button text or icons here with data.minigameData.displayName
+    }
+    private void PopulateButtonView(MapButtonView view, MinigameData game)
+    {
+        // icon: only override the prefab's default image if this minigame has one
+        if (view.iconImage != null && game.icon != null)
+            view.iconImage.sprite = game.icon;
+
+        // hover panel info
+        if (view.titleText != null)
+            view.titleText.text = game.displayName;
+
+        if (view.descriptionText != null)
+            view.descriptionText.text = game.description;
     }
 
     private bool IsPositionValid(Vector2 pos)
