@@ -1,0 +1,28 @@
+version: 1
+
+items:
+  - id: rain_jacket
+    name: Rain Jacket
+    description: Keeps you dry when it rains.
+    protectsAgainst: [rain]
+
+  - id: first_aid_kit
+    name: First Aid Kit
+    description: Patches you up after a fall or a nasty blister. Can be used once.
+    protectsAgainst: [injury]
+    singleUse: true
+
+  - id: water_filter
+    name: Water Filter
+    description: Makes water from lakes and streams safe to drink.
+
+  - id: mosquito_repellent
+    name: Mosquito Repellent
+    description: Keeps mosquitoes and other biting insects away.
+    protectsAgainst: [insects]
+
+  - id: energy_bar
+    name: Energy Bar
+    description: When you can't go on, it gets you back on your feet.
+    reviveStamina: 30
+    singleUse: true

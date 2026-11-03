@@ -1,0 +1,724 @@
+version: 1
+
+events:
+  - id: pack_bag
+    name: Pack your bag
+    description: There is room for one more thing. What do you take?
+    trigger: start
+    choices:
+      - text: Rain Jacket
+        outcome:
+          text: You pack the rain jacket. Finnish weather can change fast.
+          effects:
+            - giveItem: rain_jacket
+      - text: First Aid Kit
+        outcome:
+          text: You pack the first aid kit, just in case.
+          effects:
+            - giveItem: first_aid_kit
+      - text: Water Filter
+        outcome:
+          text: You pack the water filter. There is water everywhere in Finland.
+          effects:
+            - giveItem: water_filter
+      - text: Mosquito Repellent
+        outcome:
+          text: You pack the mosquito repellent. You will thank yourself later.
+          effects:
+            - giveItem: mosquito_repellent
+      - text: Energy Bar
+        outcome:
+          text: You pack an energy bar for when things get tough.
+          effects:
+            - giveItem: energy_bar
+
+  - id: short_break
+    name: Short Break
+    icon: Brown.png
+    description: A flat rock by the trail looks like the perfect place for a short break.
+    weight: 3
+    choices:
+      - text: Rest your legs
+        outcome:
+          text: You sit down, drink some water and feel your energy coming back.
+          effects:
+            - stamina: 10
+      - text: Watch the birds
+        outcome:
+          text: You sit very still. A Siberian jay lands on a branch right next to you.
+          effects:
+            - stamina: 5
+            - nature: 5
+
+  - id: flying_squirrel
+    name: A Flying Squirrel
+    icon: smallPlants/tinyShroom_tan.png
+    description: >-
+      Look, a flying squirrel! The Siberian flying squirrel is the only species of
+      flying squirrel in Europe. Within the EU, it only lives in Finland and Estonia.
+    maxOccurrences: 1
+    choices:
+      - text: Watch it quietly
+        outcome:
+          text: It glides from tree to tree. You will remember this moment.
+          effects:
+            - nature: 10
+      - text: Get closer for a photo
+        outcome:
+          text: You step off the trail and it flees into the canopy. The photo is blurry.
+          effects:
+            - nature: -5
+
+  - id: lake
+    name: A Clear Lake
+    icon: Brown.png
+    description: One of Finland's many lakes, calm and glittering in the sun.
+    weight: 3
+    choices:
+      - text: Go for a swim
+        outcome:
+          text: The water is wonderfully refreshing.
+          effects:
+            - stamina: 15
+        risk:
+          chance: 0.3
+          outcome:
+            text: The water is much colder than it looked. You shiver for a long time.
+            effects:
+              - stamina: -15
+                hazard: cold
+      - text: Filter some lake water
+        requiresItem: water_filter
+        outcome:
+          text: Clean, cold water. You drink as much as you like.
+          effects:
+            - stamina: 10
+      - text: Drink straight from the lake
+        outcome:
+          text: Cool, fresh water.
+          effects:
+            - stamina: 10
+        risk:
+          chance: 0.3
+          outcome:
+            text: Your stomach does not agree with the untreated water.
+            effects:
+              - stamina: -15
+                hazard: sickness
+      - text: Wash up with soap
+        outcome:
+          text: You feel fresh, but the soap ends up in the lake.
+          effects:
+            - stamina: 10
+            - nature: -10
+
+  - id: shelter
+    name: A Lean-to Shelter
+    icon: smallPlants/bush_02.png
+    description: >-
+      An open wilderness shelter with a fire ring. Anyone may stay here, and you
+      always make room if someone else arrives later.
+    weight: 2
+    choices:
+      - text: Rest and make room for others
+        outcome:
+          text: Two hikers arrive late. You move your things and share the fire.
+          effects:
+            - stamina: 20
+            - nature: 5
+      - text: Use wood from the woodshed
+        outcome:
+          text: A warm fire and a hot meal. Just what you needed.
+          effects:
+            - stamina: 20
+      - text: Break branches off living trees
+        outcome:
+          text: The green wood smokes badly, and the trees will carry the scars for years.
+          effects:
+            - stamina: 15
+            - nature: -15
+
+  - id: shortcut
+    name: A Shortcut?
+    icon: smallPlants/bush_05.png
+    description: Maybe if I just cut through the forest here, I'll save some energy...
+    weight: 2
+    choices:
+      - text: Cut through the forest
+        outcome:
+          text: You save a lot of energy, but trample some plants.
+          effects:
+            - stamina: 15
+            - nature: -5
+        risk:
+          chance: 0.4
+          outcome:
+            text: You trip over a root and twist your ankle.
+            effects:
+              - stamina: -20
+                hazard: injury
+      - text: Stay on the marked trail
+        outcome:
+          text: The marked trail is the safest way, and it protects the forest floor.
+          effects:
+            - nature: 5
+
+  - id: berries
+    name: A Field of Blueberries
+    icon: smallPlants/blue_berry_bush_small.png
+    description: >-
+      Under Everyman's Rights, anyone may pick wild berries in Finnish forests.
+      This patch is full of them.
+    weight: 3
+    choices:
+      - text: Take a handful
+        outcome:
+          text: Sweet and juicy. Your fingers turn blue.
+          effects:
+            - stamina: 10
+      - text: Eat as many as you can
+        outcome:
+          text: You eat your fill and leave little for the birds and animals.
+          effects:
+            - stamina: 20
+            - nature: -10
+      - text: Leave them for the animals
+        outcome:
+          text: A bird lands in the bush as soon as you walk on.
+          effects:
+            - nature: 5
+
+  - id: mushroom
+    name: A Mushroom
+    icon: smallPlants/tallShroom_brown.png
+    description: A big brown mushroom. I wonder if I can eat this...
+    weight: 2
+    choices:
+      - text: Try it!
+        outcome:
+          text: Tasty! You got lucky, it was a porcini.
+          effects:
+            - stamina: 10
+        risk:
+          chance: 0.5
+          outcome:
+            text: That was a bad idea. Your stomach cramps for the next hour.
+            effects:
+              - stamina: -25
+                hazard: sickness
+      - text: Better not
+        outcome:
+          text: Never eat a mushroom you can't identify. You walk on.
+
+  - id: red_mushroom
+    name: A Red Mushroom
+    icon: smallPlants/tallShroom_red.png
+    description: A bright red mushroom with white dots. It looks like it's from a fairy tale.
+    weight: 1
+    maxOccurrences: 1
+    choices:
+      - text: Taste a tiny bit
+        outcome:
+          text: You feel terrible. It was a fly agaric, and it's poisonous.
+          effects:
+            - stamina: -30
+              hazard: sickness
+      - text: Kick it over
+        outcome:
+          text: Poisonous or not, it was part of the forest.
+          effects:
+            - nature: -5
+      - text: Leave it alone
+        outcome:
+          text: A fly agaric. Beautiful to look at, poisonous to eat, and important for the trees around it.
+          effects:
+            - nature: 5
+
+  - id: cloudberries
+    name: Cloudberries!
+    icon: smallPlants/cran_berry_bush_small.png
+    description: >-
+      Golden cloudberries grow on the edge of a bog. They are rare and called the
+      gold of Lapland.
+    weight: 1
+    maxOccurrences: 1
+    choices:
+      - text: Pick a few
+        outcome:
+          text: They taste like honey and sunshine.
+          effects:
+            - stamina: 15
+            - nature: 5
+      - text: Wade into the bog for more
+        outcome:
+          text: You collect a whole bag, but your feet trample the fragile bog moss.
+          effects:
+            - stamina: 25
+            - nature: -10
+        risk:
+          chance: 0.4
+          outcome:
+            text: You sink up to your knee in cold bog water.
+            effects:
+              - nature: -10
+              - stamina: -10
+                hazard: cold
+
+  - id: duckboards
+    name: Duckboards
+    icon: smallPlants/bush_01.png
+    description: >-
+      Narrow wooden planks, called pitkospuut, lead across a wide bog. They protect
+      the bog and keep your feet dry.
+    weight: 2
+    choices:
+      - text: Walk carefully on the boards
+        outcome:
+          text: Step by step you cross the bog. A crane calls in the distance.
+          effects:
+            - nature: 5
+        risk:
+          chance: 0.2
+          outcome:
+            text: A wet plank is slippery and you fall into the bog.
+            effects:
+              - stamina: -10
+                hazard: injury
+      - text: Walk next to the boards
+        outcome:
+          text: No risk of slipping, but every step crushes the bog moss.
+          effects:
+            - nature: -10
+
+  - id: steep_ridge
+    name: A Steep Ridge
+    icon: Brown.png
+    description: The trail splits. One path climbs a rocky ridge, the other winds around it.
+    weight: 2
+    choices:
+      - text: Climb up for the view
+        outcome:
+          text: Forest and lakes as far as you can see. Worth every step.
+          effects:
+            - stamina: -5
+              hazard: exhaustion
+            - nature: 10
+        risk:
+          chance: 0.3
+          outcome:
+            text: Loose rocks slip under your feet and you scrape your knee.
+            effects:
+              - stamina: -15
+                hazard: injury
+      - text: Take the path around
+        outcome:
+          text: Longer, but easy going.
+          effects:
+            - stamina: -5
+              hazard: exhaustion
+
+  - id: rain_shower
+    name: Dark Clouds
+    icon: landscape/Cloud_3.png
+    description: The sky turns grey and the first heavy drops start to fall.
+    weight: 2
+    choices:
+      - text: Keep walking
+        outcome:
+          text: You are soaked to the skin within minutes.
+          effects:
+            - stamina: -15
+              hazard: rain
+      - text: Wait under a big spruce
+        outcome:
+          text: The thick branches keep you dry until the shower passes.
+        risk:
+          chance: 0.5
+          outcome:
+            text: The rain doesn't stop, and water drips through the branches.
+            effects:
+              - stamina: -10
+                hazard: rain
+
+  - id: thunderstorm
+    name: Thunder!
+    icon: landscape/Cloud_2.png
+    description: >-
+      Lightning flashes over the hills and heavy rain starts to pour. You are on an
+      open ridge.
+    weight: 1
+    maxOccurrences: 1
+    choices:
+      - text: Get down into the forest and wait
+        outcome:
+          text: You crouch low between small trees until the storm moves on. Wet, but safe.
+          effects:
+            - stamina: -10
+              hazard: rain
+      - text: Hurry on over the ridge
+        outcome:
+          text: You make it over the ridge, soaked and with your heart pounding.
+          effects:
+            - stamina: -15
+              hazard: rain
+        risk:
+          chance: 0.3
+          outcome:
+            text: Lightning strikes a tree nearby. You throw yourself on the rocks and get hurt.
+            effects:
+              - stamina: -25
+                hazard: injury
+
+  - id: mosquitoes
+    name: Mosquitoes!
+    icon: Brown.png
+    description: A buzzing cloud of mosquitoes rises from the wet ground. Welcome to the Finnish summer.
+    weight: 2
+    choices:
+      - text: Keep walking
+        outcome:
+          text: They bite you everywhere they can reach.
+          effects:
+            - stamina: -12
+              hazard: insects
+      - text: Hurry on
+        outcome:
+          text: You outrun most of them, but you are out of breath.
+          effects:
+            - stamina: -8
+              hazard: exhaustion
+      - text: Light a smoky fire to keep them away
+        outcome:
+          text: The smoke works, but making fires outside fire places harms the forest.
+          effects:
+            - nature: -10
+
+  - id: blister
+    name: A Blister
+    icon: Brown.png
+    description: Your heel starts to burn. A blister is forming.
+    weight: 2
+    choices:
+      - text: Stop and tape it
+        outcome:
+          text: It takes a while to get your boot off and on again, but it helps.
+          effects:
+            - stamina: -5
+      - text: Ignore it and keep walking
+        outcome:
+          text: Every step hurts more. By the evening, your heel is raw.
+          effects:
+            - stamina: -15
+              hazard: injury
+
+  - id: long_climb
+    name: A Long Climb
+    icon: Brown.png
+    description: The trail goes uphill. And uphill. And uphill.
+    weight: 2
+    choices:
+      - text: Keep a steady pace
+        outcome:
+          text: Slow and steady. Your legs burn, but you make it to the top.
+          effects:
+            - stamina: -8
+              hazard: exhaustion
+      - text: Stop often and look around
+        outcome:
+          text: It takes more out of you, but you spot a woodpecker and an old pine full of character.
+          effects:
+            - stamina: -10
+              hazard: exhaustion
+            - nature: 5
+
+  - id: fallen_tree
+    name: A Fallen Tree
+    icon: Brown.png
+    description: A storm has blown a big spruce across the trail.
+    weight: 2
+    choices:
+      - text: Climb over it
+        outcome:
+          text: You scramble over the trunk.
+          effects:
+            - stamina: -5
+              hazard: exhaustion
+        risk:
+          chance: 0.3
+          outcome:
+            text: You slip on the wet bark and land hard.
+            effects:
+              - stamina: -15
+                hazard: injury
+      - text: Go around through the undergrowth
+        outcome:
+          text: It takes a lot of effort, and you trample young plants on the way.
+          effects:
+            - stamina: -10
+              hazard: exhaustion
+            - nature: -5
+
+  - id: stream_crossing
+    name: A Stream Crossing
+    icon: Brown.png
+    description: A fast stream crosses the trail. There is no bridge here.
+    weight: 2
+    choices:
+      - text: Wade through
+        outcome:
+          text: The water is ice cold. Your feet go numb.
+          effects:
+            - stamina: -10
+              hazard: cold
+      - text: Hop across on the stones
+        outcome:
+          text: Stone, stone, stone. Dry feet!
+        risk:
+          chance: 0.4
+          outcome:
+            text: A stone wobbles, and you twist your ankle as you fall in.
+            effects:
+              - stamina: -15
+                hazard: injury
+      - text: Walk upstream to a footbridge
+        outcome:
+          text: It's a long detour, but you stay dry.
+          effects:
+            - stamina: -8
+              hazard: exhaustion
+
+  - id: lost_trail
+    name: Where Is the Trail?
+    icon: Brown.png
+    description: You haven't seen a trail marker for a while. Did you miss a turn?
+    weight: 2
+    choices:
+      - text: Walk back to the last marker
+        outcome:
+          text: There it is. You missed the turn. Annoying, but you are back on track.
+          effects:
+            - stamina: -8
+              hazard: exhaustion
+      - text: Guess the direction
+        outcome:
+          text: Lucky guess! The trail appears right in front of you.
+          effects:
+            - nature: -5
+        risk:
+          chance: 0.5
+          outcome:
+            text: You wander through the forest for ages before you find the trail again.
+            effects:
+              - stamina: -15
+                hazard: exhaustion
+              - nature: -5
+
+  - id: hot_day
+    name: A Hot Afternoon
+    icon: Brown.png
+    description: The sun is burning and your water bottle is empty. You hear a stream nearby.
+    weight: 2
+    choices:
+      - text: Filter water from the stream
+        requiresItem: water_filter
+        outcome:
+          text: Fresh, clean water. You feel alive again.
+          effects:
+            - stamina: 10
+      - text: Drink from the stream anyway
+        outcome:
+          text: Cold and delicious.
+          effects:
+            - stamina: 10
+        risk:
+          chance: 0.4
+          outcome:
+            text: An hour later, your stomach starts to rumble. Badly.
+            effects:
+              - stamina: -15
+                hazard: sickness
+      - text: Walk on thirsty
+        outcome:
+          text: Your mouth is dry and every step feels heavier.
+          effects:
+            - stamina: -10
+              hazard: exhaustion
+
+  - id: fire_warning
+    name: Forest Fire Warning
+    icon: Brown.png
+    description: >-
+      A sign at the fire ring says there is a forest fire warning today. Making open
+      fires is forbidden.
+    weight: 1
+    maxOccurrences: 2
+    choices:
+      - text: Eat a cold snack instead
+        outcome:
+          text: Cold food, but the forest is safe.
+          effects:
+            - stamina: 5
+            - nature: 5
+      - text: Make a small fire anyway
+        outcome:
+          text: A hot meal, but one spark could start a forest fire. That was irresponsible.
+          effects:
+            - stamina: 15
+            - nature: -20
+
+  - id: litter
+    name: Litter by the Trail
+    icon: smallPlants/bush_04.png
+    description: Someone left plastic bottles and wrappers next to the trail.
+    weight: 2
+    choices:
+      - text: Pack it up and carry it out
+        outcome:
+          text: Your bag is a bit heavier, but the forest is cleaner.
+          effects:
+            - stamina: -3
+              hazard: exhaustion
+            - nature: 10
+      - text: Hide it under the moss
+        outcome:
+          text: Out of sight, but plastic stays in nature for hundreds of years.
+          effects:
+            - nature: -5
+      - text: Walk past
+        outcome:
+          text: Someone else will deal with it. Maybe.
+
+  - id: reindeer
+    name: Reindeer on the Trail
+    icon: smallPlants/bush_03.png
+    description: A small herd of reindeer is grazing right on the trail.
+    weight: 2
+    maxOccurrences: 2
+    choices:
+      - text: Wait quietly until they move on
+        outcome:
+          text: After a while, they calmly wander into the forest.
+          effects:
+            - nature: 10
+      - text: Walk around them through the bushes
+        outcome:
+          text: You give them space, but the detour is tiring.
+          effects:
+            - stamina: -5
+              hazard: exhaustion
+            - nature: 5
+      - text: Try to pet one
+        outcome:
+          text: The herd scatters in panic. Reindeer are not pets.
+          effects:
+            - nature: -10
+        risk:
+          chance: 0.2
+          outcome:
+            text: The herd scatters, and a startled reindeer knocks you over.
+            effects:
+              - nature: -10
+              - stamina: -15
+                hazard: injury
+
+  - id: bear_tracks
+    name: Bear Tracks
+    icon: Brown.png
+    description: Huge paw prints in the mud. A brown bear passed by here not long ago.
+    weight: 1
+    maxOccurrences: 1
+    choices:
+      - text: Talk loudly and keep your distance
+        outcome:
+          text: Bears avoid people who make themselves heard. You never see it.
+          effects:
+            - nature: 5
+      - text: Follow the tracks for a photo
+        outcome:
+          text: The tracks disappear in the thick forest. Probably for the best.
+          effects:
+            - nature: -10
+        risk:
+          chance: 0.3
+          outcome:
+            text: You hear a deep growl and run. You fall hard on the rocky ground.
+            effects:
+              - nature: -10
+              - stamina: -20
+                hazard: injury
+
+  - id: lakeside_sauna
+    name: A Lakeside Sauna
+    icon: Brown.png
+    description: A small public sauna by the lake, already warm. Steam rises from the chimney.
+    weight: 1
+    maxOccurrences: 1
+    choices:
+      - text: Enjoy the sauna
+        outcome:
+          text: The heat melts the tiredness out of your legs.
+          effects:
+            - stamina: 20
+      - text: Sauna, then jump into the lake
+        outcome:
+          text: Hot, cold, hot again. You feel like a new person. This is the Finnish way.
+          effects:
+            - stamina: 35
+        risk:
+          chance: 0.3
+          outcome:
+            text: The lake is ice cold and you stay in too long.
+            effects:
+              - stamina: -10
+                hazard: cold
+
+  - id: tired_hiker
+    name: A Tired Hiker
+    icon: Brown.png
+    description: A hiker sits by the trail, exhausted. They still have a long way to go.
+    weight: 1
+    maxOccurrences: 1
+    choices:
+      - text: Give them your energy bar
+        requiresItem: energy_bar
+        outcome:
+          text: They thank you and insist you take their spare rain jacket in return.
+          effects:
+            - removeItem: energy_bar
+            - giveItem: rain_jacket
+      - text: Walk together for a while
+        outcome:
+          text: Good company makes the kilometers fly by.
+          effects:
+            - stamina: 5
+      - text: Wish them luck
+        outcome:
+          text: You nod and walk on.
+
+  - id: supply_box
+    name: A Hiker's Supply Box
+    icon: Brown.png
+    description: A wooden box at a trail crossing. A note says, "Take what you need, leave what you can."
+    weight: 1
+    maxOccurrences: 2
+    choices:
+      - text: Take an energy bar
+        outcome:
+          text: You find an energy bar and put it in your bag.
+          effects:
+            - giveItem: energy_bar
+      - text: Take a first aid kit
+        outcome:
+          text: You find a small first aid kit and put it in your bag.
+          effects:
+            - giveItem: first_aid_kit
+      - text: Take the mosquito repellent
+        outcome:
+          text: Half a bottle left. You put it in your bag.
+          effects:
+            - giveItem: mosquito_repellent
+      - text: Leave it for someone who needs it more
+        outcome:
+          text: You feel good about leaving it for the next hiker.
+          effects:
+            - nature: 5

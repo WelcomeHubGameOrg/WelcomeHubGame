@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d829e2f20e6295a5bfc9fcb2ca92163, type: 3}
+  m_Name: Event_cloudberries
+  m_EditorClassIdentifier: Assembly-CSharp::HikingMinigame.Events.EventDefinition
+  <Id>k__BackingField: cloudberries
+  <Title>k__BackingField: Cloudberries!
+  <Icon>k__BackingField: {fileID: 21300000, guid: 12e13abaa97b44ee08f4e3386279256d, type: 3}
+  <Description>k__BackingField: Golden cloudberries grow on the edge of a bog. They
+    are rare and called the gold of Lapland.
+  <Weight>k__BackingField: 1
+  <MaxOccurrences>k__BackingField: 1
+  <Trigger>k__BackingField: 0
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: Pick a few
+    <RequiredItem>k__BackingField: {fileID: 0}
+    <Outcome>k__BackingField:
+      <Text>k__BackingField: They taste like honey and sunshine.
+      <Effects>k__BackingField:
+      - rid: 6632890833693573282
+      - rid: 6632890833693573283
+    <Risk>k__BackingField:
+      <Chance>k__BackingField: 0
+      <ReducedBy>k__BackingField: []
+      <Outcome>k__BackingField:
+        <Text>k__BackingField: 
+        <Effects>k__BackingField: []
+  - <Text>k__BackingField: Wade into the bog for more
+    <RequiredItem>k__BackingField: {fileID: 0}
+    <Outcome>k__BackingField:
+      <Text>k__BackingField: You collect a whole bag, but your feet trample the fragile
+        bog moss.
+      <Effects>k__BackingField:
+      - rid: 6632890833693573284
+      - rid: 6632890833693573285
+    <Risk>k__BackingField:
+      <Chance>k__BackingField: 0.4
+      <ReducedBy>k__BackingField: []
+      <Outcome>k__BackingField:
+        <Text>k__BackingField: You sink up to your knee in cold bog water.
+        <Effects>k__BackingField:
+        - rid: 6632890833693573286
+        - rid: 6632890833693573287
+  references:
+    version: 2
+    RefIds:
+    - rid: 6632890833693573282
+      type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
+      data:
+        <Amount>k__BackingField: 15
+        <Hazard>k__BackingField: 0
+    - rid: 6632890833693573283
+      type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
+      data:
+        <Amount>k__BackingField: 5
+    - rid: 6632890833693573284
+      type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
+      data:
+        <Amount>k__BackingField: 25
+        <Hazard>k__BackingField: 0
+    - rid: 6632890833693573285
+      type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
+      data:
+        <Amount>k__BackingField: -10
+    - rid: 6632890833693573286
+      type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
+      data:
+        <Amount>k__BackingField: -10
+    - rid: 6632890833693573287
+      type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
+      data:
+        <Amount>k__BackingField: -10
+        <Hazard>k__BackingField: 2

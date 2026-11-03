@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d829e2f20e6295a5bfc9fcb2ca92163, type: 3}
+  m_Name: Event_reindeer
+  m_EditorClassIdentifier: Assembly-CSharp::HikingMinigame.Events.EventDefinition
+  <Id>k__BackingField: reindeer
+  <Title>k__BackingField: Reindeer on the Trail
+  <Icon>k__BackingField: {fileID: 21300000, guid: b4463c76d9d134e188ead9e486d458d1, type: 3}
+  <Description>k__BackingField: A small herd of reindeer is grazing right on the
+    trail.
+  <Weight>k__BackingField: 2
+  <MaxOccurrences>k__BackingField: 2
+  <Trigger>k__BackingField: 0
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: Wait quietly until they move on
+    <RequiredItem>k__BackingField: {fileID: 0}
+    <Outcome>k__BackingField:
+      <Text>k__BackingField: After a while, they calmly wander into the forest.
+      <Effects>k__BackingField:
+      - rid: 6632890833693573215
+    <Risk>k__BackingField:
+      <Chance>k__BackingField: 0
+      <ReducedBy>k__BackingField: []
+      <Outcome>k__BackingField:
+        <Text>k__BackingField: 
+        <Effects>k__BackingField: []
+  - <Text>k__BackingField: Walk around them through the bushes
+    <RequiredItem>k__BackingField: {fileID: 0}
+    <Outcome>k__BackingField:
+      <Text>k__BackingField: You give them space, but the detour is tiring.
+      <Effects>k__BackingField:
+      - rid: 6632890833693573216
+      - rid: 6632890833693573217
+    <Risk>k__BackingField:
+      <Chance>k__BackingField: 0
+      <ReducedBy>k__BackingField: []
+      <Outcome>k__BackingField:
+        <Text>k__BackingField: 
+        <Effects>k__BackingField: []
+  - <Text>k__BackingField: Try to pet one
+    <RequiredItem>k__BackingField: {fileID: 0}
+    <Outcome>k__BackingField:
+      <Text>k__BackingField: The herd scatters in panic. Reindeer are not pets.
+      <Effects>k__BackingField:
+      - rid: 6632890833693573218
+    <Risk>k__BackingField:
+      <Chance>k__BackingField: 0.2
+      <ReducedBy>k__BackingField: []
+      <Outcome>k__BackingField:
+        <Text>k__BackingField: The herd scatters, and a startled reindeer knocks
+          you over.
+        <Effects>k__BackingField:
+        - rid: 6632890833693573219
+        - rid: 6632890833693573220
+  references:
+    version: 2
+    RefIds:
+    - rid: 6632890833693573215
+      type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
+      data:
+        <Amount>k__BackingField: 10
+    - rid: 6632890833693573216
+      type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
+      data:
+        <Amount>k__BackingField: -5
+        <Hazard>k__BackingField: 6
+    - rid: 6632890833693573217
+      type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
+      data:
+        <Amount>k__BackingField: 5
+    - rid: 6632890833693573218
+      type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
+      data:
+        <Amount>k__BackingField: -10
+    - rid: 6632890833693573219
+      type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
+      data:
+        <Amount>k__BackingField: -10
+    - rid: 6632890833693573220
+      type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
+      data:
+        <Amount>k__BackingField: -15
+        <Hazard>k__BackingField: 3

@@ -1,12 +1,15 @@
 using UnityEngine;
 
-public class CameraSetup : MonoBehaviour
+namespace HikingMinigame
 {
-    void Awake()
+    public class CameraSetup : MonoBehaviour
     {
-        var cam = GetComponent<Camera>();
+        private void Awake()
+        {
+            var cam = GetComponent<Camera>();
 
-        cam.transparencySortMode = TransparencySortMode.CustomAxis;
-        cam.transparencySortAxis = Vector3.up;
+            cam.transparencySortMode = TransparencySortMode.CustomAxis;
+            cam.transparencySortAxis = Vector3.up;
+        }
     }
 }

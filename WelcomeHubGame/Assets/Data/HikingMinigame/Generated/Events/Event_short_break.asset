@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d829e2f20e6295a5bfc9fcb2ca92163, type: 3}
+  m_Name: Event_short_break
+  m_EditorClassIdentifier: Assembly-CSharp::HikingMinigame.Events.EventDefinition
+  <Id>k__BackingField: short_break
+  <Title>k__BackingField: Short Break
+  <Icon>k__BackingField: {fileID: 21300000, guid: 2b51b27d7924b9b2896c2437372e822a, type: 3}
+  <Description>k__BackingField: A flat rock by the trail looks like the perfect place
+    for a short break.
+  <Weight>k__BackingField: 3
+  <MaxOccurrences>k__BackingField: -1
+  <Trigger>k__BackingField: 0
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: Rest your legs
+    <RequiredItem>k__BackingField: {fileID: 0}
+    <Outcome>k__BackingField:
+      <Text>k__BackingField: You sit down, drink some water and feel your energy
+        coming back.
+      <Effects>k__BackingField:
+      - rid: 6632890833693573209
+    <Risk>k__BackingField:
+      <Chance>k__BackingField: 0
+      <ReducedBy>k__BackingField: []
+      <Outcome>k__BackingField:
+        <Text>k__BackingField: 
+        <Effects>k__BackingField: []
+  - <Text>k__BackingField: Watch the birds
+    <RequiredItem>k__BackingField: {fileID: 0}
+    <Outcome>k__BackingField:
+      <Text>k__BackingField: You sit very still. A Siberian jay lands on a branch
+        right next to you.
+      <Effects>k__BackingField:
+      - rid: 6632890833693573210
+      - rid: 6632890833693573211
+    <Risk>k__BackingField:
+      <Chance>k__BackingField: 0
+      <ReducedBy>k__BackingField: []
+      <Outcome>k__BackingField:
+        <Text>k__BackingField: 
+        <Effects>k__BackingField: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 6632890833693573209
+      type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
+      data:
+        <Amount>k__BackingField: 10
+        <Hazard>k__BackingField: 0
+    - rid: 6632890833693573210
+      type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
+      data:
+        <Amount>k__BackingField: 5
+        <Hazard>k__BackingField: 0
+    - rid: 6632890833693573211
+      type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
+      data:
+        <Amount>k__BackingField: 5

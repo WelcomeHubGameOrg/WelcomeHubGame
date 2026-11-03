@@ -1,12 +1,13 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace HikingMinigame
 {
     public class StatsHUD : MonoBehaviour
     {
-        public Image staminaFill;
-        public Image natureFill;
+        [SerializeField, FormerlySerializedAs("staminaFill")] private Image _staminaFill;
+        [SerializeField, FormerlySerializedAs("natureFill")] private Image _natureFill;
 
         private void Start()
         {
@@ -22,9 +23,9 @@ namespace HikingMinigame
 
         private void Refresh()
         {
-            var gm = HikingGameManager.Instance;
-            staminaFill.fillAmount = (float)gm.Stamina / gm.maxStamina;
-            natureFill.fillAmount = (float)gm.NatureScore / gm.maxNatureScore;
+            var game = HikingGameManager.Instance;
+            _staminaFill.fillAmount = (float)game.Stamina / game.MaxStamina;
+            _natureFill.fillAmount = (float)game.NatureScore / game.MaxNatureScore;
         }
     }
 }

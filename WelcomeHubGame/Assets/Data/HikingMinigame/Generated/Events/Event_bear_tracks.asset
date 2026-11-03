@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d829e2f20e6295a5bfc9fcb2ca92163, type: 3}
+  m_Name: Event_bear_tracks
+  m_EditorClassIdentifier: Assembly-CSharp::HikingMinigame.Events.EventDefinition
+  <Id>k__BackingField: bear_tracks
+  <Title>k__BackingField: Bear Tracks
+  <Icon>k__BackingField: {fileID: 21300000, guid: 2b51b27d7924b9b2896c2437372e822a, type: 3}
+  <Description>k__BackingField: Huge paw prints in the mud. A brown bear passed by
+    here not long ago.
+  <Weight>k__BackingField: 1
+  <MaxOccurrences>k__BackingField: 1
+  <Trigger>k__BackingField: 0
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: Talk loudly and keep your distance
+    <RequiredItem>k__BackingField: {fileID: 0}
+    <Outcome>k__BackingField:
+      <Text>k__BackingField: Bears avoid people who make themselves heard. You never
+        see it.
+      <Effects>k__BackingField:
+      - rid: 6632890833693573248
+    <Risk>k__BackingField:
+      <Chance>k__BackingField: 0
+      <ReducedBy>k__BackingField: []
+      <Outcome>k__BackingField:
+        <Text>k__BackingField: 
+        <Effects>k__BackingField: []
+  - <Text>k__BackingField: Follow the tracks for a photo
+    <RequiredItem>k__BackingField: {fileID: 0}
+    <Outcome>k__BackingField:
+      <Text>k__BackingField: The tracks disappear in the thick forest. Probably for
+        the best.
+      <Effects>k__BackingField:
+      - rid: 6632890833693573249
+    <Risk>k__BackingField:
+      <Chance>k__BackingField: 0.3
+      <ReducedBy>k__BackingField: []
+      <Outcome>k__BackingField:
+        <Text>k__BackingField: You hear a deep growl and run. You fall hard on the
+          rocky ground.
+        <Effects>k__BackingField:
+        - rid: 6632890833693573250
+        - rid: 6632890833693573251
+  references:
+    version: 2
+    RefIds:
+    - rid: 6632890833693573248
+      type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
+      data:
+        <Amount>k__BackingField: 5
+    - rid: 6632890833693573249
+      type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
+      data:
+        <Amount>k__BackingField: -10
+    - rid: 6632890833693573250
+      type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
+      data:
+        <Amount>k__BackingField: -10
+    - rid: 6632890833693573251
+      type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
+      data:
+        <Amount>k__BackingField: -20
+        <Hazard>k__BackingField: 3
