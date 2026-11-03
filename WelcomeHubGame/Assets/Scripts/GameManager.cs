@@ -18,6 +18,14 @@ public class GameManager : MonoBehaviour
     public ScenePathSO mainMapScene;
     public MinigameData currentMinigame { get; private set; }
 
+    [Header("Bus Zones where ticket is active")]
+    public bool A = false;
+    public bool B = false;
+    public bool C = false;
+    public bool D = false;
+
+    public float PlayerMoney;
+
     private void Awake()
     {
         if (!Instance) {
@@ -54,8 +62,18 @@ public class GameManager : MonoBehaviour
             else
                 failedMinigames++;
         }
+        
+        ResetTicket();
 
         currentMinigame = null;
         SceneManager.LoadScene(mainMapScene.Path);
+    }
+
+    public void ResetTicket()
+    {
+        A = false;
+        B = false;
+        C = false;
+        D = false;
     }
 }

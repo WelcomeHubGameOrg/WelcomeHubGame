@@ -15,3 +15,5 @@ MonoBehaviour:
   displayName: ChoiceGame
   scene: {fileID: 11400000, guid: 973252c043d048a42a941aeba2e258a0, type: 2}
   allowedZones: 3
+  icon: {fileID: 21300000, guid: d8fd3060920bca94080851fa0b40c5c1, type: 3}
+  description: Make a choice

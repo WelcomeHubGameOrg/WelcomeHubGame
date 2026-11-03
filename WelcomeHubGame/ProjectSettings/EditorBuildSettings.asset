@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMap.unity
     guid: 68cd837d8e6547d43927d85f77573f07
+  - enabled: 1
+    path: Assets/Scenes/BluberryMinigame.unity
+    guid: 76eff1a2882bd344db883c8c37bce220
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
