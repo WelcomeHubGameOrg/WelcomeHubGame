@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MinigameData
   displayName: BlueberryPicking
   scene: {fileID: 11400000, guid: aa513d39bb2c85c4683caa51b57c3626, type: 2}
-  allowedZones: -1
+  allowedZones: 12
   icon: {fileID: 21300000, guid: 491b0ab5a65344643b90c33d480fd4d4, type: 3}
   description: Pick Blueberries
