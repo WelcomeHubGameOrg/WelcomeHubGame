@@ -1,72 +1,177 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 public class StairsPlayerController : MonoBehaviour
 {
+    [Header("Animation")]
+    [Tooltip("How fast the player slides to the new lane.")]
+    [SerializeField] private float slideSpeed = 25f;
+    [Tooltip("How much the player squashes when stepping (0 = none).")]
+    [SerializeField] private float squashAmount = 0.2f;
+    [SerializeField] private float squashRecovery = 12f;
+
     private StairsGameManager gameManager;
     private int currentColumn = 1;
+    private float tickTimer;
+
+    private Vector3 baseScale;
+    private Vector3 targetPosition;
+    private float squash;
 
     void Start()
     {
         gameManager = FindAnyObjectByType<StairsGameManager>();
+        baseScale = transform.localScale;
         UpdatePlayerPosition();
+        transform.position = targetPosition; // start exactly in place
     }
 
     void Update()
     {
-        if (gameManager.GameEnded)
+        Animate();
+
+        if (!gameManager.GameStarted)
+        {
+            // nothing works before the Start button is pressed
+            tickTimer = gameManager.GetTickTime();
+            return;
+        }
+
+        if (gameManager.GameEnded || gameManager.IsPaused)
         {
             return;
         }
-        if (Keyboard.current.aKey.wasPressedThisFrame ||
-        Keyboard.current.leftArrowKey.wasPressedThisFrame)
+
+        int direction = ReadInput();
+        if (direction < 0)
         {
             MoveLeft();
         }
-
-        if (Keyboard.current.dKey.wasPressedThisFrame ||
-        Keyboard.current.rightArrowKey.wasPressedThisFrame)
+        else if (direction > 0)
         {
             MoveRight();
         }
+
+        if (gameManager.GameEnded || !gameManager.AutoAdvance)
+        {
+            return;
+        }
+
+        // auto mode: the board climbs by itself, the player only steers
+        tickTimer -= Time.deltaTime;
+        if (tickTimer <= 0f)
+        {
+            Advance();
+        }
     }
 
-    void MoveLeft()
+    // Smooth lane change + a small squash when stepping. Time.deltaTime is 0 while paused, so it freezes by itself.
+    void Animate()
     {
-        if (currentColumn > 0)
-        {
-            currentColumn--;
-        }
-        UpdatePlayerPosition();
-        MoveAndCheck();
+        float t = 1f - Mathf.Exp(-slideSpeed * Time.deltaTime);
+        transform.position = Vector3.Lerp(transform.position, targetPosition, t);
+
+        squash = Mathf.MoveTowards(squash, 0f, squashRecovery * Time.deltaTime);
+        float s = squash * squashAmount;
+        transform.localScale = new Vector3(baseScale.x * (1f + s), baseScale.y * (1f - s), baseScale.z);
     }
 
-    void MoveRight()
+    // -1 = left, 1 = right, 0 = nothing. Keyboard, mouse click and touch all work
+    // pressing the left half of the screen goes left, the right half goes right
+    int ReadInput()
     {
-        if (currentColumn < 2)
+        Keyboard keyboard = Keyboard.current;
+        if (keyboard != null)
         {
-            currentColumn++;
+            if (keyboard.aKey.wasPressedThisFrame || keyboard.leftArrowKey.wasPressedThisFrame)
+            {
+                return -1;
+            }
+
+            if (keyboard.dKey.wasPressedThisFrame || keyboard.rightArrowKey.wasPressedThisFrame)
+            {
+                return 1;
+            }
         }
+
+        Pointer pointer = Pointer.current;
+        if (pointer != null && pointer.press.wasPressedThisFrame)
+        {
+            // clicking a button (e.g. the pause button) must not also move the player
+            if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
+            {
+                return 0;
+            }
+
+            return pointer.position.ReadValue().x < Screen.width * 0.5f ? -1 : 1;
+        }
+
+        return 0;
+    }
+
+    public void MoveLeft()
+    {
+        Move(-1);
+    }
+
+    public void MoveRight()
+    {
+        Move(1);
+    }
+
+    void Move(int direction)
+    {
+        if (!gameManager.GameStarted || gameManager.GameEnded || gameManager.IsPaused)
+        {
+            return;
+        }
+
+        int previousColumn = currentColumn;
+        currentColumn = Mathf.Clamp(currentColumn + direction, 0, 2);
         UpdatePlayerPosition();
-        MoveAndCheck();
+
+        if (currentColumn != previousColumn)
+        {
+            gameManager.PlayMoveSound();
+            squash = Mathf.Max(squash, 0.5f);
+        }
+
+        if (gameManager.AutoAdvance)
+        {
+            // walking sideways into an obstacle on your own row also counts as a hit
+            if (gameManager.BottomRowHasObstacle(currentColumn))
+            {
+                gameManager.GameOver();
+            }
+        }
+        else
+        {
+            // original behaviour: every move is also a step
+            Advance();
+        }
     }
 
     void UpdatePlayerPosition()
     {
-        transform.position = new Vector3(currentColumn - 1, -2f, -1f);
+        targetPosition = new Vector3(currentColumn - 1, -2f, -1f);
     }
 
-    void MoveAndCheck()
+    void Advance()
     {
         gameManager.MoveBoard();
-        
-        if(gameManager.BottomRowHasObstacle(currentColumn))
+
+        if (gameManager.BottomRowHasObstacle(currentColumn))
         {
             gameManager.GameOver();
         }
         else
         {
+            gameManager.PlayStepSound();
+            squash = 1f;
             gameManager.AddScore();
         }
+
+        tickTimer = gameManager.GetTickTime();
     }
 }
