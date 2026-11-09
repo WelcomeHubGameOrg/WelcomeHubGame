@@ -5,8 +5,6 @@ using UnityEngine.InputSystem;
 public class StairsPlayerController : MonoBehaviour
 {
     [Header("Animation")]
-    [Tooltip("How fast the player slides to the new lane.")]
-    [SerializeField] private float slideSpeed = 25f;
     [Tooltip("How much the player squashes when stepping (0 = none).")]
     [SerializeField] private float squashAmount = 0.2f;
     [SerializeField] private float squashRecovery = 12f;
@@ -66,12 +64,9 @@ public class StairsPlayerController : MonoBehaviour
         }
     }
 
-    // Smooth lane change + a small squash when stepping. Time.deltaTime is 0 while paused, so it freezes by itself.
+    // Small squash when stepping. Time.deltaTime is 0 while paused, so it freezes by itself.
     void Animate()
     {
-        float t = 1f - Mathf.Exp(-slideSpeed * Time.deltaTime);
-        transform.position = Vector3.Lerp(transform.position, targetPosition, t);
-
         squash = Mathf.MoveTowards(squash, 0f, squashRecovery * Time.deltaTime);
         float s = squash * squashAmount;
         transform.localScale = new Vector3(baseScale.x * (1f + s), baseScale.y * (1f - s), baseScale.z);
@@ -98,7 +93,7 @@ public class StairsPlayerController : MonoBehaviour
         Pointer pointer = Pointer.current;
         if (pointer != null && pointer.press.wasPressedThisFrame)
         {
-            // clicking a button (e.g. the pause button) must not also move the player
+            // clicking a button (the pause button) must not also move the player
             if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
             {
                 return 0;
@@ -155,6 +150,7 @@ public class StairsPlayerController : MonoBehaviour
     void UpdatePlayerPosition()
     {
         targetPosition = new Vector3(currentColumn - 1, -2f, -1f);
+        transform.position = targetPosition;
     }
 
     void Advance()

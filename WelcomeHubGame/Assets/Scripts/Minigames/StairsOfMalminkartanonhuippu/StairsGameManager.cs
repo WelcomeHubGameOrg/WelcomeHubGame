@@ -5,21 +5,32 @@ using TMPro;
 public class StairsGameManager : MonoBehaviour
 {
     private const string MutedKey = "StairsMuted";
+    private const string AutoAdvanceKey = "StairsAutoAdvance";
 
     private StairsRow[] rows = new StairsRow[5];
     private int score = 0;
     private int emptyRowStreak = 0;
     private int obstacleRowStreak = 0;
+    private float elapsedTime = 0f;      // Step Mode only
+    private bool timerRunning = false;   // starts with the first step
+    private int lastShownTenths = -1;
     private RectTransform hudBarRect;
     private RectTransform hudTextRect;
     private Camera hudCamera;
-    private const int MaxScore = 347;
+    private const int MaxScore = 7;
     public bool GameStarted { get; private set; }
     public bool GameEnded { get; private set; }
     public bool IsPaused { get; private set; }
     public bool IsMuted { get; private set; }
+    public bool HasWon { get; private set; }
+    public string WinMessage { get; private set; }
+    public int CountdownValue { get; private set; } // 3, 2, 1 while counting down after Resume, otherwise 0
+    public bool IsCountingDown => CountdownValue > 0;
+    private float countdownTimer;
     public int MaxScoreValue => MaxScore;
     [SerializeField] private GameObject obstaclePrefab;
+    [Tooltip("Optional: more obstacle types. Every new obstacle uses a random prefab out of this list plus the Obstacle Prefab above.")]
+    [SerializeField] private GameObject[] extraObstaclePrefabs;
     [SerializeField] private GameObject gameOverScreen;
     [SerializeField] private TMP_Text scoreText;
 
@@ -28,7 +39,7 @@ public class StairsGameManager : MonoBehaviour
 
     [Header("Live HUD (optional, created automatically if empty)")]
     [SerializeField] private TMP_Text liveScoreText;
-    [SerializeField] private Image progressFill; // Image Type must be "Filled"
+    [SerializeField] private Image progressFill;
 
     [Header("Movement")]
     [Tooltip("ON: the board climbs by itself and A/D only change lane. OFF: every A/D press is one step (original behaviour).")]
@@ -49,10 +60,6 @@ public class StairsGameManager : MonoBehaviour
     [Tooltip("At most this many rows in a row can have a cat, so there is always room to breathe (breaks long diagonal chains).")]
     [SerializeField] private int maxObstacleRowsInARow = 2;
 
-    [Header("Animation")]
-    [Tooltip("How long one step of the board takes (seconds). Keep it well below the fastest step time.")]
-    [SerializeField] private float rowSlideTime = 0.12f;
-
     [Header("Audio (all optional)")]
     [Tooltip("Set the music clip and tick Loop on this AudioSource. Play On Awake should be OFF.")]
     [SerializeField] private AudioSource musicSource;
@@ -63,11 +70,14 @@ public class StairsGameManager : MonoBehaviour
     [SerializeField] private AudioClip stepClip;
     [SerializeField] private AudioClip moveClip;
     [SerializeField] private AudioClip clickClip;
+    [Tooltip("Played on every number of the 3-2-1 after Resume (Auto Climb).")]
+    [SerializeField] private AudioClip countdownClip;
 
     public bool AutoAdvance => autoAdvance;
 
     void Awake()
     {
+        autoAdvance = PlayerPrefs.GetInt(AutoAdvanceKey, autoAdvance ? 1 : 0) == 1; // last chosen mode
         IsMuted = PlayerPrefs.GetInt(MutedKey, 0) == 1;
         AudioListener.volume = IsMuted ? 0f : 1f;
 
@@ -144,11 +154,25 @@ public class StairsGameManager : MonoBehaviour
 
     public void Resume()
     {
-        if (!IsPaused)
+        if (!IsPaused || IsCountingDown)
         {
             return;
         }
 
+        if (autoAdvance)
+        {
+            // Auto Climb: 3-2-1 first, the game stays frozen until it is over
+            CountdownValue = 3;
+            countdownTimer = 1f;
+            PlaySfx(countdownClip);
+            return;
+        }
+
+        FinishResume();
+    }
+
+    void FinishResume()
+    {
         IsPaused = false;
         Time.timeScale = 1f;
 
@@ -156,6 +180,19 @@ public class StairsGameManager : MonoBehaviour
         {
             musicSource.UnPause();
         }
+    }
+
+    // Mode choice on the start screen
+    public void SetAutoAdvance(bool value)
+    {
+        if (GameStarted)
+        {
+            return;
+        }
+
+        autoAdvance = value;
+        PlayerPrefs.SetInt(AutoAdvanceKey, value ? 1 : 0);
+        PlayerPrefs.Save();
     }
 
     public void SetMuted(bool muted)
@@ -192,7 +229,6 @@ public class StairsGameManager : MonoBehaviour
             cell.transform.SetParent(rowObject.transform);
             cell.transform.localPosition = new Vector3(column - 1, 0, 0);
 
-            // nothing uses physics, so the colliders are only wasted work
             Collider cellCollider = cell.GetComponent<Collider>();
             if (cellCollider != null)
             {
@@ -227,6 +263,19 @@ public class StairsGameManager : MonoBehaviour
         return score / Mathf.Max(1, scoreStep);
     }
 
+    GameObject PickObstaclePrefab()
+    {
+        int extraCount = extraObstaclePrefabs != null ? extraObstaclePrefabs.Length : 0;
+        int index = Random.Range(0, extraCount + 1);
+
+        if (index == 0 || extraObstaclePrefabs[index - 1] == null)
+        {
+            return obstaclePrefab;
+        }
+
+        return extraObstaclePrefabs[index - 1];
+    }
+
     float GetObstacleChance()
     {
         return Mathf.Min(maxObstacleChance, startObstacleChance + GetLevel() * obstacleChanceIncrease);
@@ -234,44 +283,32 @@ public class StairsGameManager : MonoBehaviour
 
     void CreateObstacle(StairsRow row, int column)
     {
-        if (obstaclePrefab == null)
+        GameObject prefab = PickObstaclePrefab();
+
+        if (prefab == null)
         {
             Debug.LogWarning("StairsGameManager: Obstacle Prefab is not assigned.");
             return;
         }
 
-        GameObject obstacle = Instantiate(obstaclePrefab);
+        GameObject obstacle = Instantiate(prefab);
         obstacle.transform.SetParent(row.transform);
         obstacle.transform.localPosition = new Vector3(column - 1, 0, -1);
-
-        foreach (Collider obstacleCollider in obstacle.GetComponentsInChildren<Collider>())
-        {
-            Destroy(obstacleCollider);
-        }
-
-        foreach (Collider2D obstacleCollider2D in obstacle.GetComponentsInChildren<Collider2D>())
-        {
-            Destroy(obstacleCollider2D);
-        }
 
         row.SetObstacle(obstacle);
     }
 
     public void MoveBoard()
     {
-        // the old bottom row slides out and removes itself
-        rows[4].SlideTo(new Vector3(0, 2 - 5, 0), rowSlideTime, true);
+        rows[4].DestroyRow();
 
         for (int row = 4; row > 0; row--)
         {
             rows[row] = rows[row - 1];
-            rows[row].SlideTo(new Vector3(0, 2 - row, 0), rowSlideTime, false);
-        }
 
-        // the new top row slides in from above
+            rows[row].transform.position = new Vector3(0, 2 - row, 0);
+        }
         CreateRow(0);
-        rows[0].transform.position = new Vector3(0, 3, 0);
-        rows[0].SlideTo(new Vector3(0, 2, 0), rowSlideTime, false);
     }
 
     public bool BottomRowHasObstacle(int column)
@@ -279,15 +316,76 @@ public class StairsGameManager : MonoBehaviour
         return rows[4].obstacle != null && Mathf.RoundToInt(rows[4].obstacle.transform.localPosition.x + 1) == column;
     }
 
-    // Seconds between automatic steps. Gets shorter every `scoreStep` points.
+    // Seconds between automatic steps
     public float GetTickTime()
     {
         return Mathf.Max(fastestStepTime, firstStepTime - GetLevel() * stepTimeDecrease);
     }
 
+    // Step Mode only: the timer starts with the first step and stops at game over / win.
+
+    void Update()
+    {
+        // 3-2-1 after Resume. Runs on unscaled time because the game is still frozen.
+        if (CountdownValue > 0)
+        {
+            countdownTimer -= Time.unscaledDeltaTime;
+
+            if (countdownTimer <= 0f)
+            {
+                CountdownValue--;
+                countdownTimer = 1f;
+
+                if (CountdownValue == 0)
+                {
+                    FinishResume();
+                }
+                else
+                {
+                    PlaySfx(countdownClip);
+                }
+            }
+
+            return;
+        }
+
+        if (autoAdvance || !timerRunning || GameEnded || IsPaused)
+        {
+            return;
+        }
+
+        elapsedTime += Time.deltaTime;
+
+        int tenths = Mathf.FloorToInt(elapsedTime * 10f);
+        if (tenths != lastShownTenths)
+        {
+            lastShownTenths = tenths;
+            UpdateHud();
+        }
+    }
+
+    public float GetElapsedTime()
+    {
+        return elapsedTime;
+    }
+
+    static string FormatTime(float time)
+    {
+        int minutes = Mathf.FloorToInt(time / 60f);
+        float seconds = time - minutes * 60f;
+        return minutes + ":" + seconds.ToString("00.0", System.Globalization.CultureInfo.InvariantCulture);
+    }
+
+    // extra line for the end screens, only in Step Mode
+    string TimeLine()
+    {
+        return autoAdvance ? "" : "\nTime: " + FormatTime(elapsedTime);
+    }
+
     public void AddScore()
     {
         score++;
+        timerRunning = true;
         UpdateHud();
 
         if (score >= MaxScore)
@@ -301,7 +399,6 @@ public class StairsGameManager : MonoBehaviour
         return score;
     }
 
-    // Builds the score text and the progress bar in code, so nothing has to be wired up in the editor.
     void CreateHudIfMissing()
     {
         Canvas canvas = FindAnyObjectByType<Canvas>();
@@ -409,7 +506,13 @@ public class StairsGameManager : MonoBehaviour
     {
         if (liveScoreText != null)
         {
-            liveScoreText.text = score + " / " + MaxScore;
+            string hudText = score + " / " + MaxScore;
+            if (!autoAdvance)
+            {
+                hudText += "   " + FormatTime(elapsedTime);
+            }
+
+            liveScoreText.text = hudText;
         }
 
         if (progressFill != null)
@@ -451,30 +554,32 @@ public class StairsGameManager : MonoBehaviour
         }
     }
 
-    public void Win()
-    {
-        if (GameEnded)
-        {
-            return;
-        }
 
-        GameEnded = true;
-        StopMusic();
-        PlaySfx(winClip);
-        Time.timeScale = 0;
-
-        string message = "You reached the top!\nScore: " + score + " / " + MaxScore;
-
-        if (winScreen != null)
+        public void Win()
         {
-            winScreen.SetActive(true);
+            if (GameEnded)
+            {
+                return;
+            }
+
+            GameEnded = true;
+            StopMusic();
+            PlaySfx(winClip);
+            Time.timeScale = 0;
+
+            if (winScreen != null)
+            {
+                // a win screen
+                winScreen.SetActive(true);
+            }
+            else
+            {
+                // otherwise StairsPauseMenu shows its own win screen (with a Menu button)
+                WinMessage = "Score: " + score + " / " + MaxScore + TimeLine();
+                HasWon = true;
+            }
         }
-        else
-        {
-            // no win screen assigned yet: reuse the game over screen with a different text
-            ShowEndScreen(gameOverScreen, message);
-        }
-    }
+   
 
     public void GameOver()
     {
@@ -486,7 +591,7 @@ public class StairsGameManager : MonoBehaviour
         GameEnded = true;
         StopMusic();
         PlaySfx(loseClip);
-        ShowEndScreen(gameOverScreen, "Game Over\nScore: " + score + " / " + MaxScore);
+        ShowEndScreen(gameOverScreen, "Game Over\nScore: " + score + " / " + MaxScore + TimeLine());
         Time.timeScale = 0;
     }
 }
