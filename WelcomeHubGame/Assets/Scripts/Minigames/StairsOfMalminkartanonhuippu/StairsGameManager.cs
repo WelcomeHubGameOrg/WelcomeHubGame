@@ -17,7 +17,7 @@ public class StairsGameManager : MonoBehaviour
     private RectTransform hudBarRect;
     private RectTransform hudTextRect;
     private Camera hudCamera;
-    private const int MaxScore = 7;
+    private const int MaxScore = 347;
     public bool GameStarted { get; private set; }
     public bool GameEnded { get; private set; }
     public bool IsPaused { get; private set; }
