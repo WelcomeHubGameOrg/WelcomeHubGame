@@ -11,7 +11,7 @@ using UnityEngine.Networking;
 /// </summary>
 public static class MinigameApiClient
 {
-    private const string BaseUrl = "https://backend-krdv.onrender.com/api";
+    private const string BaseUrl = "https://welcomegame.home.thak.de/api";
     private const string ApiKey = "upJvJBeIHvhJ5zknVgKzaV4Qzzry1byl";
     private const string GameSecret = "MetropoliaWelcomingGameSuperSecret2026";
 
