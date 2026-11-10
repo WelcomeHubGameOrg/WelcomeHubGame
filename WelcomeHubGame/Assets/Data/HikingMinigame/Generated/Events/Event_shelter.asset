@@ -27,8 +27,8 @@ MonoBehaviour:
       <Text>k__BackingField: Two hikers arrive late. You move your things and share
         the fire.
       <Effects>k__BackingField:
-      - rid: 6632890833693573300
-      - rid: 6632890833693573301
+      - rid: 6632890994790498469
+      - rid: 6632890994790498470
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -40,7 +40,7 @@ MonoBehaviour:
     <Outcome>k__BackingField:
       <Text>k__BackingField: A warm fire and a hot meal. Just what you needed.
       <Effects>k__BackingField:
-      - rid: 6632890833693573302
+      - rid: 6632890994790498471
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -53,8 +53,8 @@ MonoBehaviour:
       <Text>k__BackingField: The green wood smokes badly, and the trees will carry
         the scars for years.
       <Effects>k__BackingField:
-      - rid: 6632890833693573303
-      - rid: 6632890833693573304
+      - rid: 6632890994790498472
+      - rid: 6632890994790498473
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -64,26 +64,26 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 6632890833693573300
+    - rid: 6632890994790498469
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 20
         <Hazard>k__BackingField: 0
-    - rid: 6632890833693573301
+    - rid: 6632890994790498470
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 5
-    - rid: 6632890833693573302
+    - rid: 6632890994790498471
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 20
         <Hazard>k__BackingField: 0
-    - rid: 6632890833693573303
+    - rid: 6632890994790498472
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 15
         <Hazard>k__BackingField: 0
-    - rid: 6632890833693573304
+    - rid: 6632890994790498473
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -15

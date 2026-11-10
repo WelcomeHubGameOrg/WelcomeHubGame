@@ -14,6 +14,7 @@ namespace HikingMinigame.Events
         [field: SerializeField] public float Weight { get; internal set; } = 1f;
         [field: SerializeField] public int MaxOccurrences { get; internal set; } = UnlimitedOccurrences;
         [field: SerializeField] public EventTrigger Trigger { get; internal set; }
+        [field: SerializeField] public EventPlacement Placement { get; internal set; }
         [field: SerializeField] public EventChoice[] Choices { get; internal set; } = Array.Empty<EventChoice>();
 
         public bool HasOccurrenceLimit => MaxOccurrences != UnlimitedOccurrences;

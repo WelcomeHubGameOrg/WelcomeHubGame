@@ -26,7 +26,7 @@ MonoBehaviour:
       <Text>k__BackingField: It takes a while to get your boot off and on again,
         but it helps.
       <Effects>k__BackingField:
-      - rid: 6632890833693573240
+      - rid: 6632890994790498409
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -39,7 +39,7 @@ MonoBehaviour:
       <Text>k__BackingField: Every step hurts more. By the evening, your heel is
         raw.
       <Effects>k__BackingField:
-      - rid: 6632890833693573241
+      - rid: 6632890994790498410
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -49,12 +49,12 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 6632890833693573240
+    - rid: 6632890994790498409
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -5
         <Hazard>k__BackingField: 0
-    - rid: 6632890833693573241
+    - rid: 6632890994790498410
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -15

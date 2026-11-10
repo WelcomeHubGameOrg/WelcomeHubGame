@@ -27,21 +27,21 @@ MonoBehaviour:
       <Text>k__BackingField: Step by step you cross the bog. A crane calls in the
         distance.
       <Effects>k__BackingField:
-      - rid: 6632890833693573242
+      - rid: 6632890994790498411
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0.2
       <ReducedBy>k__BackingField: []
       <Outcome>k__BackingField:
         <Text>k__BackingField: A wet plank is slippery and you fall into the bog.
         <Effects>k__BackingField:
-        - rid: 6632890833693573243
+        - rid: 6632890994790498412
   - <Text>k__BackingField: Walk next to the boards
     <RequiredItem>k__BackingField: {fileID: 0}
     <Outcome>k__BackingField:
       <Text>k__BackingField: No risk of slipping, but every step crushes the bog
         moss.
       <Effects>k__BackingField:
-      - rid: 6632890833693573244
+      - rid: 6632890994790498413
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -51,16 +51,16 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 6632890833693573242
+    - rid: 6632890994790498411
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 5
-    - rid: 6632890833693573243
+    - rid: 6632890994790498412
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -10
         <Hazard>k__BackingField: 3
-    - rid: 6632890833693573244
+    - rid: 6632890994790498413
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -10

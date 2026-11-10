@@ -26,7 +26,7 @@ MonoBehaviour:
     <Outcome>k__BackingField:
       <Text>k__BackingField: After a while, they calmly wander into the forest.
       <Effects>k__BackingField:
-      - rid: 6632890833693573215
+      - rid: 6632890994790498384
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -38,8 +38,8 @@ MonoBehaviour:
     <Outcome>k__BackingField:
       <Text>k__BackingField: You give them space, but the detour is tiring.
       <Effects>k__BackingField:
-      - rid: 6632890833693573216
-      - rid: 6632890833693573217
+      - rid: 6632890994790498385
+      - rid: 6632890994790498386
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -51,7 +51,7 @@ MonoBehaviour:
     <Outcome>k__BackingField:
       <Text>k__BackingField: The herd scatters in panic. Reindeer are not pets.
       <Effects>k__BackingField:
-      - rid: 6632890833693573218
+      - rid: 6632890994790498387
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0.2
       <ReducedBy>k__BackingField: []
@@ -59,33 +59,33 @@ MonoBehaviour:
         <Text>k__BackingField: The herd scatters, and a startled reindeer knocks
           you over.
         <Effects>k__BackingField:
-        - rid: 6632890833693573219
-        - rid: 6632890833693573220
+        - rid: 6632890994790498388
+        - rid: 6632890994790498389
   references:
     version: 2
     RefIds:
-    - rid: 6632890833693573215
+    - rid: 6632890994790498384
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 10
-    - rid: 6632890833693573216
+    - rid: 6632890994790498385
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -5
         <Hazard>k__BackingField: 6
-    - rid: 6632890833693573217
+    - rid: 6632890994790498386
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 5
-    - rid: 6632890833693573218
+    - rid: 6632890994790498387
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -10
-    - rid: 6632890833693573219
+    - rid: 6632890994790498388
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -10
-    - rid: 6632890833693573220
+    - rid: 6632890994790498389
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -15

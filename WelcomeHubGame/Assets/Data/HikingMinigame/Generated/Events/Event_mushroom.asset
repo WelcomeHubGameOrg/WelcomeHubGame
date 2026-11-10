@@ -25,7 +25,7 @@ MonoBehaviour:
     <Outcome>k__BackingField:
       <Text>k__BackingField: Tasty! You got lucky, it was a porcini.
       <Effects>k__BackingField:
-      - rid: 6632890833693573221
+      - rid: 6632890994790498394
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0.5
       <ReducedBy>k__BackingField: []
@@ -33,7 +33,7 @@ MonoBehaviour:
         <Text>k__BackingField: That was a bad idea. Your stomach cramps for the next
           hour.
         <Effects>k__BackingField:
-        - rid: 6632890833693573222
+        - rid: 6632890994790498395
   - <Text>k__BackingField: Better not
     <RequiredItem>k__BackingField: {fileID: 0}
     <Outcome>k__BackingField:
@@ -48,12 +48,12 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 6632890833693573221
+    - rid: 6632890994790498394
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 10
         <Hazard>k__BackingField: 0
-    - rid: 6632890833693573222
+    - rid: 6632890994790498395
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -25

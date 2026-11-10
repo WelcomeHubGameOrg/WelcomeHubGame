@@ -55,6 +55,7 @@ Items can also unlock choices (`requiresItem`) and lower risks (`reducedBy`); se
 | `weight`         | no       | How often it comes up compared to other events. Default `1`                |
 | `maxOccurrences` | no       | How often it can happen per run. Leave out for unlimited                   |
 | `trigger`        | no       | `random` (default) or `start`. Exactly one event can be the start event: it opens the run (packing the bag) |
+| `placement`      | no       | `trail` (default) or `sky`. Sky events (e.g. clouds) are shown high above the trail but still trigger when the hiker passes underneath |
 | `choices`        | yes      | At least one choice                                                        |
 
 ### Choices

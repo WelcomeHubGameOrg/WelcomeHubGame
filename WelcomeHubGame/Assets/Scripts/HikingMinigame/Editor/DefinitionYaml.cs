@@ -35,6 +35,7 @@ namespace HikingMinigame.Editor
         public float Weight { get; set; } = 1f;
         public int? MaxOccurrences { get; set; }
         public string Trigger { get; set; } = "random";
+        public string Placement { get; set; } = "trail";
         public List<ChoiceYaml> Choices { get; set; }
     }
 

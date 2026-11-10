@@ -26,7 +26,7 @@ MonoBehaviour:
     <Outcome>k__BackingField:
       <Text>k__BackingField: The water is wonderfully refreshing.
       <Effects>k__BackingField:
-      - rid: 6632890833693573305
+      - rid: 6632890994790498474
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0.3
       <ReducedBy>k__BackingField: []
@@ -34,13 +34,13 @@ MonoBehaviour:
         <Text>k__BackingField: The water is much colder than it looked. You shiver
           for a long time.
         <Effects>k__BackingField:
-        - rid: 6632890833693573306
+        - rid: 6632890994790498475
   - <Text>k__BackingField: Filter some lake water
     <RequiredItem>k__BackingField: {fileID: 11400000, guid: 824d168d8118dcc72a60092b5c5fd916, type: 2}
     <Outcome>k__BackingField:
       <Text>k__BackingField: Clean, cold water. You drink as much as you like.
       <Effects>k__BackingField:
-      - rid: 6632890833693573307
+      - rid: 6632890994790498476
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -52,21 +52,21 @@ MonoBehaviour:
     <Outcome>k__BackingField:
       <Text>k__BackingField: Cool, fresh water.
       <Effects>k__BackingField:
-      - rid: 6632890833693573308
+      - rid: 6632890994790498477
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0.3
       <ReducedBy>k__BackingField: []
       <Outcome>k__BackingField:
         <Text>k__BackingField: Your stomach does not agree with the untreated water.
         <Effects>k__BackingField:
-        - rid: 6632890833693573309
+        - rid: 6632890994790498478
   - <Text>k__BackingField: Wash up with soap
     <RequiredItem>k__BackingField: {fileID: 0}
     <Outcome>k__BackingField:
       <Text>k__BackingField: You feel fresh, but the soap ends up in the lake.
       <Effects>k__BackingField:
-      - rid: 6632890833693573310
-      - rid: 6632890833693573311
+      - rid: 6632890994790498479
+      - rid: 6632890994790498480
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -76,37 +76,37 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 6632890833693573305
+    - rid: 6632890994790498474
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 15
         <Hazard>k__BackingField: 0
-    - rid: 6632890833693573306
+    - rid: 6632890994790498475
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -15
         <Hazard>k__BackingField: 2
-    - rid: 6632890833693573307
+    - rid: 6632890994790498476
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 10
         <Hazard>k__BackingField: 0
-    - rid: 6632890833693573308
+    - rid: 6632890994790498477
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 10
         <Hazard>k__BackingField: 0
-    - rid: 6632890833693573309
+    - rid: 6632890994790498478
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -15
         <Hazard>k__BackingField: 4
-    - rid: 6632890833693573310
+    - rid: 6632890994790498479
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 10
         <Hazard>k__BackingField: 0
-    - rid: 6632890833693573311
+    - rid: 6632890994790498480
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -10

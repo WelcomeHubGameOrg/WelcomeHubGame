@@ -320,6 +320,7 @@ events:
   - id: rain_shower
     name: Dark Clouds
     icon: landscape/Cloud_3.png
+    placement: sky
     description: The sky turns grey and the first heavy drops start to fall.
     weight: 2
     choices:
@@ -343,6 +344,7 @@ events:
   - id: thunderstorm
     name: Thunder!
     icon: landscape/Cloud_2.png
+    placement: sky
     description: >-
       Lightning flashes over the hills and heavy rain starts to pour. You are on an
       open ridge.

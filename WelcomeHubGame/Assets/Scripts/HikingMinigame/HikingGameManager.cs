@@ -16,6 +16,7 @@ namespace HikingMinigame
 
         public static HikingGameManager Instance { get; private set; }
 
+        public event Action RunStarted;
         public event Action StatsChanged;
         public event Action GameOver;
 
@@ -24,7 +25,10 @@ namespace HikingMinigame
         public int NatureScore { get; private set; }
         public int MaxNatureScore => _maxNatureScore;
         public float ElapsedSeconds { get; private set; }
+        public bool IsRunning { get; private set; }
         public bool IsGameOver { get; private set; }
+        public DateTime RunStartedAt { get; private set; }
+        public DateTime RunEndedAt { get; private set; }
         public Inventory Inventory { get; private set; }
         public HikeScore Score => _scoring.Calculate(ElapsedSeconds, NatureScore, _maxNatureScore);
 
@@ -44,7 +48,7 @@ namespace HikingMinigame
 
         private void Update()
         {
-            if (IsGameOver)
+            if (!IsRunning)
                 return;
 
             ElapsedSeconds += Time.deltaTime;
@@ -55,6 +59,16 @@ namespace HikingMinigame
         {
             if (Instance == this)
                 Instance = null;
+        }
+
+        public void StartRun()
+        {
+            if (IsRunning || IsGameOver)
+                return;
+
+            IsRunning = true;
+            RunStartedAt = DateTime.UtcNow;
+            RunStarted?.Invoke();
         }
 
         public StaminaChange ChangeStamina(int amount, HazardType hazard)
@@ -121,7 +135,9 @@ namespace HikingMinigame
 
         private void EndRun()
         {
+            IsRunning = false;
             IsGameOver = true;
+            RunEndedAt = DateTime.UtcNow;
             GameOver?.Invoke();
         }
     }

@@ -26,8 +26,8 @@ MonoBehaviour:
     <Outcome>k__BackingField:
       <Text>k__BackingField: Cold food, but the forest is safe.
       <Effects>k__BackingField:
-      - rid: 6632890833693573278
-      - rid: 6632890833693573279
+      - rid: 6632890994790498452
+      - rid: 6632890994790498453
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -40,8 +40,8 @@ MonoBehaviour:
       <Text>k__BackingField: A hot meal, but one spark could start a forest fire.
         That was irresponsible.
       <Effects>k__BackingField:
-      - rid: 6632890833693573280
-      - rid: 6632890833693573281
+      - rid: 6632890994790498454
+      - rid: 6632890994790498455
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -51,21 +51,21 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 6632890833693573278
+    - rid: 6632890994790498452
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 5
         <Hazard>k__BackingField: 0
-    - rid: 6632890833693573279
+    - rid: 6632890994790498453
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 5
-    - rid: 6632890833693573280
+    - rid: 6632890994790498454
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 15
         <Hazard>k__BackingField: 0
-    - rid: 6632890833693573281
+    - rid: 6632890994790498455
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -20

@@ -27,7 +27,7 @@ MonoBehaviour:
       <Text>k__BackingField: You sit down, drink some water and feel your energy
         coming back.
       <Effects>k__BackingField:
-      - rid: 6632890833693573209
+      - rid: 6632890994790498378
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -40,8 +40,8 @@ MonoBehaviour:
       <Text>k__BackingField: You sit very still. A Siberian jay lands on a branch
         right next to you.
       <Effects>k__BackingField:
-      - rid: 6632890833693573210
-      - rid: 6632890833693573211
+      - rid: 6632890994790498379
+      - rid: 6632890994790498380
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -51,17 +51,17 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 6632890833693573209
+    - rid: 6632890994790498378
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 10
         <Hazard>k__BackingField: 0
-    - rid: 6632890833693573210
+    - rid: 6632890994790498379
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 5
         <Hazard>k__BackingField: 0
-    - rid: 6632890833693573211
+    - rid: 6632890994790498380
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 5

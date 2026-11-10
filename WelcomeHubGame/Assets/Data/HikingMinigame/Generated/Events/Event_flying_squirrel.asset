@@ -28,7 +28,7 @@ MonoBehaviour:
       <Text>k__BackingField: It glides from tree to tree. You will remember this
         moment.
       <Effects>k__BackingField:
-      - rid: 6632890833693573238
+      - rid: 6632890994790498407
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -41,7 +41,7 @@ MonoBehaviour:
       <Text>k__BackingField: You step off the trail and it flees into the canopy.
         The photo is blurry.
       <Effects>k__BackingField:
-      - rid: 6632890833693573239
+      - rid: 6632890994790498408
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -51,11 +51,11 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 6632890833693573238
+    - rid: 6632890994790498407
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 10
-    - rid: 6632890833693573239
+    - rid: 6632890994790498408
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -5

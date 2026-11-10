@@ -27,7 +27,7 @@ MonoBehaviour:
       <Text>k__BackingField: You crouch low between small trees until the storm moves
         on. Wet, but safe.
       <Effects>k__BackingField:
-      - rid: 6632890833693573275
+      - rid: 6632890994790498449
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -40,7 +40,7 @@ MonoBehaviour:
       <Text>k__BackingField: You make it over the ridge, soaked and with your heart
         pounding.
       <Effects>k__BackingField:
-      - rid: 6632890833693573276
+      - rid: 6632890994790498450
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0.3
       <ReducedBy>k__BackingField: []
@@ -48,21 +48,21 @@ MonoBehaviour:
         <Text>k__BackingField: Lightning strikes a tree nearby. You throw yourself
           on the rocks and get hurt.
         <Effects>k__BackingField:
-        - rid: 6632890833693573277
+        - rid: 6632890994790498451
   references:
     version: 2
     RefIds:
-    - rid: 6632890833693573275
+    - rid: 6632890994790498449
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -10
         <Hazard>k__BackingField: 1
-    - rid: 6632890833693573276
+    - rid: 6632890994790498450
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -15
         <Hazard>k__BackingField: 1
-    - rid: 6632890833693573277
+    - rid: 6632890994790498451
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -25

@@ -26,7 +26,7 @@ MonoBehaviour:
     <Outcome>k__BackingField:
       <Text>k__BackingField: They bite you everywhere they can reach.
       <Effects>k__BackingField:
-      - rid: 6632890833693573227
+      - rid: 6632890994790498396
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -38,7 +38,7 @@ MonoBehaviour:
     <Outcome>k__BackingField:
       <Text>k__BackingField: You outrun most of them, but you are out of breath.
       <Effects>k__BackingField:
-      - rid: 6632890833693573228
+      - rid: 6632890994790498397
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -51,7 +51,7 @@ MonoBehaviour:
       <Text>k__BackingField: The smoke works, but making fires outside fire places
         harms the forest.
       <Effects>k__BackingField:
-      - rid: 6632890833693573229
+      - rid: 6632890994790498398
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -61,17 +61,17 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 6632890833693573227
+    - rid: 6632890994790498396
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -12
         <Hazard>k__BackingField: 5
-    - rid: 6632890833693573228
+    - rid: 6632890994790498397
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -8
         <Hazard>k__BackingField: 6
-    - rid: 6632890833693573229
+    - rid: 6632890994790498398
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -10

@@ -26,7 +26,7 @@ MonoBehaviour:
       <Text>k__BackingField: You pack the rain jacket. Finnish weather can change
         fast.
       <Effects>k__BackingField:
-      - rid: 6632890833693573295
+      - rid: 6632890994790498440
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -38,7 +38,7 @@ MonoBehaviour:
     <Outcome>k__BackingField:
       <Text>k__BackingField: You pack the first aid kit, just in case.
       <Effects>k__BackingField:
-      - rid: 6632890833693573296
+      - rid: 6632890994790498441
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -51,7 +51,7 @@ MonoBehaviour:
       <Text>k__BackingField: You pack the water filter. There is water everywhere
         in Finland.
       <Effects>k__BackingField:
-      - rid: 6632890833693573297
+      - rid: 6632890994790498442
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -64,7 +64,7 @@ MonoBehaviour:
       <Text>k__BackingField: You pack the mosquito repellent. You will thank yourself
         later.
       <Effects>k__BackingField:
-      - rid: 6632890833693573298
+      - rid: 6632890994790498443
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -76,7 +76,7 @@ MonoBehaviour:
     <Outcome>k__BackingField:
       <Text>k__BackingField: You pack an energy bar for when things get tough.
       <Effects>k__BackingField:
-      - rid: 6632890833693573299
+      - rid: 6632890994790498444
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -86,23 +86,23 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 6632890833693573295
+    - rid: 6632890994790498440
       type: {class: GiveItemEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Item>k__BackingField: {fileID: 11400000, guid: 7dc1f61f69a80d71cab30a2ce395b651, type: 2}
-    - rid: 6632890833693573296
+    - rid: 6632890994790498441
       type: {class: GiveItemEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Item>k__BackingField: {fileID: 11400000, guid: dd282f281313d1742b4c6cc3cbb224df, type: 2}
-    - rid: 6632890833693573297
+    - rid: 6632890994790498442
       type: {class: GiveItemEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Item>k__BackingField: {fileID: 11400000, guid: 824d168d8118dcc72a60092b5c5fd916, type: 2}
-    - rid: 6632890833693573298
+    - rid: 6632890994790498443
       type: {class: GiveItemEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Item>k__BackingField: {fileID: 11400000, guid: 52667a6328931d3db8e7c2a0ea488ac8, type: 2}
-    - rid: 6632890833693573299
+    - rid: 6632890994790498444
       type: {class: GiveItemEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Item>k__BackingField: {fileID: 11400000, guid: ae668b24e0ff3f0b581e077958bad971, type: 2}

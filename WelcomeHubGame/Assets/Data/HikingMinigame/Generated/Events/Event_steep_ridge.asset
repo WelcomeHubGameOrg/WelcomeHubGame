@@ -27,8 +27,8 @@ MonoBehaviour:
       <Text>k__BackingField: Forest and lakes as far as you can see. Worth every
         step.
       <Effects>k__BackingField:
-      - rid: 6632890833693573267
-      - rid: 6632890833693573268
+      - rid: 6632890994790498431
+      - rid: 6632890994790498432
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0.3
       <ReducedBy>k__BackingField: []
@@ -36,13 +36,13 @@ MonoBehaviour:
         <Text>k__BackingField: Loose rocks slip under your feet and you scrape your
           knee.
         <Effects>k__BackingField:
-        - rid: 6632890833693573269
+        - rid: 6632890994790498433
   - <Text>k__BackingField: Take the path around
     <RequiredItem>k__BackingField: {fileID: 0}
     <Outcome>k__BackingField:
       <Text>k__BackingField: Longer, but easy going.
       <Effects>k__BackingField:
-      - rid: 6632890833693573270
+      - rid: 6632890994790498434
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -52,21 +52,21 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 6632890833693573267
+    - rid: 6632890994790498431
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -5
         <Hazard>k__BackingField: 6
-    - rid: 6632890833693573268
+    - rid: 6632890994790498432
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 10
-    - rid: 6632890833693573269
+    - rid: 6632890994790498433
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -15
         <Hazard>k__BackingField: 3
-    - rid: 6632890833693573270
+    - rid: 6632890994790498434
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -5

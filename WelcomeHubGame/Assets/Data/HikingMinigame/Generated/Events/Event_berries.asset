@@ -26,7 +26,7 @@ MonoBehaviour:
     <Outcome>k__BackingField:
       <Text>k__BackingField: Sweet and juicy. Your fingers turn blue.
       <Effects>k__BackingField:
-      - rid: 6632890833693573271
+      - rid: 6632890994790498445
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -39,8 +39,8 @@ MonoBehaviour:
       <Text>k__BackingField: You eat your fill and leave little for the birds and
         animals.
       <Effects>k__BackingField:
-      - rid: 6632890833693573272
-      - rid: 6632890833693573273
+      - rid: 6632890994790498446
+      - rid: 6632890994790498447
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -52,7 +52,7 @@ MonoBehaviour:
     <Outcome>k__BackingField:
       <Text>k__BackingField: A bird lands in the bush as soon as you walk on.
       <Effects>k__BackingField:
-      - rid: 6632890833693573274
+      - rid: 6632890994790498448
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -62,21 +62,21 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 6632890833693573271
+    - rid: 6632890994790498445
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 10
         <Hazard>k__BackingField: 0
-    - rid: 6632890833693573272
+    - rid: 6632890994790498446
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 20
         <Hazard>k__BackingField: 0
-    - rid: 6632890833693573273
+    - rid: 6632890994790498447
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -10
-    - rid: 6632890833693573274
+    - rid: 6632890994790498448
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 5

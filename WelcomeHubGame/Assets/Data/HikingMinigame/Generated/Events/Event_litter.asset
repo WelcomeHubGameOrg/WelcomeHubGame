@@ -26,8 +26,8 @@ MonoBehaviour:
     <Outcome>k__BackingField:
       <Text>k__BackingField: Your bag is a bit heavier, but the forest is cleaner.
       <Effects>k__BackingField:
-      - rid: 6632890833693573256
-      - rid: 6632890833693573257
+      - rid: 6632890994790498425
+      - rid: 6632890994790498426
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -40,7 +40,7 @@ MonoBehaviour:
       <Text>k__BackingField: Out of sight, but plastic stays in nature for hundreds
         of years.
       <Effects>k__BackingField:
-      - rid: 6632890833693573258
+      - rid: 6632890994790498427
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -61,16 +61,16 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 6632890833693573256
+    - rid: 6632890994790498425
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -3
         <Hazard>k__BackingField: 6
-    - rid: 6632890833693573257
+    - rid: 6632890994790498426
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 10
-    - rid: 6632890833693573258
+    - rid: 6632890994790498427
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -5

@@ -24,14 +24,20 @@ namespace HikingMinigame.Events
                 gameObject.SetActive(false);
         }
 
-        public void ResetAndActivate(Vector3 spawnPosition, float speed, EventDefinition definition)
+        public void ResetAndActivate(Vector3 trailPosition, float heightAboveTrail, float speed, EventDefinition definition)
         {
-            transform.position = spawnPosition;
+            transform.position = trailPosition + Vector3.up * heightAboveTrail;
+            KeepTriggerOnTrail(heightAboveTrail);
             _scrollSpeed = speed;
             GetComponent<SpriteRenderer>().sprite = definition.Icon;
 
             _eventDefinition = definition;
             gameObject.SetActive(true);
+        }
+
+        private void KeepTriggerOnTrail(float heightAboveTrail)
+        {
+            GetComponent<Collider2D>().offset = Vector2.down * (heightAboveTrail / transform.lossyScale.y);
         }
 
         private void CacheCameraLeftEdge()

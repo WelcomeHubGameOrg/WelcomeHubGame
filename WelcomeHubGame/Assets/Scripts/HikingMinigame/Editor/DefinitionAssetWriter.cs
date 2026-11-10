@@ -58,6 +58,7 @@ namespace HikingMinigame.Editor
             definition.Weight = yaml.Weight;
             definition.MaxOccurrences = yaml.MaxOccurrences ?? EventDefinition.UnlimitedOccurrences;
             definition.Trigger = YamlEnum.Parse<EventTrigger>(yaml.Trigger);
+            definition.Placement = YamlEnum.Parse<EventPlacement>(yaml.Placement);
             definition.Choices = yaml.Choices.Select(BuildChoice).ToArray();
 
             EditorUtility.SetDirty(definition);

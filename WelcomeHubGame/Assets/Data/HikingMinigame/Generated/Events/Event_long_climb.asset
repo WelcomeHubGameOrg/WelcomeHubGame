@@ -26,7 +26,7 @@ MonoBehaviour:
       <Text>k__BackingField: Slow and steady. Your legs burn, but you make it to
         the top.
       <Effects>k__BackingField:
-      - rid: 6632890833693573259
+      - rid: 6632890994790498428
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -39,8 +39,8 @@ MonoBehaviour:
       <Text>k__BackingField: It takes more out of you, but you spot a woodpecker
         and an old pine full of character.
       <Effects>k__BackingField:
-      - rid: 6632890833693573260
-      - rid: 6632890833693573261
+      - rid: 6632890994790498429
+      - rid: 6632890994790498430
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -50,17 +50,17 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 6632890833693573259
+    - rid: 6632890994790498428
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -8
         <Hazard>k__BackingField: 6
-    - rid: 6632890833693573260
+    - rid: 6632890994790498429
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -10
         <Hazard>k__BackingField: 6
-    - rid: 6632890833693573261
+    - rid: 6632890994790498430
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 5

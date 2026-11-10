@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,9 +23,9 @@ namespace HikingMinigame
         [SerializeField] private string _continueLabel = "Continue";
         [SerializeField] private string _gameOverMessage = "You are too exhausted to go on.";
         [SerializeField] private string _summaryTitle = "The hike is over";
-        [SerializeField] private string _finishLabel = "Back to the map";
-
         private Coroutine _slowdown;
+
+        public event Action SummaryClosed;
 
         private static HikingGameManager Game => HikingGameManager.Instance;
 
@@ -63,7 +64,13 @@ namespace HikingMinigame
                 $"Total: {score.Total} points");
 
             OpenPanel(_summaryTitle, summary);
-            AddButton(_finishLabel, () => Game.Finish(score.IsWin));
+            AddButton(_continueLabel, CloseSummary);
+        }
+
+        private void CloseSummary()
+        {
+            HidePanel();
+            SummaryClosed?.Invoke();
         }
 
         private void OpenPanel(string title, string text)
@@ -117,11 +124,16 @@ namespace HikingMinigame
                 return;
             }
 
+            HidePanel();
+            Time.timeScale = 1f;
+        }
+
+        private void HidePanel()
+        {
             if (_slowdown != null)
                 StopCoroutine(_slowdown);
 
             _panel.SetActive(false);
-            Time.timeScale = 1f;
         }
 
         private Button AddButton(string label, UnityAction onClick)

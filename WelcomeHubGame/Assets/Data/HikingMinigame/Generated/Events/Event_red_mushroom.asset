@@ -26,7 +26,7 @@ MonoBehaviour:
     <Outcome>k__BackingField:
       <Text>k__BackingField: You feel terrible. It was a fly agaric, and it's poisonous.
       <Effects>k__BackingField:
-      - rid: 6632890833693573212
+      - rid: 6632890994790498381
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -38,7 +38,7 @@ MonoBehaviour:
     <Outcome>k__BackingField:
       <Text>k__BackingField: Poisonous or not, it was part of the forest.
       <Effects>k__BackingField:
-      - rid: 6632890833693573213
+      - rid: 6632890994790498382
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -51,7 +51,7 @@ MonoBehaviour:
       <Text>k__BackingField: A fly agaric. Beautiful to look at, poisonous to eat,
         and important for the trees around it.
       <Effects>k__BackingField:
-      - rid: 6632890833693573214
+      - rid: 6632890994790498383
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -61,16 +61,16 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 6632890833693573212
+    - rid: 6632890994790498381
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -30
         <Hazard>k__BackingField: 4
-    - rid: 6632890833693573213
+    - rid: 6632890994790498382
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -5
-    - rid: 6632890833693573214
+    - rid: 6632890994790498383
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 5

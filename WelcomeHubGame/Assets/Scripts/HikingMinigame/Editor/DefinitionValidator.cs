@@ -94,6 +94,9 @@ namespace HikingMinigame.Editor
             if (!YamlEnum.TryParse<EventTrigger>(definition.Trigger, out _))
                 Fail(location, $"unknown trigger '{definition.Trigger}'. Use one of: {YamlEnum.Options<EventTrigger>()}.");
 
+            if (!YamlEnum.TryParse<EventPlacement>(definition.Placement, out _))
+                Fail(location, $"unknown placement '{definition.Placement}'. Use one of: {YamlEnum.Options<EventPlacement>()}.");
+
             var choices = definition.Choices.OrEmpty().ToList();
             if (choices.Count == 0)
                 Fail(location, "needs at least one choice.");

@@ -26,7 +26,7 @@ MonoBehaviour:
     <Outcome>k__BackingField:
       <Text>k__BackingField: Fresh, clean water. You feel alive again.
       <Effects>k__BackingField:
-      - rid: 6632890833693573223
+      - rid: 6632890994790498390
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -38,20 +38,20 @@ MonoBehaviour:
     <Outcome>k__BackingField:
       <Text>k__BackingField: Cold and delicious.
       <Effects>k__BackingField:
-      - rid: 6632890833693573224
+      - rid: 6632890994790498391
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0.4
       <ReducedBy>k__BackingField: []
       <Outcome>k__BackingField:
         <Text>k__BackingField: An hour later, your stomach starts to rumble. Badly.
         <Effects>k__BackingField:
-        - rid: 6632890833693573225
+        - rid: 6632890994790498392
   - <Text>k__BackingField: Walk on thirsty
     <RequiredItem>k__BackingField: {fileID: 0}
     <Outcome>k__BackingField:
       <Text>k__BackingField: Your mouth is dry and every step feels heavier.
       <Effects>k__BackingField:
-      - rid: 6632890833693573226
+      - rid: 6632890994790498393
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -61,22 +61,22 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 6632890833693573223
+    - rid: 6632890994790498390
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 10
         <Hazard>k__BackingField: 0
-    - rid: 6632890833693573224
+    - rid: 6632890994790498391
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 10
         <Hazard>k__BackingField: 0
-    - rid: 6632890833693573225
+    - rid: 6632890994790498392
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -15
         <Hazard>k__BackingField: 4
-    - rid: 6632890833693573226
+    - rid: 6632890994790498393
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -10

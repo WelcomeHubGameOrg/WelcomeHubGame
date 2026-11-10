@@ -27,7 +27,7 @@ MonoBehaviour:
       <Text>k__BackingField: There it is. You missed the turn. Annoying, but you
         are back on track.
       <Effects>k__BackingField:
-      - rid: 6632890833693573288
+      - rid: 6632890994790498462
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -39,7 +39,7 @@ MonoBehaviour:
     <Outcome>k__BackingField:
       <Text>k__BackingField: Lucky guess! The trail appears right in front of you.
       <Effects>k__BackingField:
-      - rid: 6632890833693573289
+      - rid: 6632890994790498463
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0.5
       <ReducedBy>k__BackingField: []
@@ -47,26 +47,26 @@ MonoBehaviour:
         <Text>k__BackingField: You wander through the forest for ages before you
           find the trail again.
         <Effects>k__BackingField:
-        - rid: 6632890833693573290
-        - rid: 6632890833693573291
+        - rid: 6632890994790498464
+        - rid: 6632890994790498465
   references:
     version: 2
     RefIds:
-    - rid: 6632890833693573288
+    - rid: 6632890994790498462
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -8
         <Hazard>k__BackingField: 6
-    - rid: 6632890833693573289
+    - rid: 6632890994790498463
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -5
-    - rid: 6632890833693573290
+    - rid: 6632890994790498464
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -15
         <Hazard>k__BackingField: 6
-    - rid: 6632890833693573291
+    - rid: 6632890994790498465
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -5

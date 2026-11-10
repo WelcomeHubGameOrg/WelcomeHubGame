@@ -26,7 +26,7 @@ MonoBehaviour:
     <Outcome>k__BackingField:
       <Text>k__BackingField: You are soaked to the skin within minutes.
       <Effects>k__BackingField:
-      - rid: 6632890833693573265
+      - rid: 6632890994790498438
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -45,16 +45,16 @@ MonoBehaviour:
         <Text>k__BackingField: The rain doesn't stop, and water drips through the
           branches.
         <Effects>k__BackingField:
-        - rid: 6632890833693573266
+        - rid: 6632890994790498439
   references:
     version: 2
     RefIds:
-    - rid: 6632890833693573265
+    - rid: 6632890994790498438
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -15
         <Hazard>k__BackingField: 1
-    - rid: 6632890833693573266
+    - rid: 6632890994790498439
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -10

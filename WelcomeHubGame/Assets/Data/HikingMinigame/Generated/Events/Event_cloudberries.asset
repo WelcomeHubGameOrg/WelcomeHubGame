@@ -26,8 +26,8 @@ MonoBehaviour:
     <Outcome>k__BackingField:
       <Text>k__BackingField: They taste like honey and sunshine.
       <Effects>k__BackingField:
-      - rid: 6632890833693573282
-      - rid: 6632890833693573283
+      - rid: 6632890994790498456
+      - rid: 6632890994790498457
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -40,42 +40,42 @@ MonoBehaviour:
       <Text>k__BackingField: You collect a whole bag, but your feet trample the fragile
         bog moss.
       <Effects>k__BackingField:
-      - rid: 6632890833693573284
-      - rid: 6632890833693573285
+      - rid: 6632890994790498458
+      - rid: 6632890994790498459
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0.4
       <ReducedBy>k__BackingField: []
       <Outcome>k__BackingField:
         <Text>k__BackingField: You sink up to your knee in cold bog water.
         <Effects>k__BackingField:
-        - rid: 6632890833693573286
-        - rid: 6632890833693573287
+        - rid: 6632890994790498460
+        - rid: 6632890994790498461
   references:
     version: 2
     RefIds:
-    - rid: 6632890833693573282
+    - rid: 6632890994790498456
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 15
         <Hazard>k__BackingField: 0
-    - rid: 6632890833693573283
+    - rid: 6632890994790498457
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 5
-    - rid: 6632890833693573284
+    - rid: 6632890994790498458
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 25
         <Hazard>k__BackingField: 0
-    - rid: 6632890833693573285
+    - rid: 6632890994790498459
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -10
-    - rid: 6632890833693573286
+    - rid: 6632890994790498460
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -10
-    - rid: 6632890833693573287
+    - rid: 6632890994790498461
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -10

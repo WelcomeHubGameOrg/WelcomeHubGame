@@ -13,12 +13,28 @@ namespace HikingMinigame.Events
         [SerializeField] private DialogueManager _dialogue;
         [SerializeField, FormerlySerializedAs("spawnPosition")] private Vector3 _spawnPosition;
         [SerializeField, FormerlySerializedAs("roadSpeed")] private float _roadSpeed;
+        [SerializeField] private float _skyHeight = 6f;
 
         private EventPicker _picker;
 
+        private static HikingGameManager Game => HikingGameManager.Instance;
         private bool IsRoadFree => !_eventObject.gameObject.activeSelf;
 
         private void Start()
+        {
+            if (Game.IsRunning)
+                BeginSpawning();
+            else
+                Game.RunStarted += BeginSpawning;
+        }
+
+        private void OnDestroy()
+        {
+            if (Game != null)
+                Game.RunStarted -= BeginSpawning;
+        }
+
+        private void BeginSpawning()
         {
             _picker = new EventPicker(_catalog.RandomEvents);
 
@@ -28,6 +44,9 @@ namespace HikingMinigame.Events
 
             StartCoroutine(SpawnLoop());
         }
+
+        private float HeightAboveTrail(EventDefinition definition) =>
+            definition.Placement == EventPlacement.Sky ? _skyHeight : 0f;
 
         private IEnumerator SpawnLoop()
         {
@@ -39,7 +58,7 @@ namespace HikingMinigame.Events
                 if (!_picker.TryPick(out var next))
                     yield break;
 
-                _eventObject.ResetAndActivate(_spawnPosition, _roadSpeed, next);
+                _eventObject.ResetAndActivate(_spawnPosition, HeightAboveTrail(next), _roadSpeed, next);
             }
         }
     }

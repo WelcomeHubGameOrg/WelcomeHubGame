@@ -27,7 +27,7 @@ MonoBehaviour:
       <Text>k__BackingField: Bears avoid people who make themselves heard. You never
         see it.
       <Effects>k__BackingField:
-      - rid: 6632890833693573248
+      - rid: 6632890994790498421
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -40,7 +40,7 @@ MonoBehaviour:
       <Text>k__BackingField: The tracks disappear in the thick forest. Probably for
         the best.
       <Effects>k__BackingField:
-      - rid: 6632890833693573249
+      - rid: 6632890994790498422
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0.3
       <ReducedBy>k__BackingField: []
@@ -48,24 +48,24 @@ MonoBehaviour:
         <Text>k__BackingField: You hear a deep growl and run. You fall hard on the
           rocky ground.
         <Effects>k__BackingField:
-        - rid: 6632890833693573250
-        - rid: 6632890833693573251
+        - rid: 6632890994790498423
+        - rid: 6632890994790498424
   references:
     version: 2
     RefIds:
-    - rid: 6632890833693573248
+    - rid: 6632890994790498421
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 5
-    - rid: 6632890833693573249
+    - rid: 6632890994790498422
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -10
-    - rid: 6632890833693573250
+    - rid: 6632890994790498423
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -10
-    - rid: 6632890833693573251
+    - rid: 6632890994790498424
       type: {class: ModifyStaminaEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: -20

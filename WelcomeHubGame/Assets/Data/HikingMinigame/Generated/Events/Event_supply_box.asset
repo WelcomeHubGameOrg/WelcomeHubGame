@@ -26,7 +26,7 @@ MonoBehaviour:
     <Outcome>k__BackingField:
       <Text>k__BackingField: You find an energy bar and put it in your bag.
       <Effects>k__BackingField:
-      - rid: 6632890833693573230
+      - rid: 6632890994790498399
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -38,7 +38,7 @@ MonoBehaviour:
     <Outcome>k__BackingField:
       <Text>k__BackingField: You find a small first aid kit and put it in your bag.
       <Effects>k__BackingField:
-      - rid: 6632890833693573231
+      - rid: 6632890994790498400
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -50,7 +50,7 @@ MonoBehaviour:
     <Outcome>k__BackingField:
       <Text>k__BackingField: Half a bottle left. You put it in your bag.
       <Effects>k__BackingField:
-      - rid: 6632890833693573232
+      - rid: 6632890994790498401
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -62,7 +62,7 @@ MonoBehaviour:
     <Outcome>k__BackingField:
       <Text>k__BackingField: You feel good about leaving it for the next hiker.
       <Effects>k__BackingField:
-      - rid: 6632890833693573233
+      - rid: 6632890994790498402
     <Risk>k__BackingField:
       <Chance>k__BackingField: 0
       <ReducedBy>k__BackingField: []
@@ -72,19 +72,19 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 6632890833693573230
+    - rid: 6632890994790498399
       type: {class: GiveItemEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Item>k__BackingField: {fileID: 11400000, guid: ae668b24e0ff3f0b581e077958bad971, type: 2}
-    - rid: 6632890833693573231
+    - rid: 6632890994790498400
       type: {class: GiveItemEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Item>k__BackingField: {fileID: 11400000, guid: dd282f281313d1742b4c6cc3cbb224df, type: 2}
-    - rid: 6632890833693573232
+    - rid: 6632890994790498401
       type: {class: GiveItemEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Item>k__BackingField: {fileID: 11400000, guid: 52667a6328931d3db8e7c2a0ea488ac8, type: 2}
-    - rid: 6632890833693573233
+    - rid: 6632890994790498402
       type: {class: ModifyNatureScoreEffect, ns: HikingMinigame.Effects, asm: Assembly-CSharp}
       data:
         <Amount>k__BackingField: 5
