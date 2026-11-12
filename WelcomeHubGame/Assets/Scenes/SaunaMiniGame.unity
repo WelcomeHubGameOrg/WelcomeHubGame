@@ -372,7 +372,7 @@ MonoBehaviour:
   leftLimit: -6
   rightLimit: 6
   requiredPours: 10
-  potWidth: 1.5
+  waterFallSpeed: 5
 --- !u!4 &361558774
 Transform:
   m_ObjectHideFlags: 0
