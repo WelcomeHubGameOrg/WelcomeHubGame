@@ -1,7 +1,4 @@
 # 🎮 Metropolia Welcoming Game
-> [!CAUTION]
-> **This README file is only a draft!**
-
 Welcome to the **Innovation Project: Software/Game Development** repository! 
 
 This project aims to create an interactive, web-based 2D "Welcoming Game" for new international students at [Metropolia University of Applied Sciences](https://opiskelijan.metropolia.fi/en/guidance-and-support/welcome-hub). 
@@ -49,7 +46,24 @@ Direct pushes to the `main` branch are **blocked**.
 
 ---
 
+## Run WebGL application after pipeline has finished
+1. Download WebGL-Build zip-file from actions run
+2. Unzip file and go into folder
+3. Run `npm install -g serve-unity`
+4. Run `serve-unity 8080`
+5. Go to http://localhost:8080
+
+For more details: https://github.com/TheRoccoB/serve-unity
+
+---
+
 ## 🚀 Setup Instructions for Developers
 
 ### Prerequisites
 1. **Git LFS:** Our repository uses Git Large File Storage for images and sounds. You **must** install [Git LFS](https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage?platform=mac) before cloning!
+
+### Handling Git LFS (Large Files)
+Since we use LFS for Unity assets, a standard `git pull` might sometimes only fetch file pointers instead of the actual heavy assets. 
+* **Download the actual files:** After pulling new changes from a branch, run the following command to ensure all LFS files are downloaded correctly:
+  ```bash
+  git lfs pull
