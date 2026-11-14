@@ -1,6 +1,6 @@
 # Hiking Minigame: writing items and events
 
-Every `*.yaml` file in this folder is read by **Tools → Hiking → Import Definitions** in Unity.
+Every `*.yaml` and `*.yml` file in this folder is read by **Tools → Hiking → Import Definitions** in Unity.
 You can split content over as many files as you like (e.g. `events_lakes.yaml`), so people
 working in parallel don't edit the same file.
 

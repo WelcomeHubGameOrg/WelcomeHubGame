@@ -43,6 +43,13 @@ namespace HikingMinigame
         
         private void Start()
         {
+            if (_possibleSprites.Length == 0)
+            {
+                Debug.LogError($"{name}: ParallaxSlice needs at least one entry in Possible Sprites.", this);
+                enabled = false;
+                return;
+            }
+
             _area = GetComponent<SpriteRenderer>();
             var bounds = _area.bounds;
 

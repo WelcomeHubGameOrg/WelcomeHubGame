@@ -10,6 +10,14 @@ namespace HikingMinigame.Events
 
         private float _camLeftEdge;
         private EventDefinition _eventDefinition;
+        private SpriteRenderer _spriteRenderer;
+
+        private bool IsFullyOffScreen => _spriteRenderer.bounds.max.x < _camLeftEdge;
+
+        private void Awake()
+        {
+            _spriteRenderer = GetComponent<SpriteRenderer>();
+        }
 
         private void Start()
         {
@@ -20,7 +28,7 @@ namespace HikingMinigame.Events
         {
             transform.Translate(Vector2.left * (_scrollSpeed * Time.deltaTime));
 
-            if (transform.position.x < _camLeftEdge)
+            if (IsFullyOffScreen)
                 gameObject.SetActive(false);
         }
 

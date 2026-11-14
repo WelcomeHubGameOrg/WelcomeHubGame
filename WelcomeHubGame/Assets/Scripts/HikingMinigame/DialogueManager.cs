@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using HikingMinigame.Effects;
 using HikingMinigame.Events;
+using HikingMinigame.Items;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -23,6 +24,8 @@ namespace HikingMinigame
         [SerializeField] private string _continueLabel = "Continue";
         [SerializeField] private string _gameOverMessage = "You are too exhausted to go on.";
         [SerializeField] private string _summaryTitle = "The hike is over";
+        [SerializeField] private string _revivedTitle = "Exhausted!";
+
         private Coroutine _slowdown;
 
         public event Action SummaryClosed;
@@ -32,12 +35,16 @@ namespace HikingMinigame
         private void Start()
         {
             Game.GameOver += OnGameOver;
+            Game.Revived += OnRevived;
         }
 
         private void OnDestroy()
         {
-            if (Game != null)
-                Game.GameOver -= OnGameOver;
+            if (Game == null)
+                return;
+
+            Game.GameOver -= OnGameOver;
+            Game.Revived -= OnRevived;
         }
 
         public void ShowEvent(EventDefinition definition)
@@ -52,6 +59,15 @@ namespace HikingMinigame
         {
             if (!_panel.activeSelf)
                 ShowSummary();
+        }
+
+        private void OnRevived(ItemDefinition item)
+        {
+            if (_panel.activeSelf)
+                return;
+
+            OpenPanel(_revivedTitle, $"You collapse on the trail. Your {item.DisplayName} gets you back on your feet.");
+            AddButton(_continueLabel, Close);
         }
 
         private void ShowSummary()
@@ -78,6 +94,7 @@ namespace HikingMinigame
             if (_slowdown != null)
                 StopCoroutine(_slowdown);
 
+            Game.Pause();
             _slowdown = StartCoroutine(SlowDownTime());
             _panel.SetActive(true);
 
@@ -126,6 +143,7 @@ namespace HikingMinigame
 
             HidePanel();
             Time.timeScale = 1f;
+            Game.Resume();
         }
 
         private void HidePanel()

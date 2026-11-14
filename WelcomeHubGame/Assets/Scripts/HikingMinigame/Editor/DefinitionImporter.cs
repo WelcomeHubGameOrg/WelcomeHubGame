@@ -12,6 +12,7 @@ namespace HikingMinigame.Editor
     public static class DefinitionImporter
     {
         private const int SupportedVersion = 1;
+        private static readonly string[] YamlFilePatterns = { "*.yaml", "*.yml" };
 
         [MenuItem("Tools/Hiking/Import Definitions")]
         public static void Import()
@@ -38,6 +39,12 @@ namespace HikingMinigame.Editor
             Debug.Log($"Imported {items.Count} item(s) and {events.Count} event(s) from {files.Count} file(s).");
         }
 
+        private static IEnumerable<string> FindDefinitionFiles() =>
+            YamlFilePatterns
+                .SelectMany(pattern => Directory.GetFiles(DefinitionPaths.DefinitionFolder, pattern))
+                .Distinct()
+                .OrderBy(path => path);
+
         private static List<DefinitionFileYaml> LoadFiles(List<string> errors)
         {
             var deserializer = new DeserializerBuilder()
@@ -45,7 +52,7 @@ namespace HikingMinigame.Editor
                 .Build();
 
             var files = new List<DefinitionFileYaml>();
-            foreach (var path in Directory.GetFiles(DefinitionPaths.DefinitionFolder, "*.yaml"))
+            foreach (var path in FindDefinitionFiles())
             {
                 var fileName = Path.GetFileName(path);
                 try
