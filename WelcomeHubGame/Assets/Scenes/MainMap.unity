@@ -4905,6 +4905,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7ed5960b726ed55479c432dc84644c39, type: 2}
   - {fileID: 11400000, guid: f0b459c73880beb4f974d6224604b2b1, type: 2}
   - {fileID: 11400000, guid: dce64952452f0e74c982a004835879ba, type: 2}
+  - {fileID: 11400000, guid: c149d58f6a5b0a2428320d0f01ef96aa, type: 2}
   completedMinigames: 0
   failedMinigames: 0
   mainMapScene: {fileID: 11400000, guid: 2269eb2ad77f3f6419be40538b627fb4, type: 2}
