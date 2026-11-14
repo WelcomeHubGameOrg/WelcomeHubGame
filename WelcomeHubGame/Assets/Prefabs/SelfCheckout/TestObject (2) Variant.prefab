@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1016004862403293831, guid: 13370e58b8316da47b529fec7a5c4ea1, type: 3}
+      propertyPath: price
+      value: 1984
+      objectReference: {fileID: 0}
+    - target: {fileID: 1016004862403293831, guid: 13370e58b8316da47b529fec7a5c4ea1, type: 3}
+      propertyPath: productName
+      value: the book of 1984
+      objectReference: {fileID: 0}
     - target: {fileID: 4058949603979629870, guid: 13370e58b8316da47b529fec7a5c4ea1, type: 3}
       propertyPath: m_Name
       value: TestObject (2) Variant

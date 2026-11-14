@@ -26,12 +26,15 @@ public class ScanManager : MonoBehaviour
         game.ScannedItem -= OnProductScanned;
     }
 
-    private void OnProductScanned()
+    private void OnProductScanned(int price, string productName)
     {
         currentScanPoint.SetActive(false);
         currentScanPoint.transform.rotation = Quaternion.identity;
         currentScanPoint = ScanPoints[(Random.Range(0, ScanPoints.Count))].gameObject;
         currentScanPoint.transform.Rotate(0f, 0f, _rotations[Random.Range(0, _rotations.Length)]);
         currentScanPoint.SetActive(true);
+
+        decimal priceEuros = price / 100m;
+        Debug.Log($"Product scanned: {productName}, price: {priceEuros}€");
     }
 }

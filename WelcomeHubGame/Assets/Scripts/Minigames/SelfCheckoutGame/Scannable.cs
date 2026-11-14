@@ -8,6 +8,10 @@ public class Scannable : MonoBehaviour
     private float _timeRequired;
     private float _timer;
 
+    // assume that price is in cents
+    [SerializeField] private int price;
+    [SerializeField] private string productName;
+
     [SerializeField] SelfCheckoutGame game;
 
     private void Awake()
@@ -27,7 +31,7 @@ public class Scannable : MonoBehaviour
                 _hasScanned = true;
                 _inContact = false;
                 Debug.Log("Scanned object successfully");
-                if (game) game.NotifyScannedItem();
+                if (game) game.NotifyScannedItem(this.price, this.productName);
             }
         }
     }
