@@ -1,14 +1,17 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SelfCheckoutGame : MinigameController
 {
     private float _timer = 60f;
     private int _score;
-    private bool _timerRunning = true;
+    private bool _timerRunning = false;
 
+    [SerializeField] private SpawnManager spawnManager;
     [SerializeField] TextMeshProUGUI timerText;
+    [SerializeField] private GameObject startButton;
     
     public int ScannedCount = 0;
     public int TotalCount = 10;
@@ -55,5 +58,12 @@ public class SelfCheckoutGame : MinigameController
     {
         _score = Mathf.RoundToInt((_timer * 100f));
         Debug.Log($"Score : {_score}");
+    }
+
+    public void StartGame()
+    {
+        _timerRunning = true;
+        spawnManager.SpawnItems();
+        startButton.SetActive(false);
     }
 }

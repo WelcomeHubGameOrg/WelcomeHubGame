@@ -8,7 +8,7 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] List<Transform> spawnPoints = new List<Transform>();
     [SerializeField] List<GameObject> prefabs = new List<GameObject>();
 
-    private void Start()
+    public void SpawnItems()
     {
         foreach (Transform spawnPoint in spawnPoints)
         {
