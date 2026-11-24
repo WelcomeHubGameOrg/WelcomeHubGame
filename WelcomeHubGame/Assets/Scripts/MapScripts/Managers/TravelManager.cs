@@ -1,70 +1,93 @@
 using System.Collections;
-using Unity.VectorGraphics;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class TravelManager : MonoBehaviour
 {
     public static TravelManager instance;
 
-    public RectTransform playerRect;
-    public Vector2 playerPosition;
-    [SerializeField] private float moveSpeed = 500f; // pixels per second
-    private Coroutine moveRoutine;
-
-    public Image player;
-    public Sprite playerIcon;
+    [Header("Player visuals")]
+    [SerializeField] private RectTransform playerRect;
+    [SerializeField] private Image player;
+    [SerializeField] private Sprite playerIcon;
     [SerializeField] private Sprite bus;
 
+    [Header("Movement")]
+    [SerializeField] private float moveSpeed = 500f; // pixels per second
 
-    void Awake()
+    // Static so the position survives the map scene being reloaded
+    private static Vector2 savedPosition;
+    private static bool hasSavedPosition;
+
+    public bool isTraveling;
+
+    private void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        // Lives in the map scene only. A new one is created each time the map loads.
+        instance = this;
     }
 
-    public void MoveTo(Vector2 targetAnchoredPosition, string sceneName)
+    private void Start()
     {
-        if (moveRoutine != null)
-            StopCoroutine(moveRoutine);
-
-        moveRoutine = StartCoroutine(MoveRoutine(targetAnchoredPosition, sceneName));
+        if (hasSavedPosition)
+            playerRect.anchoredPosition = savedPosition;
     }
 
-    private IEnumerator MoveRoutine(Vector2 target, string sceneName)
+    private void OnDestroy()
     {
+        if (instance == this)
+            instance = null;
+    }
+
+    /// <summary>
+    /// Moves the player to the destination UI element, then launches the minigame.
+    /// </summary>
+    public void MoveTo(RectTransform destination, MinigameData minigame)
+    {
+        if (isTraveling) return; // ignore clicks while already travelling
+
+        if (minigame == null)
+        {
+            Debug.LogError("TravelManager.MoveTo called with no MinigameData!");
+            return;
+        }
+
+        StartCoroutine(MoveRoutine(destination.position, minigame));
+    }
+
+    private IEnumerator MoveRoutine(Vector3 targetWorldPos, MinigameData minigame)
+    {
+        isTraveling = true;
         player.sprite = bus;
 
-        Vector2 start = playerRect.anchoredPosition;
-        float distance = Vector2.Distance(start, target);
+        // Using world positions means it doesn't matter which parent/anchors
+        // the spawned buttons use, as long as they're on the same canvas.
+        Vector3 start = playerRect.position;
+        float distance = Vector3.Distance(start, targetWorldPos);
         float duration = distance / moveSpeed;
         float elapsed = 0f;
-        Debug.DrawLine(start, target);
-        Debug.Log("start: " + start);
-        Debug.Log("target: " + target);
 
         while (elapsed < duration)
         {
             elapsed += Time.deltaTime;
             float t = Mathf.Clamp01(elapsed / duration);
-            playerRect.anchoredPosition = Vector2.Lerp(start, target, t);
+            playerRect.position = Vector3.Lerp(start, targetWorldPos, t);
             yield return null;
         }
 
-        playerRect.anchoredPosition = target;
-        moveRoutine = null;
-        playerPosition = playerRect.anchoredPosition;
+        playerRect.position = targetWorldPos;
+
+        savedPosition = playerRect.anchoredPosition;
+        hasSavedPosition = true;
 
         player.sprite = playerIcon;
-        SceneManager.LoadScene(sceneName);
-    }
+        isTraveling = false;
 
+        GameManager.Instance.LaunchMinigame(minigame);
+    }
+    public static bool TryGetSavedPosition(out Vector2 pos)
+    {
+        pos = savedPosition;
+        return hasSavedPosition;
+    }
 }

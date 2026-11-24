@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "NewMinigame", menuName = "Game/MinigameData")]
 public class MinigameData : ScriptableObject
@@ -15,4 +16,6 @@ public class MinigameData : ScriptableObject
     // for unlockable minigames
 
     //
+    public Sprite icon;
+    public string description;
 }

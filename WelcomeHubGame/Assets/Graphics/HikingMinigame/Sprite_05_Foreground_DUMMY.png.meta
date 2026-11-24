@@ -1,0 +1,5902 @@
+fileFormatVersion: 2
+guid: b23519b07f201eb7d8458034159f2e03
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4373506743860519083
+    second: Sprite_05_Foreground_DUMMY_0
+  - first:
+      213: -5568511308206973418
+    second: Sprite_05_Foreground_DUMMY_1
+  - first:
+      213: -3436932926173848716
+    second: Sprite_05_Foreground_DUMMY_2
+  - first:
+      213: -5193979463122638516
+    second: Sprite_05_Foreground_DUMMY_3
+  - first:
+      213: 6484664980418516137
+    second: Sprite_05_Foreground_DUMMY_4
+  - first:
+      213: -6611518188481374337
+    second: Sprite_05_Foreground_DUMMY_5
+  - first:
+      213: -3545801521571195775
+    second: Sprite_05_Foreground_DUMMY_6
+  - first:
+      213: 1426685379373583794
+    second: Sprite_05_Foreground_DUMMY_7
+  - first:
+      213: -633073410965652677
+    second: Sprite_05_Foreground_DUMMY_8
+  - first:
+      213: -7637567007309601767
+    second: Sprite_05_Foreground_DUMMY_9
+  - first:
+      213: -6399802272627917045
+    second: Sprite_05_Foreground_DUMMY_10
+  - first:
+      213: -4660662494646762377
+    second: Sprite_05_Foreground_DUMMY_11
+  - first:
+      213: 830354281980842954
+    second: Sprite_05_Foreground_DUMMY_12
+  - first:
+      213: 2666841997321474778
+    second: Sprite_05_Foreground_DUMMY_13
+  - first:
+      213: 7117991698193097647
+    second: Sprite_05_Foreground_DUMMY_14
+  - first:
+      213: 3553640361488545986
+    second: Sprite_05_Foreground_DUMMY_15
+  - first:
+      213: -4315372937105907717
+    second: Sprite_05_Foreground_DUMMY_16
+  - first:
+      213: -1355505332771425967
+    second: Sprite_05_Foreground_DUMMY_17
+  - first:
+      213: 5194084217035304477
+    second: Sprite_05_Foreground_DUMMY_18
+  - first:
+      213: -8985918426328245959
+    second: Sprite_05_Foreground_DUMMY_19
+  - first:
+      213: -2902470558373615109
+    second: Sprite_05_Foreground_DUMMY_20
+  - first:
+      213: 1668519265150822737
+    second: Sprite_05_Foreground_DUMMY_21
+  - first:
+      213: -5414652750300579217
+    second: Sprite_05_Foreground_DUMMY_22
+  - first:
+      213: -4911921048834592506
+    second: Sprite_05_Foreground_DUMMY_23
+  - first:
+      213: 3037246050023485937
+    second: Sprite_05_Foreground_DUMMY_24
+  - first:
+      213: -154980653654201808
+    second: Sprite_05_Foreground_DUMMY_25
+  - first:
+      213: 5465365462164475142
+    second: Sprite_05_Foreground_DUMMY_26
+  - first:
+      213: -5060915353842104460
+    second: Sprite_05_Foreground_DUMMY_27
+  - first:
+      213: -6372714862820417530
+    second: Sprite_05_Foreground_DUMMY_28
+  - first:
+      213: 7912121274203402559
+    second: Sprite_05_Foreground_DUMMY_29
+  - first:
+      213: 5127265706660292871
+    second: Sprite_05_Foreground_DUMMY_30
+  - first:
+      213: 695187955996470780
+    second: Sprite_05_Foreground_DUMMY_31
+  - first:
+      213: 3136311795775414243
+    second: Sprite_05_Foreground_DUMMY_32
+  - first:
+      213: -9064245246402592154
+    second: Sprite_05_Foreground_DUMMY_33
+  - first:
+      213: 2497695156331345868
+    second: Sprite_05_Foreground_DUMMY_34
+  - first:
+      213: -726613427360429731
+    second: Sprite_05_Foreground_DUMMY_35
+  - first:
+      213: 715210878026663449
+    second: Sprite_05_Foreground_DUMMY_36
+  - first:
+      213: -7304905268997228659
+    second: Sprite_05_Foreground_DUMMY_37
+  - first:
+      213: -8549921874420254585
+    second: Sprite_05_Foreground_DUMMY_38
+  - first:
+      213: 6449044491922159236
+    second: Sprite_05_Foreground_DUMMY_39
+  - first:
+      213: 6827013343792697022
+    second: Sprite_05_Foreground_DUMMY_40
+  - first:
+      213: -3824722431972664290
+    second: Sprite_05_Foreground_DUMMY_41
+  - first:
+      213: 8775316907954954346
+    second: Sprite_05_Foreground_DUMMY_42
+  - first:
+      213: 8211409989891142686
+    second: Sprite_05_Foreground_DUMMY_43
+  - first:
+      213: 3958999539302027326
+    second: Sprite_05_Foreground_DUMMY_44
+  - first:
+      213: -8262087068842704423
+    second: Sprite_05_Foreground_DUMMY_45
+  - first:
+      213: -1348465465979256605
+    second: Sprite_05_Foreground_DUMMY_46
+  - first:
+      213: 5922503528155672495
+    second: Sprite_05_Foreground_DUMMY_47
+  - first:
+      213: -2641462435619754524
+    second: Sprite_05_Foreground_DUMMY_48
+  - first:
+      213: -446462683769555051
+    second: Sprite_05_Foreground_DUMMY_49
+  - first:
+      213: 980348214350898058
+    second: Sprite_05_Foreground_DUMMY_50
+  - first:
+      213: 4036091553349141675
+    second: Sprite_05_Foreground_DUMMY_51
+  - first:
+      213: 6326494766395961616
+    second: Sprite_05_Foreground_DUMMY_52
+  - first:
+      213: -3365245424701368518
+    second: Sprite_05_Foreground_DUMMY_53
+  - first:
+      213: -4165118454440707296
+    second: Sprite_05_Foreground_DUMMY_54
+  - first:
+      213: 5851844506656228775
+    second: Sprite_05_Foreground_DUMMY_55
+  - first:
+      213: -2677180018505094578
+    second: Sprite_05_Foreground_DUMMY_56
+  - first:
+      213: 2496724951438399971
+    second: Sprite_05_Foreground_DUMMY_57
+  - first:
+      213: -8701507382714821118
+    second: Sprite_05_Foreground_DUMMY_58
+  - first:
+      213: 1812656486116518639
+    second: Sprite_05_Foreground_DUMMY_59
+  - first:
+      213: 2284366712565347436
+    second: Sprite_05_Foreground_DUMMY_60
+  - first:
+      213: 2001566655869172778
+    second: Sprite_05_Foreground_DUMMY_61
+  - first:
+      213: -2639606861510866454
+    second: Sprite_05_Foreground_DUMMY_62
+  - first:
+      213: -7030176268049891709
+    second: Sprite_05_Foreground_DUMMY_63
+  - first:
+      213: 5399816600109739581
+    second: Sprite_05_Foreground_DUMMY_64
+  - first:
+      213: 1588981639614813839
+    second: Sprite_05_Foreground_DUMMY_65
+  - first:
+      213: -2423611646549410909
+    second: Sprite_05_Foreground_DUMMY_66
+  - first:
+      213: 2073985679269805522
+    second: Sprite_05_Foreground_DUMMY_67
+  - first:
+      213: 8514166695324452989
+    second: Sprite_05_Foreground_DUMMY_68
+  - first:
+      213: -6539560264505239797
+    second: Sprite_05_Foreground_DUMMY_69
+  - first:
+      213: 928643390292680183
+    second: Sprite_05_Foreground_DUMMY_70
+  - first:
+      213: 7404541648764883427
+    second: Sprite_05_Foreground_DUMMY_71
+  - first:
+      213: -6789094394776400234
+    second: Sprite_05_Foreground_DUMMY_72
+  - first:
+      213: 785603216691673257
+    second: Sprite_05_Foreground_DUMMY_73
+  - first:
+      213: 6563084813729211533
+    second: Sprite_05_Foreground_DUMMY_74
+  - first:
+      213: -567989842924831522
+    second: Sprite_05_Foreground_DUMMY_75
+  - first:
+      213: 6527766233573853851
+    second: Sprite_05_Foreground_DUMMY_76
+  - first:
+      213: -4242384427733536741
+    second: Sprite_05_Foreground_DUMMY_77
+  - first:
+      213: -5435591484554584502
+    second: Sprite_05_Foreground_DUMMY_78
+  - first:
+      213: 334120758431964898
+    second: Sprite_05_Foreground_DUMMY_79
+  - first:
+      213: 6700132035204371873
+    second: Sprite_05_Foreground_DUMMY_80
+  - first:
+      213: -788983620846607219
+    second: Sprite_05_Foreground_DUMMY_81
+  - first:
+      213: -898472897609418018
+    second: Sprite_05_Foreground_DUMMY_82
+  - first:
+      213: -2497114888170687592
+    second: Sprite_05_Foreground_DUMMY_83
+  - first:
+      213: -7851996458244060339
+    second: Sprite_05_Foreground_DUMMY_84
+  - first:
+      213: 7415382124366559986
+    second: Sprite_05_Foreground_DUMMY_85
+  - first:
+      213: -937083315317532018
+    second: Sprite_05_Foreground_DUMMY_86
+  - first:
+      213: 4925965569492724146
+    second: Sprite_05_Foreground_DUMMY_87
+  - first:
+      213: 7404134766671390790
+    second: Sprite_05_Foreground_DUMMY_88
+  - first:
+      213: -3581638348002446900
+    second: Sprite_05_Foreground_DUMMY_89
+  - first:
+      213: 7700093863676684029
+    second: Sprite_05_Foreground_DUMMY_90
+  - first:
+      213: 4993233307315567501
+    second: Sprite_05_Foreground_DUMMY_91
+  - first:
+      213: -4941664463385966725
+    second: Sprite_05_Foreground_DUMMY_92
+  - first:
+      213: 6583863946361194773
+    second: Sprite_05_Foreground_DUMMY_93
+  - first:
+      213: -5482119940871068424
+    second: Sprite_05_Foreground_DUMMY_94
+  - first:
+      213: -5957359482460795843
+    second: Sprite_05_Foreground_DUMMY_95
+  - first:
+      213: -2052408631172553537
+    second: Sprite_05_Foreground_DUMMY_96
+  - first:
+      213: -7369130641437709557
+    second: Sprite_05_Foreground_DUMMY_97
+  - first:
+      213: -4338883245966838841
+    second: Sprite_05_Foreground_DUMMY_98
+  - first:
+      213: 1021750974555183853
+    second: Sprite_05_Foreground_DUMMY_99
+  - first:
+      213: -1469359182840617419
+    second: Sprite_05_Foreground_DUMMY_100
+  - first:
+      213: 8052016818088360773
+    second: Sprite_05_Foreground_DUMMY_101
+  - first:
+      213: -6064268150836517371
+    second: Sprite_05_Foreground_DUMMY_102
+  - first:
+      213: -3571968420303815706
+    second: Sprite_05_Foreground_DUMMY_103
+  - first:
+      213: -1711497747964153207
+    second: Sprite_05_Foreground_DUMMY_104
+  - first:
+      213: -8814196172484056186
+    second: Sprite_05_Foreground_DUMMY_105
+  - first:
+      213: 3953817101561230731
+    second: Sprite_05_Foreground_DUMMY_106
+  - first:
+      213: 2879555489904520951
+    second: Sprite_05_Foreground_DUMMY_107
+  - first:
+      213: -7408936128168082286
+    second: Sprite_05_Foreground_DUMMY_108
+  - first:
+      213: 2578551678941779436
+    second: Sprite_05_Foreground_DUMMY_109
+  - first:
+      213: -2063503548024255073
+    second: Sprite_05_Foreground_DUMMY_110
+  - first:
+      213: 5106218991606533290
+    second: Sprite_05_Foreground_DUMMY_111
+  - first:
+      213: -3162195205719717555
+    second: Sprite_05_Foreground_DUMMY_112
+  - first:
+      213: 2269595200897839355
+    second: Sprite_05_Foreground_DUMMY_113
+  - first:
+      213: 3100218923613115599
+    second: Sprite_05_Foreground_DUMMY_114
+  - first:
+      213: 979432788438809505
+    second: Sprite_05_Foreground_DUMMY_115
+  - first:
+      213: 6283156872911773437
+    second: Sprite_05_Foreground_DUMMY_116
+  - first:
+      213: -3546026530151958311
+    second: Sprite_05_Foreground_DUMMY_117
+  - first:
+      213: -5903768448737387620
+    second: Sprite_05_Foreground_DUMMY_118
+  - first:
+      213: 376249540422945703
+    second: Sprite_05_Foreground_DUMMY_119
+  - first:
+      213: -5381126235331959699
+    second: Sprite_05_Foreground_DUMMY_120
+  - first:
+      213: 4233737644130100440
+    second: Sprite_05_Foreground_DUMMY_121
+  - first:
+      213: -8016326158572197707
+    second: Sprite_05_Foreground_DUMMY_122
+  - first:
+      213: -1206529488321112058
+    second: Sprite_05_Foreground_DUMMY_123
+  - first:
+      213: 4410563190741905102
+    second: Sprite_05_Foreground_DUMMY_124
+  - first:
+      213: 3986029029612301748
+    second: Sprite_05_Foreground_DUMMY_125
+  - first:
+      213: -2419279870373525133
+    second: Sprite_05_Foreground_DUMMY_126
+  - first:
+      213: -3945134747209408565
+    second: Sprite_05_Foreground_DUMMY_127
+  - first:
+      213: -662542828123198776
+    second: Sprite_05_Foreground_DUMMY_128
+  - first:
+      213: 8798721520765664638
+    second: Sprite_05_Foreground_DUMMY_129
+  - first:
+      213: 398465128567840499
+    second: Sprite_05_Foreground_DUMMY_130
+  - first:
+      213: -240614737808994069
+    second: Sprite_05_Foreground_DUMMY_131
+  - first:
+      213: 2354833539176483979
+    second: Sprite_05_Foreground_DUMMY_132
+  - first:
+      213: -5568465115408906718
+    second: Sprite_05_Foreground_DUMMY_133
+  - first:
+      213: -8647319645355126479
+    second: Sprite_05_Foreground_DUMMY_134
+  - first:
+      213: -1536429731480174006
+    second: Sprite_05_Foreground_DUMMY_135
+  - first:
+      213: -3487459934261421924
+    second: Sprite_05_Foreground_DUMMY_136
+  - first:
+      213: 6250900327470975311
+    second: Sprite_05_Foreground_DUMMY_137
+  - first:
+      213: 4675878721758899251
+    second: Sprite_05_Foreground_DUMMY_138
+  - first:
+      213: 2995141174428758881
+    second: Sprite_05_Foreground_DUMMY_139
+  - first:
+      213: 8424591284418915548
+    second: Sprite_05_Foreground_DUMMY_140
+  - first:
+      213: -8059281857957751549
+    second: Sprite_05_Foreground_DUMMY_141
+  - first:
+      213: 5652424235178136189
+    second: Sprite_05_Foreground_DUMMY_142
+  - first:
+      213: -3651339821689343403
+    second: Sprite_05_Foreground_DUMMY_143
+  - first:
+      213: 6532083031057014036
+    second: Sprite_05_Foreground_DUMMY_144
+  - first:
+      213: 6972917738713165078
+    second: Sprite_05_Foreground_DUMMY_145
+  - first:
+      213: 560707246351669250
+    second: Sprite_05_Foreground_DUMMY_146
+  - first:
+      213: -6414473584356184993
+    second: Sprite_05_Foreground_DUMMY_147
+  - first:
+      213: 5919594158434416132
+    second: Sprite_05_Foreground_DUMMY_148
+  - first:
+      213: 8835999948960407382
+    second: Sprite_05_Foreground_DUMMY_149
+  - first:
+      213: -3964158705362189414
+    second: Sprite_05_Foreground_DUMMY_150
+  - first:
+      213: 3954494296476647341
+    second: Sprite_05_Foreground_DUMMY_151
+  - first:
+      213: -4447378000367356323
+    second: Sprite_05_Foreground_DUMMY_152
+  - first:
+      213: 3445436306222858469
+    second: Sprite_05_Foreground_DUMMY_153
+  - first:
+      213: -6062459970569624468
+    second: Sprite_05_Foreground_DUMMY_154
+  - first:
+      213: -1782453197844607675
+    second: Sprite_05_Foreground_DUMMY_155
+  - first:
+      213: 9098961211848809035
+    second: Sprite_05_Foreground_DUMMY_156
+  - first:
+      213: -3429710321164724858
+    second: Sprite_05_Foreground_DUMMY_157
+  - first:
+      213: 1385327538332145370
+    second: Sprite_05_Foreground_DUMMY_158
+  - first:
+      213: 4355092602860508420
+    second: Sprite_05_Foreground_DUMMY_159
+  - first:
+      213: -4106425308917893793
+    second: Sprite_05_Foreground_DUMMY_160
+  - first:
+      213: 3647979081266383233
+    second: Sprite_05_Foreground_DUMMY_161
+  - first:
+      213: 3646087335754834298
+    second: Sprite_05_Foreground_DUMMY_162
+  - first:
+      213: 7377716030178964383
+    second: Sprite_05_Foreground_DUMMY_163
+  - first:
+      213: -3992299269166652426
+    second: Sprite_05_Foreground_DUMMY_164
+  - first:
+      213: 55970282011342409
+    second: Sprite_05_Foreground_DUMMY_165
+  - first:
+      213: 7031064788181982539
+    second: Sprite_05_Foreground_DUMMY_166
+  - first:
+      213: 633149175373550399
+    second: Sprite_05_Foreground_DUMMY_167
+  - first:
+      213: -6718801826785850328
+    second: Sprite_05_Foreground_DUMMY_168
+  - first:
+      213: -3778703406405626892
+    second: Sprite_05_Foreground_DUMMY_169
+  - first:
+      213: 1788650953010719455
+    second: Sprite_05_Foreground_DUMMY_170
+  - first:
+      213: 2114964239832417387
+    second: Sprite_05_Foreground_DUMMY_171
+  - first:
+      213: -2412379889170378039
+    second: Sprite_05_Foreground_DUMMY_172
+  - first:
+      213: 1793271454255946759
+    second: Sprite_05_Foreground_DUMMY_173
+  - first:
+      213: 5027255279934203020
+    second: Sprite_05_Foreground_DUMMY_174
+  - first:
+      213: -7706293043671577952
+    second: Sprite_05_Foreground_DUMMY_175
+  - first:
+      213: -5775839718776903230
+    second: Sprite_05_Foreground_DUMMY_176
+  - first:
+      213: -28206488237250014
+    second: Sprite_05_Foreground_DUMMY_177
+  - first:
+      213: -7430411736357058224
+    second: Sprite_05_Foreground_DUMMY_178
+  - first:
+      213: -7771535318493994813
+    second: Sprite_05_Foreground_DUMMY_179
+  - first:
+      213: -6213255558450131556
+    second: Sprite_05_Foreground_DUMMY_180
+  - first:
+      213: -8958622375040392050
+    second: Sprite_05_Foreground_DUMMY_181
+  - first:
+      213: 4548812893746165210
+    second: Sprite_05_Foreground_DUMMY_182
+  - first:
+      213: 8320460470714926114
+    second: Sprite_05_Foreground_DUMMY_183
+  - first:
+      213: 4380098146792759921
+    second: Sprite_05_Foreground_DUMMY_184
+  - first:
+      213: 6340110811131127452
+    second: Sprite_05_Foreground_DUMMY_185
+  - first:
+      213: -8398258263076724188
+    second: Sprite_05_Foreground_DUMMY_186
+  - first:
+      213: 9169210920589055840
+    second: Sprite_05_Foreground_DUMMY_187
+  - first:
+      213: 184808115248542062
+    second: Sprite_05_Foreground_DUMMY_188
+  - first:
+      213: 1550560152812684502
+    second: Sprite_05_Foreground_DUMMY_189
+  - first:
+      213: 3401473327939809702
+    second: Sprite_05_Foreground_DUMMY_190
+  - first:
+      213: -350955468199829412
+    second: Sprite_05_Foreground_DUMMY_191
+  - first:
+      213: 1555398202633988563
+    second: Sprite_05_Foreground_DUMMY_192
+  - first:
+      213: -3922861605063310479
+    second: Sprite_05_Foreground_DUMMY_193
+  - first:
+      213: 2661499801617566766
+    second: Sprite_05_Foreground_DUMMY_194
+  - first:
+      213: -4443078834815924781
+    second: Sprite_05_Foreground_DUMMY_195
+  - first:
+      213: 3301706274878765577
+    second: Sprite_05_Foreground_DUMMY_196
+  - first:
+      213: -2054221216025742248
+    second: Sprite_05_Foreground_DUMMY_197
+  - first:
+      213: -4042609516358558334
+    second: Sprite_05_Foreground_DUMMY_198
+  - first:
+      213: 28988855721502585
+    second: Sprite_05_Foreground_DUMMY_199
+  - first:
+      213: -7380718791930118190
+    second: Sprite_05_Foreground_DUMMY_200
+  - first:
+      213: -91911183185955843
+    second: Sprite_05_Foreground_DUMMY_201
+  - first:
+      213: 1266565542418191392
+    second: Sprite_05_Foreground_DUMMY_202
+  - first:
+      213: -8686800131458445930
+    second: Sprite_05_Foreground_DUMMY_203
+  - first:
+      213: -3194119228450483336
+    second: Sprite_05_Foreground_DUMMY_204
+  - first:
+      213: -684263255034556417
+    second: Sprite_05_Foreground_DUMMY_205
+  - first:
+      213: 1664911091051759211
+    second: Sprite_05_Foreground_DUMMY_206
+  - first:
+      213: 623844391340802784
+    second: Sprite_05_Foreground_DUMMY_207
+  - first:
+      213: -6067908741133654250
+    second: Sprite_05_Foreground_DUMMY_208
+  - first:
+      213: -4229033134483398292
+    second: Sprite_05_Foreground_DUMMY_209
+  - first:
+      213: -1079101081592302362
+    second: Sprite_05_Foreground_DUMMY_210
+  - first:
+      213: -694759319478380123
+    second: Sprite_05_Foreground_DUMMY_211
+  - first:
+      213: -1326059086016889316
+    second: Sprite_05_Foreground_DUMMY_212
+  - first:
+      213: 6874609108429852251
+    second: Sprite_05_Foreground_DUMMY_213
+  - first:
+      213: -3257188502715849022
+    second: Sprite_05_Foreground_DUMMY_214
+  - first:
+      213: 5143762414271487524
+    second: Sprite_05_Foreground_DUMMY_215
+  - first:
+      213: 4222846132634510756
+    second: Sprite_05_Foreground_DUMMY_216
+  - first:
+      213: -3056206139835051288
+    second: Sprite_05_Foreground_DUMMY_217
+  - first:
+      213: 8792901587330267822
+    second: Sprite_05_Foreground_DUMMY_218
+  - first:
+      213: 4272741518551435915
+    second: Sprite_05_Foreground_DUMMY_219
+  - first:
+      213: 882468181040347765
+    second: Sprite_05_Foreground_DUMMY_220
+  - first:
+      213: -8367208199366897528
+    second: Sprite_05_Foreground_DUMMY_221
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1172
+        width: 584
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba0e4923631d1bc30800000000000000
+      internalID: 4373506743860519083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_1
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 1258
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61ed39ae77ca8b2b0800000000000000
+      internalID: -5568511308206973418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_2
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 1258
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47b509a96bf8d40d0800000000000000
+      internalID: -3436932926173848716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_3
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 1258
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c49a6e972374be7b0800000000000000
+      internalID: -5193979463122638516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_4
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 1258
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a4d24541782ef950800000000000000
+      internalID: 6484664980418516137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_5
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 1258
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f779885ac3b2f34a0800000000000000
+      internalID: -6611518188481374337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_6
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1258
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18495b67d48cacec0800000000000000
+      internalID: -3545801521571195775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_7
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 1258
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bd4ecb2bca9cc310800000000000000
+      internalID: 1426685379373583794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_8
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1258
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3bb5ae361fd637f0800000000000000
+      internalID: -633073410965652677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_9
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 1258
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 914611db549e10690800000000000000
+      internalID: -7637567007309601767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_10
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 1258
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0f764b9db55f27a0800000000000000
+      internalID: -6399802272627917045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_11
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 1258
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77408948720025fb0800000000000000
+      internalID: -4660662494646762377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_12
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 1258
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac3513fe1d2068b00800000000000000
+      internalID: 830354281980842954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_13
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 1258
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad29072caa6820520800000000000000
+      internalID: 2666841997321474778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_14
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 1258
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa3aafc9cbf28c260800000000000000
+      internalID: 7117991698193097647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_15
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 1258
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c8f30ea411115130800000000000000
+      internalID: 3553640361488545986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_16
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 1258
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bffd7727d27bc14c0800000000000000
+      internalID: -4315372937105907717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_17
+      rect:
+        serializedVersion: 2
+        x: 1655
+        y: 1258
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 151f205e417403de0800000000000000
+      internalID: -1355505332771425967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_18
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 1258
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1e2ad17318151840800000000000000
+      internalID: 5194084217035304477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_19
+      rect:
+        serializedVersion: 2
+        x: 1723
+        y: 1258
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 939511afcca9b4380800000000000000
+      internalID: -8985918426328245959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_20
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 1258
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf96c15b76a58b7d0800000000000000
+      internalID: -2902470558373615109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_21
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 1258
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 159e5347e65c72710800000000000000
+      internalID: 1668519265150822737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_22
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 1258
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6afd3cf20a4bd4b0800000000000000
+      internalID: -5414652750300579217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_23
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 1258
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 601337f94d955dbb0800000000000000
+      internalID: -4911921048834592506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_24
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 1258
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f1bb13c037762a20800000000000000
+      internalID: 3037246050023485937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_25
+      rect:
+        serializedVersion: 2
+        x: 1918
+        y: 1258
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03a22e7aae569ddf0800000000000000
+      internalID: -154980653654201808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_26
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 1258
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60d800c5ee0e8db40800000000000000
+      internalID: 5465365462164475142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_27
+      rect:
+        serializedVersion: 2
+        x: 1982
+        y: 1258
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 477cbefac4404c9b0800000000000000
+      internalID: -5060915353842104460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_28
+      rect:
+        serializedVersion: 2
+        x: 2034
+        y: 1258
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 600acbaa8919f87a0800000000000000
+      internalID: -6372714862820417530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_29
+      rect:
+        serializedVersion: 2
+        x: 2071
+        y: 1258
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3174b0f0608dcd60800000000000000
+      internalID: 7912121274203402559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_30
+      rect:
+        serializedVersion: 2
+        x: 2106
+        y: 1258
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 709678aaef4b72740800000000000000
+      internalID: 5127265706660292871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_31
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 1258
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfdac4143cdc5a900800000000000000
+      internalID: 695187955996470780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_32
+      rect:
+        serializedVersion: 2
+        x: 2189
+        y: 1258
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ef9f0c16fa668b20800000000000000
+      internalID: 3136311795775414243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_33
+      rect:
+        serializedVersion: 2
+        x: 2483
+        y: 1258
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 662862b09f4553280800000000000000
+      internalID: -9064245246402592154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_34
+      rect:
+        serializedVersion: 2
+        x: 2521
+        y: 1258
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc7f756e28899a220800000000000000
+      internalID: 2497695156331345868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_35
+      rect:
+        serializedVersion: 2
+        x: 2551
+        y: 1258
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d59072500fc8ae5f0800000000000000
+      internalID: -726613427360429731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_36
+      rect:
+        serializedVersion: 2
+        x: 2589
+        y: 1258
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91646441180fce900800000000000000
+      internalID: 715210878026663449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_37
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 1258
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d877a836c53cf9a90800000000000000
+      internalID: -7304905268997228659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_38
+      rect:
+        serializedVersion: 2
+        x: 2656
+        y: 1258
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 788b6d9ca53985980800000000000000
+      internalID: -8549921874420254585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_39
+      rect:
+        serializedVersion: 2
+        x: 2686
+        y: 1258
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 486b5b10ccb9f7950800000000000000
+      internalID: 6449044491922159236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_40
+      rect:
+        serializedVersion: 2
+        x: 2716
+        y: 1258
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe8d91177c6ebe50800000000000000
+      internalID: 6827013343792697022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_41
+      rect:
+        serializedVersion: 2
+        x: 2746
+        y: 1258
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1c1dcd563bdbeac0800000000000000
+      internalID: -3824722431972664290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_42
+      rect:
+        serializedVersion: 2
+        x: 2780
+        y: 1258
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a606222fb3038c970800000000000000
+      internalID: 8775316907954954346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_43
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 1258
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e143e8041e9c4f170800000000000000
+      internalID: 8211409989891142686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_44
+      rect:
+        serializedVersion: 2
+        x: 2862
+        y: 1258
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e305806fa1131f630800000000000000
+      internalID: 3958999539302027326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_45
+      rect:
+        serializedVersion: 2
+        x: 2899
+        y: 1258
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d14846d59b275d80800000000000000
+      internalID: -8262087068842704423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_46
+      rect:
+        serializedVersion: 2
+        x: 2934
+        y: 1258
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e0cc6c9dc9494de0800000000000000
+      internalID: -1348465465979256605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_47
+      rect:
+        serializedVersion: 2
+        x: 2978
+        y: 1258
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faf67b08495f03250800000000000000
+      internalID: 5922503528155672495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_48
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 965
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eda85de8e3a75bd0800000000000000
+      internalID: -2641462435619754524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_49
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 965
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 597b278fd88ddc9f0800000000000000
+      internalID: -446462683769555051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_50
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 965
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a83e290c185ea9d00800000000000000
+      internalID: 980348214350898058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_51
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 965
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba4845632e3130830800000000000000
+      internalID: 4036091553349141675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_52
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 965
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 011366888793cc750800000000000000
+      internalID: 6326494766395961616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_53
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 965
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a379aa6bd1f3c41d0800000000000000
+      internalID: -3365245424701368518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_54
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 965
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02b33ab55d68236c0800000000000000
+      internalID: -4165118454440707296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_55
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 965
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a5c01c039de53150800000000000000
+      internalID: 5851844506656228775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_56
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 965
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4aea3d15feb8dad0800000000000000
+      internalID: -2677180018505094578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_57
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 965
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e917587d1626a220800000000000000
+      internalID: 2496724951438399971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_58
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 965
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20618d253290e3780800000000000000
+      internalID: -8701507382714821118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_59
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 965
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fea68c26879d72910800000000000000
+      internalID: 1812656486116518639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_60
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 965
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c643f270c63b3bf10800000000000000
+      internalID: 2284366712565347436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_61
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 965
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2c395dc44ef6cb10800000000000000
+      internalID: 2001566655869172778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_62
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 965
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae906f07b8b3e5bd0800000000000000
+      internalID: -2639606861510866454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_63
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 965
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38e31828eebcf6e90800000000000000
+      internalID: -7030176268049891709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_64
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 965
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3e6ccd969000fa40800000000000000
+      internalID: 5399816600109739581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_65
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 965
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f86dbd7e1623d0610800000000000000
+      internalID: 1588981639614813839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_66
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 965
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ab3ced5c0a9d5ed0800000000000000
+      internalID: -2423611646549410909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_67
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 965
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ddbf12acf648cc10800000000000000
+      internalID: 2073985679269805522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_68
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 965
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d788649df75682670800000000000000
+      internalID: 8514166695324452989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_69
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 965
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b07d7e66690de35a0800000000000000
+      internalID: -6539560264505239797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_70
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 965
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fdd8694e3433ec00800000000000000
+      internalID: 928643390292680183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_71
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 965
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e1573b066732c660800000000000000
+      internalID: 7404541648764883427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_72
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 965
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69ec1cc3e9a48c1a0800000000000000
+      internalID: -6789094394776400234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_73
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 965
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a8bf4996f507ea00800000000000000
+      internalID: 785603216691673257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_74
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 965
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8427198dd2c41b50800000000000000
+      internalID: 6563084813729211533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_75
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 965
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edc7f684f381e18f0800000000000000
+      internalID: -567989842924831522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_76
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 965
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9a85f8cdc8479a50800000000000000
+      internalID: 6527766233573853851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_77
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 965
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b103b4017d50025c0800000000000000
+      internalID: -4242384427733536741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_78
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 965
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4e5cf20856e094b0800000000000000
+      internalID: -5435591484554584502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_79
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 965
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eedb6e3f0903a400800000000000000
+      internalID: 334120758431964898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_80
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 965
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a552925696abfc50800000000000000
+      internalID: 6700132035204371873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_81
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 965
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8426d9b397fc05f0800000000000000
+      internalID: -788983620846607219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_82
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 965
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edabca1f8abf783f0800000000000000
+      internalID: -898472897609418018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_83
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 965
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8933f3f4d37785dd0800000000000000
+      internalID: -2497114888170687592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_84
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 965
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4bccb8a2da180390800000000000000
+      internalID: -7851996458244060339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_85
+      rect:
+        serializedVersion: 2
+        x: 2107
+        y: 965
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fa76a4f0cab8e660800000000000000
+      internalID: 7415382124366559986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_86
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 965
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a9d8980bfcef2f0800000000000000
+      internalID: -937083315317532018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_87
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 965
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b92b69269b8c5440800000000000000
+      internalID: 4925965569492724146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_88
+      rect:
+        serializedVersion: 2
+        x: 2205
+        y: 965
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 648619c6755c0c660800000000000000
+      internalID: 7404134766671390790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_89
+      rect:
+        serializedVersion: 2
+        x: 2242
+        y: 965
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc1b56916e67b4ec0800000000000000
+      internalID: -3581638348002446900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_90
+      rect:
+        serializedVersion: 2
+        x: 2272
+        y: 965
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df62d99729a3cda60800000000000000
+      internalID: 7700093863676684029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_91
+      rect:
+        serializedVersion: 2
+        x: 2302
+        y: 965
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8b713bdc378b4540800000000000000
+      internalID: 4993233307315567501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_92
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 965
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7745b44a5eab6bb0800000000000000
+      internalID: -4941664463385966725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_93
+      rect:
+        serializedVersion: 2
+        x: 2366
+        y: 965
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5194c5c50659e5b50800000000000000
+      internalID: 6583863946361194773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_94
+      rect:
+        serializedVersion: 2
+        x: 2396
+        y: 965
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f46b4495f89be3b0800000000000000
+      internalID: -5482119940871068424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_95
+      rect:
+        serializedVersion: 2
+        x: 2448
+        y: 965
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3c8e983d15335da0800000000000000
+      internalID: -5957359482460795843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_96
+      rect:
+        serializedVersion: 2
+        x: 2485
+        y: 965
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb4a30d59316483e0800000000000000
+      internalID: -2052408631172553537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_97
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 965
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0ba8a599b69bb990800000000000000
+      internalID: -7369130641437709557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_98
+      rect:
+        serializedVersion: 2
+        x: 2564
+        y: 965
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c3b04a1da039c3c0800000000000000
+      internalID: -4338883245966838841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_99
+      rect:
+        serializedVersion: 2
+        x: 2603
+        y: 965
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dea554f091dfd2e00800000000000000
+      internalID: 1021750974555183853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_100
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 965
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 536a353bb99cb9be0800000000000000
+      internalID: -1469359182840617419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_101
+      rect:
+        serializedVersion: 2
+        x: 2935
+        y: 965
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54bb0a772a28ebf60800000000000000
+      internalID: 8052016818088360773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_102
+      rect:
+        serializedVersion: 2
+        x: 2965
+        y: 965
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 506aca62f3467dba0800000000000000
+      internalID: -6064268150836517371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_103
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ebb0e695a1dd6ec0800000000000000
+      internalID: -3571968420303815706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_104
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 672
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98237babdd98f38e0800000000000000
+      internalID: -1711497747964153207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_105
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 672
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68bea7ed74fada580800000000000000
+      internalID: -8814196172484056186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_106
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 672
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b85fb65a4b7ced630800000000000000
+      internalID: 3953817101561230731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_107
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 672
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fee8c6267c36f720800000000000000
+      internalID: 2879555489904520951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_108
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 672
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 294cbfc78db2e2990800000000000000
+      internalID: -7408936128168082286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_109
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 672
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce5df4a171bd8c320800000000000000
+      internalID: 2578551678941779436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_110
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 672
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9d814bb476fc53e0800000000000000
+      internalID: -2063503548024255073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_111
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 672
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aac8f047e1fecd640800000000000000
+      internalID: 5106218991606533290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_112
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 672
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4902a4e630ad14d0800000000000000
+      internalID: -3162195205719717555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_113
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 672
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf072757fc83f7f10800000000000000
+      internalID: 2269595200897839355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_114
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 672
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc457e37fa0360b20800000000000000
+      internalID: 3100218923613115599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_115
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 672
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1abf34c8ee4a79d00800000000000000
+      internalID: 979432788438809505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_116
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 672
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfed5f5e2e1423750800000000000000
+      internalID: 6283156872911773437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_117
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 672
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d87e2298abf9cec0800000000000000
+      internalID: -3546026530151958311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_118
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 672
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b59d810e9911ea0800000000000000
+      internalID: -5903768448737387620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_119
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 672
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ab40dba6f4b83500800000000000000
+      internalID: 376249540422945703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_120
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 672
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d64e08b03366255b0800000000000000
+      internalID: -5381126235331959699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_121
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 672
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d4e29eb4f141ca30800000000000000
+      internalID: 4233737644130100440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_122
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 672
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8e1a2c4d940c090800000000000000
+      internalID: -8016326158572197707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_123
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 672
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6081695a2db814fe0800000000000000
+      internalID: -1206529488321112058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_124
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 672
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecea5939ad7753d30800000000000000
+      internalID: 4410563190741905102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_125
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 672
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bdaf669848315730800000000000000
+      internalID: 3986029029612301748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_126
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 672
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 379022a96cdfc6ed0800000000000000
+      internalID: -2419279870373525133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_127
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 672
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcf588189d01049c0800000000000000
+      internalID: -3945134747209408565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_128
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 672
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8caeb31eecc2ec6f0800000000000000
+      internalID: -662542828123198776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_129
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 672
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d72d20b965b1a70800000000000000
+      internalID: 8798721520765664638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_130
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 672
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fe9aab5ce1a78500800000000000000
+      internalID: 398465128567840499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_131
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 672
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be0db29bb2a29acf0800000000000000
+      internalID: -240614737808994069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_132
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 672
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8c4acf90ac0ea020800000000000000
+      internalID: 2354833539176483979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_133
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 672
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 226c5e30b76d8b2b0800000000000000
+      internalID: -5568465115408906718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_134
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 672
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 131d957199c8ef780800000000000000
+      internalID: -8647319645355126479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_135
+      rect:
+        serializedVersion: 2
+        x: 1655
+        y: 672
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4286c0bc418daae0800000000000000
+      internalID: -1536429731480174006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_136
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 672
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c98d0f9caad0a9fc0800000000000000
+      internalID: -3487459934261421924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_137
+      rect:
+        serializedVersion: 2
+        x: 1723
+        y: 672
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f49c749aab8afb650800000000000000
+      internalID: 6250900327470975311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_138
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 672
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33c2f3f6cee04e040800000000000000
+      internalID: 4675878721758899251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_139
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 672
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 163f8f97701e09920800000000000000
+      internalID: 2995141174428758881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_140
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 672
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdc24a543292ae470800000000000000
+      internalID: 8424591284418915548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_141
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 672
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3059daf99dda72090800000000000000
+      internalID: -8059281857957751549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_142
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 672
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d721a91e4e1717e40800000000000000
+      internalID: 5652424235178136189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_143
+      rect:
+        serializedVersion: 2
+        x: 1918
+        y: 672
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 552f7fd17c5d35dc0800000000000000
+      internalID: -3651339821689343403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_144
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 672
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41d928588ee96aa50800000000000000
+      internalID: 6532083031057014036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_145
+      rect:
+        serializedVersion: 2
+        x: 1982
+        y: 672
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61da4004db7c4c060800000000000000
+      internalID: 6972917738713165078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_146
+      rect:
+        serializedVersion: 2
+        x: 2034
+        y: 672
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20857c1154808c700800000000000000
+      internalID: 560707246351669250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_147
+      rect:
+        serializedVersion: 2
+        x: 2071
+        y: 672
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5ca257a2463bf6a0800000000000000
+      internalID: -6414473584356184993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_148
+      rect:
+        serializedVersion: 2
+        x: 2106
+        y: 672
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 406f5f3168f962250800000000000000
+      internalID: 5919594158434416132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_149
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 672
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65f97217327cf9a70800000000000000
+      internalID: 8835999948960407382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_150
+      rect:
+        serializedVersion: 2
+        x: 2189
+        y: 672
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a934d9519aa7cf8c0800000000000000
+      internalID: -3964158705362189414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_151
+      rect:
+        serializedVersion: 2
+        x: 2483
+        y: 672
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daf7ccf5c9f21e630800000000000000
+      internalID: 3954494296476647341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_152
+      rect:
+        serializedVersion: 2
+        x: 2521
+        y: 672
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d56773a954db742c0800000000000000
+      internalID: -4447378000367356323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_153
+      rect:
+        serializedVersion: 2
+        x: 2551
+        y: 672
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e0c5a8d016a0df20800000000000000
+      internalID: 3445436306222858469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_154
+      rect:
+        serializedVersion: 2
+        x: 2589
+        y: 672
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c642c2de6c0dddba0800000000000000
+      internalID: -6062459970569624468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_155
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 672
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54d86b9a2447347e0800000000000000
+      internalID: -1782453197844607675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_156
+      rect:
+        serializedVersion: 2
+        x: 2656
+        y: 672
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a5e498301064e70800000000000000
+      internalID: 9098961211848809035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_157
+      rect:
+        serializedVersion: 2
+        x: 2686
+        y: 672
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6855c7062a83760d0800000000000000
+      internalID: -3429710321164724858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_158
+      rect:
+        serializedVersion: 2
+        x: 2716
+        y: 672
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad69adb6e0ca93310800000000000000
+      internalID: 1385327538332145370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_159
+      rect:
+        serializedVersion: 2
+        x: 2746
+        y: 672
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4059e65e5a5607c30800000000000000
+      internalID: 4355092602860508420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_160
+      rect:
+        serializedVersion: 2
+        x: 2780
+        y: 672
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f55764530fb0307c0800000000000000
+      internalID: -4106425308917893793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_161
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 672
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18940f685a930a230800000000000000
+      internalID: 3647979081266383233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_162
+      rect:
+        serializedVersion: 2
+        x: 2862
+        y: 672
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a71a7b33d11899230800000000000000
+      internalID: 3646087335754834298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_163
+      rect:
+        serializedVersion: 2
+        x: 2899
+        y: 672
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f93b58004a9e26660800000000000000
+      internalID: 7377716030178964383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_164
+      rect:
+        serializedVersion: 2
+        x: 2934
+        y: 672
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f3254087f08898c0800000000000000
+      internalID: -3992299269166652426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_165
+      rect:
+        serializedVersion: 2
+        x: 2978
+        y: 672
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 946b349cca8d6c000800000000000000
+      internalID: 55970282011342409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_166
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 379
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4d18543c2c539160800000000000000
+      internalID: 7031064788181982539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_167
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 379
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33d8f702d569c800800000000000000
+      internalID: 633149175373550399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_168
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 379
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c0f26165502c2a0800000000000000
+      internalID: -6718801826785850328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_169
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 379
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f352a5b5495f8bc0800000000000000
+      internalID: -3778703406405626892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_170
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 379
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fda2e59a09092d810800000000000000
+      internalID: 1788650953010719455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_171
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 379
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b648dd345ccd95d10800000000000000
+      internalID: 2114964239832417387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_172
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 379
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c214baa541858ed0800000000000000
+      internalID: -2412379889170378039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_173
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 379
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70c16c0f2eaf2e810800000000000000
+      internalID: 1793271454255946759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_174
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 379
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c846fa3aa0664c540800000000000000
+      internalID: 5027255279934203020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_175
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 379
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aa44e47e4fbd0590800000000000000
+      internalID: -7706293043671577952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_176
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 379
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c9e5b2a06818dfa0800000000000000
+      internalID: -5775839718776903230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_177
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 379
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ae140395acb9ff0800000000000000
+      internalID: -28206488237250014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_178
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 379
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0594b8fc4efd1e890800000000000000
+      internalID: -7430411736357058224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_179
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 379
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c063cd9dc5f52490800000000000000
+      internalID: -7771535318493994813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_180
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 379
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9dcbd32df416c9a0800000000000000
+      internalID: -6213255558450131556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_181
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 379
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e84e9da2a649ca380800000000000000
+      internalID: -8958622375040392050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_182
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 379
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad5f479e931a02f30800000000000000
+      internalID: 4548812893746165210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_183
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 379
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22484a4e6b6387370800000000000000
+      internalID: 8320460470714926114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_184
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 379
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 172ede8ce0c39cc30800000000000000
+      internalID: 4380098146792759921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_185
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 379
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c96a51ef0399cf750800000000000000
+      internalID: 6340110811131127452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_186
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 379
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 422a2590b94637b80800000000000000
+      internalID: -8398258263076724188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_187
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 379
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 067d75070c49f3f70800000000000000
+      internalID: 9169210920589055840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_188
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 379
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e61bffc6002909200800000000000000
+      internalID: 184808115248542062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_189
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 379
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d486476e32b48510800000000000000
+      internalID: 1550560152812684502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_190
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 379
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a171d058f5743f20800000000000000
+      internalID: 3401473327939809702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_191
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 379
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c50e7f17cd7212bf0800000000000000
+      internalID: -350955468199829412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_192
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 379
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d9a748ac62e59510800000000000000
+      internalID: 1555398202633988563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_193
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 379
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 173ce2787223f89c0800000000000000
+      internalID: -3922861605063310479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_194
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 379
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2c0035e7fb8fe420800000000000000
+      internalID: 2661499801617566766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_195
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 379
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d58db517530752c0800000000000000
+      internalID: -4443078834815924781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_196
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 379
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90ab3d22d5402dd20800000000000000
+      internalID: 3301706274878765577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_197
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 379
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 854f6b010b0fd73e0800000000000000
+      internalID: -2054221216025742248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_198
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 379
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28d95d34014c5e7c0800000000000000
+      internalID: -4042609516358558334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_199
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 379
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 977a9bfe53df66000800000000000000
+      internalID: 28988855721502585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_200
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 379
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df74fb0d5b629990800000000000000
+      internalID: -7380718791930118190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_201
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 379
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df3b05f044779bef0800000000000000
+      internalID: -91911183185955843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_202
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 379
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 024169876aeb39110800000000000000
+      internalID: 1266565542418191392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_203
+      rect:
+        serializedVersion: 2
+        x: 2107
+        y: 379
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69d4a991e49427780800000000000000
+      internalID: -8686800131458445930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_204
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 379
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 873d6f12c753ca3d0800000000000000
+      internalID: -3194119228450483336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_205
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 379
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fff00d6e1320186f0800000000000000
+      internalID: -684263255034556417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_206
+      rect:
+        serializedVersion: 2
+        x: 2205
+        y: 379
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b668fb4f0d3fa1710800000000000000
+      internalID: 1664911091051759211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_207
+      rect:
+        serializedVersion: 2
+        x: 2242
+        y: 379
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e20dfc2b2758a800800000000000000
+      internalID: 623844391340802784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_208
+      rect:
+        serializedVersion: 2
+        x: 2272
+        y: 379
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 617ad3b26257acba0800000000000000
+      internalID: -6067908741133654250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_209
+      rect:
+        serializedVersion: 2
+        x: 2302
+        y: 379
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c61a2c345c47f45c0800000000000000
+      internalID: -4229033134483398292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_210
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 379
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e473fa98434601f0800000000000000
+      internalID: -1079101081592302362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_211
+      rect:
+        serializedVersion: 2
+        x: 2366
+        y: 379
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a959167418bb56f0800000000000000
+      internalID: -694759319478380123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_212
+      rect:
+        serializedVersion: 2
+        x: 2396
+        y: 379
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1eb8ca7944e89de0800000000000000
+      internalID: -1326059086016889316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_213
+      rect:
+        serializedVersion: 2
+        x: 2448
+        y: 379
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5e40a59f84876f50800000000000000
+      internalID: 6874609108429852251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_214
+      rect:
+        serializedVersion: 2
+        x: 2485
+        y: 379
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c6a22960542cc2d0800000000000000
+      internalID: -3257188502715849022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_215
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 379
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42e58a7b9a0526740800000000000000
+      internalID: 5143762414271487524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_216
+      rect:
+        serializedVersion: 2
+        x: 2564
+        y: 379
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a5efcc1f209a9a30800000000000000
+      internalID: 4222846132634510756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_217
+      rect:
+        serializedVersion: 2
+        x: 2603
+        y: 379
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e293c255bc2695d0800000000000000
+      internalID: -3056206139835051288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_218
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 379
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaaf9c92869a60a70800000000000000
+      internalID: 8792901587330267822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_219
+      rect:
+        serializedVersion: 2
+        x: 2935
+        y: 379
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8a425ee5c3db4b30800000000000000
+      internalID: 4272741518551435915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_220
+      rect:
+        serializedVersion: 2
+        x: 2965
+        y: 379
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57abe7892282f3c00800000000000000
+      internalID: 882468181040347765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_05_Foreground_DUMMY_221
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 3000
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 880100b5974b1eb80800000000000000
+      internalID: -8367208199366897528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sprite_05_Foreground_DUMMY_0: 4373506743860519083
+      Sprite_05_Foreground_DUMMY_1: -5568511308206973418
+      Sprite_05_Foreground_DUMMY_10: -6399802272627917045
+      Sprite_05_Foreground_DUMMY_100: -1469359182840617419
+      Sprite_05_Foreground_DUMMY_101: 8052016818088360773
+      Sprite_05_Foreground_DUMMY_102: -6064268150836517371
+      Sprite_05_Foreground_DUMMY_103: -3571968420303815706
+      Sprite_05_Foreground_DUMMY_104: -1711497747964153207
+      Sprite_05_Foreground_DUMMY_105: -8814196172484056186
+      Sprite_05_Foreground_DUMMY_106: 3953817101561230731
+      Sprite_05_Foreground_DUMMY_107: 2879555489904520951
+      Sprite_05_Foreground_DUMMY_108: -7408936128168082286
+      Sprite_05_Foreground_DUMMY_109: 2578551678941779436
+      Sprite_05_Foreground_DUMMY_11: -4660662494646762377
+      Sprite_05_Foreground_DUMMY_110: -2063503548024255073
+      Sprite_05_Foreground_DUMMY_111: 5106218991606533290
+      Sprite_05_Foreground_DUMMY_112: -3162195205719717555
+      Sprite_05_Foreground_DUMMY_113: 2269595200897839355
+      Sprite_05_Foreground_DUMMY_114: 3100218923613115599
+      Sprite_05_Foreground_DUMMY_115: 979432788438809505
+      Sprite_05_Foreground_DUMMY_116: 6283156872911773437
+      Sprite_05_Foreground_DUMMY_117: -3546026530151958311
+      Sprite_05_Foreground_DUMMY_118: -5903768448737387620
+      Sprite_05_Foreground_DUMMY_119: 376249540422945703
+      Sprite_05_Foreground_DUMMY_12: 830354281980842954
+      Sprite_05_Foreground_DUMMY_120: -5381126235331959699
+      Sprite_05_Foreground_DUMMY_121: 4233737644130100440
+      Sprite_05_Foreground_DUMMY_122: -8016326158572197707
+      Sprite_05_Foreground_DUMMY_123: -1206529488321112058
+      Sprite_05_Foreground_DUMMY_124: 4410563190741905102
+      Sprite_05_Foreground_DUMMY_125: 3986029029612301748
+      Sprite_05_Foreground_DUMMY_126: -2419279870373525133
+      Sprite_05_Foreground_DUMMY_127: -3945134747209408565
+      Sprite_05_Foreground_DUMMY_128: -662542828123198776
+      Sprite_05_Foreground_DUMMY_129: 8798721520765664638
+      Sprite_05_Foreground_DUMMY_13: 2666841997321474778
+      Sprite_05_Foreground_DUMMY_130: 398465128567840499
+      Sprite_05_Foreground_DUMMY_131: -240614737808994069
+      Sprite_05_Foreground_DUMMY_132: 2354833539176483979
+      Sprite_05_Foreground_DUMMY_133: -5568465115408906718
+      Sprite_05_Foreground_DUMMY_134: -8647319645355126479
+      Sprite_05_Foreground_DUMMY_135: -1536429731480174006
+      Sprite_05_Foreground_DUMMY_136: -3487459934261421924
+      Sprite_05_Foreground_DUMMY_137: 6250900327470975311
+      Sprite_05_Foreground_DUMMY_138: 4675878721758899251
+      Sprite_05_Foreground_DUMMY_139: 2995141174428758881
+      Sprite_05_Foreground_DUMMY_14: 7117991698193097647
+      Sprite_05_Foreground_DUMMY_140: 8424591284418915548
+      Sprite_05_Foreground_DUMMY_141: -8059281857957751549
+      Sprite_05_Foreground_DUMMY_142: 5652424235178136189
+      Sprite_05_Foreground_DUMMY_143: -3651339821689343403
+      Sprite_05_Foreground_DUMMY_144: 6532083031057014036
+      Sprite_05_Foreground_DUMMY_145: 6972917738713165078
+      Sprite_05_Foreground_DUMMY_146: 560707246351669250
+      Sprite_05_Foreground_DUMMY_147: -6414473584356184993
+      Sprite_05_Foreground_DUMMY_148: 5919594158434416132
+      Sprite_05_Foreground_DUMMY_149: 8835999948960407382
+      Sprite_05_Foreground_DUMMY_15: 3553640361488545986
+      Sprite_05_Foreground_DUMMY_150: -3964158705362189414
+      Sprite_05_Foreground_DUMMY_151: 3954494296476647341
+      Sprite_05_Foreground_DUMMY_152: -4447378000367356323
+      Sprite_05_Foreground_DUMMY_153: 3445436306222858469
+      Sprite_05_Foreground_DUMMY_154: -6062459970569624468
+      Sprite_05_Foreground_DUMMY_155: -1782453197844607675
+      Sprite_05_Foreground_DUMMY_156: 9098961211848809035
+      Sprite_05_Foreground_DUMMY_157: -3429710321164724858
+      Sprite_05_Foreground_DUMMY_158: 1385327538332145370
+      Sprite_05_Foreground_DUMMY_159: 4355092602860508420
+      Sprite_05_Foreground_DUMMY_16: -4315372937105907717
+      Sprite_05_Foreground_DUMMY_160: -4106425308917893793
+      Sprite_05_Foreground_DUMMY_161: 3647979081266383233
+      Sprite_05_Foreground_DUMMY_162: 3646087335754834298
+      Sprite_05_Foreground_DUMMY_163: 7377716030178964383
+      Sprite_05_Foreground_DUMMY_164: -3992299269166652426
+      Sprite_05_Foreground_DUMMY_165: 55970282011342409
+      Sprite_05_Foreground_DUMMY_166: 7031064788181982539
+      Sprite_05_Foreground_DUMMY_167: 633149175373550399
+      Sprite_05_Foreground_DUMMY_168: -6718801826785850328
+      Sprite_05_Foreground_DUMMY_169: -3778703406405626892
+      Sprite_05_Foreground_DUMMY_17: -1355505332771425967
+      Sprite_05_Foreground_DUMMY_170: 1788650953010719455
+      Sprite_05_Foreground_DUMMY_171: 2114964239832417387
+      Sprite_05_Foreground_DUMMY_172: -2412379889170378039
+      Sprite_05_Foreground_DUMMY_173: 1793271454255946759
+      Sprite_05_Foreground_DUMMY_174: 5027255279934203020
+      Sprite_05_Foreground_DUMMY_175: -7706293043671577952
+      Sprite_05_Foreground_DUMMY_176: -5775839718776903230
+      Sprite_05_Foreground_DUMMY_177: -28206488237250014
+      Sprite_05_Foreground_DUMMY_178: -7430411736357058224
+      Sprite_05_Foreground_DUMMY_179: -7771535318493994813
+      Sprite_05_Foreground_DUMMY_18: 5194084217035304477
+      Sprite_05_Foreground_DUMMY_180: -6213255558450131556
+      Sprite_05_Foreground_DUMMY_181: -8958622375040392050
+      Sprite_05_Foreground_DUMMY_182: 4548812893746165210
+      Sprite_05_Foreground_DUMMY_183: 8320460470714926114
+      Sprite_05_Foreground_DUMMY_184: 4380098146792759921
+      Sprite_05_Foreground_DUMMY_185: 6340110811131127452
+      Sprite_05_Foreground_DUMMY_186: -8398258263076724188
+      Sprite_05_Foreground_DUMMY_187: 9169210920589055840
+      Sprite_05_Foreground_DUMMY_188: 184808115248542062
+      Sprite_05_Foreground_DUMMY_189: 1550560152812684502
+      Sprite_05_Foreground_DUMMY_19: -8985918426328245959
+      Sprite_05_Foreground_DUMMY_190: 3401473327939809702
+      Sprite_05_Foreground_DUMMY_191: -350955468199829412
+      Sprite_05_Foreground_DUMMY_192: 1555398202633988563
+      Sprite_05_Foreground_DUMMY_193: -3922861605063310479
+      Sprite_05_Foreground_DUMMY_194: 2661499801617566766
+      Sprite_05_Foreground_DUMMY_195: -4443078834815924781
+      Sprite_05_Foreground_DUMMY_196: 3301706274878765577
+      Sprite_05_Foreground_DUMMY_197: -2054221216025742248
+      Sprite_05_Foreground_DUMMY_198: -4042609516358558334
+      Sprite_05_Foreground_DUMMY_199: 28988855721502585
+      Sprite_05_Foreground_DUMMY_2: -3436932926173848716
+      Sprite_05_Foreground_DUMMY_20: -2902470558373615109
+      Sprite_05_Foreground_DUMMY_200: -7380718791930118190
+      Sprite_05_Foreground_DUMMY_201: -91911183185955843
+      Sprite_05_Foreground_DUMMY_202: 1266565542418191392
+      Sprite_05_Foreground_DUMMY_203: -8686800131458445930
+      Sprite_05_Foreground_DUMMY_204: -3194119228450483336
+      Sprite_05_Foreground_DUMMY_205: -684263255034556417
+      Sprite_05_Foreground_DUMMY_206: 1664911091051759211
+      Sprite_05_Foreground_DUMMY_207: 623844391340802784
+      Sprite_05_Foreground_DUMMY_208: -6067908741133654250
+      Sprite_05_Foreground_DUMMY_209: -4229033134483398292
+      Sprite_05_Foreground_DUMMY_21: 1668519265150822737
+      Sprite_05_Foreground_DUMMY_210: -1079101081592302362
+      Sprite_05_Foreground_DUMMY_211: -694759319478380123
+      Sprite_05_Foreground_DUMMY_212: -1326059086016889316
+      Sprite_05_Foreground_DUMMY_213: 6874609108429852251
+      Sprite_05_Foreground_DUMMY_214: -3257188502715849022
+      Sprite_05_Foreground_DUMMY_215: 5143762414271487524
+      Sprite_05_Foreground_DUMMY_216: 4222846132634510756
+      Sprite_05_Foreground_DUMMY_217: -3056206139835051288
+      Sprite_05_Foreground_DUMMY_218: 8792901587330267822
+      Sprite_05_Foreground_DUMMY_219: 4272741518551435915
+      Sprite_05_Foreground_DUMMY_22: -5414652750300579217
+      Sprite_05_Foreground_DUMMY_220: 882468181040347765
+      Sprite_05_Foreground_DUMMY_221: -8367208199366897528
+      Sprite_05_Foreground_DUMMY_23: -4911921048834592506
+      Sprite_05_Foreground_DUMMY_24: 3037246050023485937
+      Sprite_05_Foreground_DUMMY_25: -154980653654201808
+      Sprite_05_Foreground_DUMMY_26: 5465365462164475142
+      Sprite_05_Foreground_DUMMY_27: -5060915353842104460
+      Sprite_05_Foreground_DUMMY_28: -6372714862820417530
+      Sprite_05_Foreground_DUMMY_29: 7912121274203402559
+      Sprite_05_Foreground_DUMMY_3: -5193979463122638516
+      Sprite_05_Foreground_DUMMY_30: 5127265706660292871
+      Sprite_05_Foreground_DUMMY_31: 695187955996470780
+      Sprite_05_Foreground_DUMMY_32: 3136311795775414243
+      Sprite_05_Foreground_DUMMY_33: -9064245246402592154
+      Sprite_05_Foreground_DUMMY_34: 2497695156331345868
+      Sprite_05_Foreground_DUMMY_35: -726613427360429731
+      Sprite_05_Foreground_DUMMY_36: 715210878026663449
+      Sprite_05_Foreground_DUMMY_37: -7304905268997228659
+      Sprite_05_Foreground_DUMMY_38: -8549921874420254585
+      Sprite_05_Foreground_DUMMY_39: 6449044491922159236
+      Sprite_05_Foreground_DUMMY_4: 6484664980418516137
+      Sprite_05_Foreground_DUMMY_40: 6827013343792697022
+      Sprite_05_Foreground_DUMMY_41: -3824722431972664290
+      Sprite_05_Foreground_DUMMY_42: 8775316907954954346
+      Sprite_05_Foreground_DUMMY_43: 8211409989891142686
+      Sprite_05_Foreground_DUMMY_44: 3958999539302027326
+      Sprite_05_Foreground_DUMMY_45: -8262087068842704423
+      Sprite_05_Foreground_DUMMY_46: -1348465465979256605
+      Sprite_05_Foreground_DUMMY_47: 5922503528155672495
+      Sprite_05_Foreground_DUMMY_48: -2641462435619754524
+      Sprite_05_Foreground_DUMMY_49: -446462683769555051
+      Sprite_05_Foreground_DUMMY_5: -6611518188481374337
+      Sprite_05_Foreground_DUMMY_50: 980348214350898058
+      Sprite_05_Foreground_DUMMY_51: 4036091553349141675
+      Sprite_05_Foreground_DUMMY_52: 6326494766395961616
+      Sprite_05_Foreground_DUMMY_53: -3365245424701368518
+      Sprite_05_Foreground_DUMMY_54: -4165118454440707296
+      Sprite_05_Foreground_DUMMY_55: 5851844506656228775
+      Sprite_05_Foreground_DUMMY_56: -2677180018505094578
+      Sprite_05_Foreground_DUMMY_57: 2496724951438399971
+      Sprite_05_Foreground_DUMMY_58: -8701507382714821118
+      Sprite_05_Foreground_DUMMY_59: 1812656486116518639
+      Sprite_05_Foreground_DUMMY_6: -3545801521571195775
+      Sprite_05_Foreground_DUMMY_60: 2284366712565347436
+      Sprite_05_Foreground_DUMMY_61: 2001566655869172778
+      Sprite_05_Foreground_DUMMY_62: -2639606861510866454
+      Sprite_05_Foreground_DUMMY_63: -7030176268049891709
+      Sprite_05_Foreground_DUMMY_64: 5399816600109739581
+      Sprite_05_Foreground_DUMMY_65: 1588981639614813839
+      Sprite_05_Foreground_DUMMY_66: -2423611646549410909
+      Sprite_05_Foreground_DUMMY_67: 2073985679269805522
+      Sprite_05_Foreground_DUMMY_68: 8514166695324452989
+      Sprite_05_Foreground_DUMMY_69: -6539560264505239797
+      Sprite_05_Foreground_DUMMY_7: 1426685379373583794
+      Sprite_05_Foreground_DUMMY_70: 928643390292680183
+      Sprite_05_Foreground_DUMMY_71: 7404541648764883427
+      Sprite_05_Foreground_DUMMY_72: -6789094394776400234
+      Sprite_05_Foreground_DUMMY_73: 785603216691673257
+      Sprite_05_Foreground_DUMMY_74: 6563084813729211533
+      Sprite_05_Foreground_DUMMY_75: -567989842924831522
+      Sprite_05_Foreground_DUMMY_76: 6527766233573853851
+      Sprite_05_Foreground_DUMMY_77: -4242384427733536741
+      Sprite_05_Foreground_DUMMY_78: -5435591484554584502
+      Sprite_05_Foreground_DUMMY_79: 334120758431964898
+      Sprite_05_Foreground_DUMMY_8: -633073410965652677
+      Sprite_05_Foreground_DUMMY_80: 6700132035204371873
+      Sprite_05_Foreground_DUMMY_81: -788983620846607219
+      Sprite_05_Foreground_DUMMY_82: -898472897609418018
+      Sprite_05_Foreground_DUMMY_83: -2497114888170687592
+      Sprite_05_Foreground_DUMMY_84: -7851996458244060339
+      Sprite_05_Foreground_DUMMY_85: 7415382124366559986
+      Sprite_05_Foreground_DUMMY_86: -937083315317532018
+      Sprite_05_Foreground_DUMMY_87: 4925965569492724146
+      Sprite_05_Foreground_DUMMY_88: 7404134766671390790
+      Sprite_05_Foreground_DUMMY_89: -3581638348002446900
+      Sprite_05_Foreground_DUMMY_9: -7637567007309601767
+      Sprite_05_Foreground_DUMMY_90: 7700093863676684029
+      Sprite_05_Foreground_DUMMY_91: 4993233307315567501
+      Sprite_05_Foreground_DUMMY_92: -4941664463385966725
+      Sprite_05_Foreground_DUMMY_93: 6583863946361194773
+      Sprite_05_Foreground_DUMMY_94: -5482119940871068424
+      Sprite_05_Foreground_DUMMY_95: -5957359482460795843
+      Sprite_05_Foreground_DUMMY_96: -2052408631172553537
+      Sprite_05_Foreground_DUMMY_97: -7369130641437709557
+      Sprite_05_Foreground_DUMMY_98: -4338883245966838841
+      Sprite_05_Foreground_DUMMY_99: 1021750974555183853
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
