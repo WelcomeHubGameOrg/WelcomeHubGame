@@ -13,11 +13,14 @@ public class UI : MonoBehaviour
     public TMP_Text TicketZoneText;
     public TMP_Text PlayerMoneyDisplay;
 
+    [Header("Story-Related")]
+    public GameObject StoryPanelStart;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        // add if cookies = null or something
+        StoryPanelStart.SetActive(true);
     }
 
     // Update is called once per frame
