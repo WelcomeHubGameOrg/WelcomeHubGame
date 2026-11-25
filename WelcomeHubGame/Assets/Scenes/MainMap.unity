@@ -590,7 +590,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 97528711}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -599,7 +599,7 @@ RectTransform:
   - {fileID: 1041575888}
   - {fileID: 804128731}
   - {fileID: 1250337096}
-  m_Father: {fileID: 1631049369}
+  m_Father: {fileID: 1479656128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5735,11 +5735,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1479656129}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: WindowPopUp
-        m_Mode: 2
+        m_MethodName: ChooseSandbox
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 97528711}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6660,6 +6660,7 @@ RectTransform:
   m_Children:
   - {fileID: 1631049369}
   - {fileID: 1910336918}
+  - {fileID: 97528712}
   - {fileID: 788818388}
   - {fileID: 1098382271}
   m_Father: {fileID: 0}
@@ -6688,6 +6689,7 @@ MonoBehaviour:
   TicketZoneText: {fileID: 1331391165}
   PlayerMoneyDisplay: {fileID: 96330733}
   StoryPanelStart: {fileID: 97528711}
+  moveMap: {fileID: 1631049370}
 --- !u!1001 &1502893064
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7428,7 +7430,6 @@ RectTransform:
   - {fileID: 1620404602}
   - {fileID: 883225790}
   - {fileID: 161847047}
-  - {fileID: 97528712}
   m_Father: {fileID: 1479656128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}

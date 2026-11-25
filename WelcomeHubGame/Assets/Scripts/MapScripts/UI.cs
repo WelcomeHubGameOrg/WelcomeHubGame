@@ -16,17 +16,25 @@ public class UI : MonoBehaviour
     [Header("Story-Related")]
     public GameObject StoryPanelStart;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private MoveMap moveMap;
+
+    private void Start()
     {
-        // add if cookies = null or something
-        StoryPanelStart.SetActive(true);
+        SetWelcomeVisible(GameManager.Instance.SelectedMode == PlayMode.Unselected);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ChooseSandbox()
     {
-        
+        GameManager.Instance.SetPlayMode(PlayMode.Sandbox);
+        SetWelcomeVisible(false);
+    }
+
+    private void SetWelcomeVisible(bool visible)
+    {
+        StoryPanelStart.SetActive(visible);
+
+        if (moveMap != null)
+            moveMap.enabled = !visible;
     }
 
     // Opening HSL Related Panels

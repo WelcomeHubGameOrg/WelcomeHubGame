@@ -26,11 +26,35 @@ public class GameManager : MonoBehaviour
 
     public float PlayerMoney;
 
+    [Header("Cookie saving")]
+    private OrientationSave orientationSave = new OrientationSave();
+
+    public PlayMode SelectedMode => orientationSave.mode;
+
+    public void SetPlayMode(PlayMode mode)
+    {
+        orientationSave.mode = mode;
+        orientationSave.Write();
+    }
+
+    public void SaveMapPosition(Vector2 position)
+    {
+        orientationSave.mapPosition = position;
+        orientationSave.hasMapPosition = true;
+        orientationSave.Write();
+    }
+
+    public bool TryGetMapPosition(out Vector2 position)
+    {
+        position = orientationSave.mapPosition;
+        return orientationSave.hasMapPosition;
+    }
     private void Awake()
     {
         if (!Instance) {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            orientationSave = OrientationSave.Load();
         }
         else
         {

@@ -16,8 +16,8 @@ public class TravelManager : MonoBehaviour
     [SerializeField] private float moveSpeed = 500f; // pixels per second
 
     // Static so the position survives the map scene being reloaded
-    private static Vector2 savedPosition;
-    private static bool hasSavedPosition;
+    //private static Vector2 savedPosition;
+    //private static bool hasSavedPosition;
 
     public bool isTraveling;
 
@@ -29,8 +29,18 @@ public class TravelManager : MonoBehaviour
 
     private void Start()
     {
-        if (hasSavedPosition)
-            playerRect.anchoredPosition = savedPosition;
+        if (TryGetSavedPosition(out Vector2 position))
+            playerRect.anchoredPosition = position;
+    }
+
+    public static bool TryGetSavedPosition(out Vector2 position)
+    {
+        var manager = GameManager.Instance;
+        if (manager != null)
+            return manager.TryGetMapPosition(out position);
+
+        position = Vector2.zero;
+        return false;
     }
 
     private void OnDestroy()
@@ -77,17 +87,11 @@ public class TravelManager : MonoBehaviour
 
         playerRect.position = targetWorldPos;
 
-        savedPosition = playerRect.anchoredPosition;
-        hasSavedPosition = true;
+        GameManager.Instance.SaveMapPosition(playerRect.anchoredPosition);
 
         player.sprite = playerIcon;
         isTraveling = false;
 
         GameManager.Instance.LaunchMinigame(minigame);
-    }
-    public static bool TryGetSavedPosition(out Vector2 pos)
-    {
-        pos = savedPosition;
-        return hasSavedPosition;
     }
 }

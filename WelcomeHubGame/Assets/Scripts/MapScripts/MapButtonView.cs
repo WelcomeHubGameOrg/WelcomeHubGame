@@ -20,8 +20,10 @@ public class MapButtonView : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         if (infoPanel != null) 
             infoPanel.SetActive(false);
 
-        if (stationaryMinigame != null)
-            Bind(stationaryMinigame);
+        if (stationaryMinigame == null)
+            return;
+
+        Bind(stationaryMinigame);
 
         if (stationaryMinigame.scene != null && TryGetComponent<Button>(out var button))
             button.onClick.AddListener(TravelToStationaryMinigame);
