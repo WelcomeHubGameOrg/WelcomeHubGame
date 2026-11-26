@@ -6,12 +6,15 @@ using UnityEngine.UI;
 public class SelfCheckoutGame : MinigameController
 {
     private float _timer = 60f;
+    private decimal _totalPrice = 0.0m;
     private int _score;
     private bool _timerRunning = false;
 
     [SerializeField] private SpawnManager spawnManager;
     [SerializeField] TextMeshProUGUI timerText;
+    [SerializeField] private TextMeshProUGUI totalPriceText;
     [SerializeField] private GameObject startButton;
+    [SerializeField] private GameObject payButton;
     
     public int ScannedCount = 0;
     public int TotalCount = 10;
@@ -37,10 +40,25 @@ public class SelfCheckoutGame : MinigameController
     {
         ScannedCount++;
         ScannedItem?.Invoke(price, productName);
-        CheckWinCondition();
+        _totalPrice += (price / 100m);
+        totalPriceText.SetText("Total: " + _totalPrice +"€");
     }
 
-    private void CheckWinCondition()
+    private void CalculateScore()
+    {
+        _score = Mathf.RoundToInt((_timer * 100f));
+        Debug.Log($"Score : {_score}");
+    }
+    
+    public void StartGame()
+    {
+        _timerRunning = true;
+        spawnManager.SpawnItems();
+        startButton.SetActive(false);
+        payButton.SetActive(true);
+    }
+    
+    public void CheckWinCondition()
     {
         if (!_timerRunning) return;
         
@@ -51,18 +69,5 @@ public class SelfCheckoutGame : MinigameController
             Debug.Log($"Timer : {_timer}");
             CalculateScore();
         }
-    }
-
-    private void CalculateScore()
-    {
-        _score = Mathf.RoundToInt((_timer * 100f));
-        Debug.Log($"Score : {_score}");
-    }
-
-    public void StartGame()
-    {
-        _timerRunning = true;
-        spawnManager.SpawnItems();
-        startButton.SetActive(false);
     }
 }

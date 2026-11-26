@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class DragObject : MonoBehaviour
 {
     public LayerMask dragLayers;
+    public LayerMask barcodeLayers;
 
     // to prevent the background UI from interfering
     [SerializeField] GraphicRaycaster backgroundUICaster;
@@ -20,11 +21,9 @@ public class DragObject : MonoBehaviour
     private void Update()
     {
         var currentMouse = Mouse.current;
-        var screenPos = currentMouse.position.ReadValue();
         var worldPos = Camera.main.ScreenToWorldPoint(currentMouse.position.value);
-        
         var targetCollider = Physics2D.OverlapPoint(worldPos, dragLayers);
-
+        
         if (backgroundUICaster)
         {
             bool blockUI = (targetJoint) || (targetCollider);
@@ -33,6 +32,7 @@ public class DragObject : MonoBehaviour
 
         if (currentMouse.leftButton.wasPressedThisFrame)
         {
+            if (Physics2D.OverlapPoint(worldPos, barcodeLayers)) return;
             if (!targetCollider) return;
             
             var body = targetCollider.attachedRigidbody;
@@ -41,7 +41,6 @@ public class DragObject : MonoBehaviour
             targetJoint = body.gameObject.AddComponent<TargetJoint2D>();
             targetJoint.dampingRatio = damping;
             targetJoint.frequency = frequency;
-
             targetJoint.anchor = targetJoint.transform.InverseTransformPoint(worldPos);
         }
         else if (currentMouse.leftButton.wasReleasedThisFrame)
