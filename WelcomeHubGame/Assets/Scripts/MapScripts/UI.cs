@@ -17,7 +17,68 @@ public class UI : MonoBehaviour
     public GameObject StoryPanelStart;
 
     [SerializeField] private MoveMap moveMap;
+    [Header("Story setup")]
+    [SerializeField] private GameObject modeChoiceStep;
+    [SerializeField] private GameObject nameStep;
+    [SerializeField] private GameObject genderStep;
+    [SerializeField] private GameObject studentTypeStep;
+    [SerializeField] private TMP_InputField storyNameInput;
+    [SerializeField] private TMP_Text storyNameError;
+    [SerializeField] private RectTransform airportStart;
+    [SerializeField] private RectTransform homeStart;
 
+    private string pendingStoryName;
+    private StoryGender pendingStoryGender;
+
+    public void ChooseStory()
+    {
+        ShowStoryStep(nameStep);
+        storyNameInput.ActivateInputField();
+    }
+
+    public void ConfirmStoryName()
+    {
+        string enteredName = storyNameInput.text.Trim();
+        if (string.IsNullOrEmpty(enteredName))
+        {
+            storyNameError.text = "Enter a name to continue.";
+            return;
+        }
+
+        pendingStoryName = enteredName;
+        storyNameError.text = string.Empty;
+        ShowStoryStep(genderStep);
+    }
+
+    public void ChooseMale() => ChooseGender(StoryGender.Male);
+    public void ChooseFemale() => ChooseGender(StoryGender.Female);
+    public void ChooseNonBinary() => ChooseGender(StoryGender.NonBinary);
+
+    private void ChooseGender(StoryGender gender)
+    {
+        pendingStoryGender = gender;
+        ShowStoryStep(studentTypeStep);
+    }
+
+    public void ChooseExchangeStudent() => FinishStory(StudentType.Exchange, airportStart);
+    public void ChooseFinnishStudent() => FinishStory(StudentType.Finnish, homeStart);
+
+    private void FinishStory(StudentType studentType, RectTransform startPoint)
+    {
+        Vector2 startPosition = TravelManager.instance.PlacePlayerAt(startPoint);
+        GameManager.Instance.BeginStory(
+            pendingStoryName, pendingStoryGender, studentType, startPosition);
+
+        SetWelcomeVisible(false);
+    }
+
+    private void ShowStoryStep(GameObject step)
+    {
+        modeChoiceStep.SetActive(step == modeChoiceStep);
+        nameStep.SetActive(step == nameStep);
+        genderStep.SetActive(step == genderStep);
+        studentTypeStep.SetActive(step == studentTypeStep);
+    }
     private void Start()
     {
         SetWelcomeVisible(GameManager.Instance.SelectedMode == PlayMode.Unselected);

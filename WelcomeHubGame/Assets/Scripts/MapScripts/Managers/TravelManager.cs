@@ -94,4 +94,9 @@ public class TravelManager : MonoBehaviour
 
         GameManager.Instance.LaunchMinigame(minigame);
     }
+    public Vector2 PlacePlayerAt(RectTransform marker)
+    {
+        playerRect.position = marker.position;
+        return playerRect.anchoredPosition;
+    }
 }

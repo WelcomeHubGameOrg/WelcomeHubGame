@@ -7,6 +7,8 @@ public enum PlayMode
     Sandbox,
     Story
 }
+public enum StoryGender { Unselected, Male, Female, NonBinary }
+public enum StudentType { Unselected, Exchange, Finnish }
 
 [Serializable]
 public sealed class OrientationSave
@@ -16,6 +18,10 @@ public sealed class OrientationSave
     public PlayMode mode;
     public bool hasMapPosition;
     public Vector2 mapPosition;
+
+    public string storyName;
+    public StoryGender storyGender;
+    public StudentType studentType;
 
     public static OrientationSave Load()
     {

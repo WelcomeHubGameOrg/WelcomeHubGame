@@ -36,7 +36,20 @@ public class GameManager : MonoBehaviour
         orientationSave.mode = mode;
         orientationSave.Write();
     }
-
+    public void BeginStory(
+    string playerName,
+    StoryGender gender,
+    StudentType studentType,
+    Vector2 startPosition)
+    {
+        orientationSave.storyName = playerName;
+        orientationSave.storyGender = gender;
+        orientationSave.studentType = studentType;
+        orientationSave.mapPosition = startPosition;
+        orientationSave.hasMapPosition = true;
+        orientationSave.mode = PlayMode.Story;
+        orientationSave.Write();
+    }
     public void SaveMapPosition(Vector2 position)
     {
         orientationSave.mapPosition = position;
