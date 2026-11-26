@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6616418593315457142}
   - component: {fileID: 8720717532722143525}
   - component: {fileID: 1016004862403293831}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TestObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,7 +181,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a22706b61ce05a94cb6cdd89ec01b9cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Scannable
-  _inContact: 0
   price: 6767
   productName: the 67 product
   game: {fileID: 0}

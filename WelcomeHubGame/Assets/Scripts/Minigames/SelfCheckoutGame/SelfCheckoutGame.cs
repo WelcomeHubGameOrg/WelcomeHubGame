@@ -44,7 +44,6 @@ public class SelfCheckoutGame : MinigameController
     {
         if (!_timerRunning) return;
         
-        Debug.Log("Checking win condition");
         if (ScannedCount >= TotalCount)
         {
             _timerRunning = false;

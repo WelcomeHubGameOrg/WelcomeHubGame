@@ -1,9 +1,13 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class DragObject : MonoBehaviour
 {
     public LayerMask dragLayers;
+
+    // to prevent the background UI from interfering
+    [SerializeField] GraphicRaycaster backgroundUICaster;
 
     [Range(0.0f, 100.0f)] 
     public float damping = 1.0f;
@@ -16,11 +20,19 @@ public class DragObject : MonoBehaviour
     private void Update()
     {
         var currentMouse = Mouse.current;
+        var screenPos = currentMouse.position.ReadValue();
         var worldPos = Camera.main.ScreenToWorldPoint(currentMouse.position.value);
+        
+        var targetCollider = Physics2D.OverlapPoint(worldPos, dragLayers);
+
+        if (backgroundUICaster)
+        {
+            bool blockUI = (targetJoint) || (targetCollider);
+            backgroundUICaster.enabled = !blockUI;
+        }
 
         if (currentMouse.leftButton.wasPressedThisFrame)
         {
-            var targetCollider = Physics2D.OverlapPoint(worldPos, dragLayers);
             if (!targetCollider) return;
             
             var body = targetCollider.attachedRigidbody;
@@ -34,6 +46,8 @@ public class DragObject : MonoBehaviour
         }
         else if (currentMouse.leftButton.wasReleasedThisFrame)
         {
+            if (!targetJoint) return;
+            
             Destroy(targetJoint);
             targetJoint = null;
             return;

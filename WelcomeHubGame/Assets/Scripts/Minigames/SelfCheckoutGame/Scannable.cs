@@ -4,7 +4,7 @@ using Random = UnityEngine.Random;
 public class Scannable : MonoBehaviour
 {
     private bool _hasScanned = false;
-    public bool _inContact = false;
+    private bool _inContact = false;
     private float _timeRequired;
     private float _timer;
 
@@ -30,8 +30,7 @@ public class Scannable : MonoBehaviour
             {
                 _hasScanned = true;
                 _inContact = false;
-                Debug.Log("Scanned object successfully");
-                if (game) game.NotifyScannedItem(this.price, this.productName);
+                if (game) game.NotifyScannedItem(price, productName);
             }
         }
     }
