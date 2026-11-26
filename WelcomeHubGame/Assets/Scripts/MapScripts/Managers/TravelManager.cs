@@ -62,31 +62,33 @@ public class TravelManager : MonoBehaviour
             return;
         }
 
-        StartCoroutine(MoveRoutine(destination.position, minigame));
+        Vector3 targetMapPosition = playerRect.parent.InverseTransformPoint(destination.position);
+
+        StartCoroutine(MoveRoutine(targetMapPosition, minigame));
     }
 
-    private IEnumerator MoveRoutine(Vector3 targetWorldPos, MinigameData minigame)
+    private IEnumerator MoveRoutine(Vector3 targetMapPosition, MinigameData minigame)
     {
         isTraveling = true;
         player.sprite = bus;
 
-        // Using world positions means it doesn't matter which parent/anchors
-        // the spawned buttons use, as long as they're on the same canvas.
-        Vector3 start = playerRect.position;
-        float distance = Vector3.Distance(start, targetWorldPos);
+        Vector3 startMapPosition = playerRect.localPosition;
+        float distance = Vector3.Distance(startMapPosition, targetMapPosition);
         float duration = distance / moveSpeed;
         float elapsed = 0f;
 
         while (elapsed < duration)
         {
             elapsed += Time.deltaTime;
-            float t = Mathf.Clamp01(elapsed / duration);
-            playerRect.position = Vector3.Lerp(start, targetWorldPos, t);
+            float progress = Mathf.Clamp01(elapsed / duration);
+
+            playerRect.localPosition =
+                Vector3.Lerp(startMapPosition, targetMapPosition, progress);
+
             yield return null;
         }
 
-        playerRect.position = targetWorldPos;
-
+        playerRect.localPosition = targetMapPosition;
         GameManager.Instance.SaveMapPosition(playerRect.anchoredPosition);
 
         player.sprite = playerIcon;
